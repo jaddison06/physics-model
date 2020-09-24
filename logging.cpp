@@ -7,8 +7,14 @@ tm *getTime() {
     return localtime(&rawTime);
 }
 
-Logger::Logger() {
+std::string formatTime(tm *someTime) {
+    return someTime->tm_year + "-" + someTime->tm_mon + "-" + someTime->tm_mday + " " + someTime->tm_hour + ":" + someTime->tm_min + ":" + someTime->tm_sec;
+}
 
+tm *startTime = getTime();
+
+Logger::Logger() {
+    std::ofstream logfile(formatTime(startTime));
 }
 
 // set the sender of the logs
@@ -39,6 +45,6 @@ void Logger::warning(std::string msg)
 
 void Logger::writeLog(std::string level, std::string msg) {
     tm *logTime = getTime();
-    logfile << logTime->tm_year << "-" << logTime->tm_mon << "-" << logTime->tm_mday << " " << logTime->tm_hour << ":" << logTime->tm_min << "-" << logTime->tm_sec << "   " << level << " (" << sender << ") " << msg << "\n\n";
+    logfile << formatTime(logTime) << "   " << level << " (" << sender << ") " << msg << "\n\n";
 
 }
