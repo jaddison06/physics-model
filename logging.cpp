@@ -2,6 +2,8 @@
 
 // very very simple logging
 
+tm *startTime;
+
 // get a tm struct
 tm *getTime() {
     time_t rawTime = time(0);
@@ -13,8 +15,11 @@ std::string formatTime(tm *someTime) {
     return std::to_string(someTime->tm_year) + "-" + std::to_string(someTime->tm_mon) + "-" + std::to_string(someTime->tm_mday) + " " + std::to_string(someTime->tm_hour) + ":" + std::to_string(someTime->tm_min) + ":" + std::to_string(someTime->tm_sec);
 }
 
-// will this run? who knows
-tm *startTime = getTime();
+
+// i'm used to interpreted langs so i find it difficult to put this before the getTime() definition
+void initLogging() {
+    startTime = getTime();
+}
 
 // constructor, atm just configures the ostream
 Logger::Logger() {

@@ -2,6 +2,8 @@
 
 #include "logging.h"
 
+void initLogging();
+
 class Model {
     public:
         Model();

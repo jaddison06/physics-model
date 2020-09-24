@@ -10,10 +10,12 @@
 // it'll also get that
 bool exitFunc(Logger *logger) {
     logger->info("exitFunc called");
-    return false;
+    return true;
 }
 
 int main() {
+    initLogging();
+
     Model model;
 
     model.Start(*exitFunc);
