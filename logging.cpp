@@ -23,7 +23,7 @@ void initLogging() {
 
 // constructor, atm just configures the ostream
 Logger::Logger() {
-    std::ofstream logfile("./logs/"+formatTime(startTime));
+    logfile.open("./logs/"+formatTime(startTime));
 }
 
 // set the sender of the logs
