@@ -6,14 +6,17 @@ Model::Model() {
 
 // start the Model
 void Model::Start( bool (*exitFunc)(Logger *logger) ) {
+    logger.info("Model starting");
     
     // are we already running?
     if (!isRunning) {
         
         // tick until we're told to stop
         while ( !exitFunc(&logger) ){
+            logger.info("ticking");
             Tick();
         }
+        
 
         // now shut down
         Shutdown();
