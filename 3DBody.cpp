@@ -54,5 +54,9 @@ bool ThreeDBody::containsPoint(coord *coords) {
             coord minimums { location.x - halfSideLength, location.y - halfSideLength, location.z - halfSideLength };
             coord maximums {location.x + halfSideLength, location.y + halfSideLength, location.z + halfSideLength};
             return ( (coords->x > minimums.x && coords->y > minimums.y && coords->z > minimums.z) && (coords->x < maximums.x && coords->y < maximums.y && coords->z < maximums.z) );
+        
+        case sphere:
+            // do spicy shit here
+            logger.warning("fuck off");
     }
 }
