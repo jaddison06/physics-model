@@ -1,11 +1,17 @@
 #pragma once
 
+#include "logging.h"
+
 class Model {
     public:
-        //bool exitFunc();
-        void setExitFunc( bool (*someFunc)() );
-        void Start();
+        Model();
+
+        void Start( bool (exitFunc)(Logger *logger) );
     private:
         bool isRunning;
-        bool exitFunc;
+        void Tick();
+        void Shutdown();
+
+        Logger logger;
+
 };

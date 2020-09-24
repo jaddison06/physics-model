@@ -1,18 +1,22 @@
 #include "Model.h"
+#include "logging.h"
 
 // entrypoint for the model
 
 // exitFunc is called repeatedly to determine
 // whether or not the model should continue to the next tick
-bool exitFunc() {
+//
+// it's given a pointer to the Model's logger and once model data happens
+// it'll also get that
+bool exitFunc(Logger *logger) {
+    logger->info("exitFunc called");
     return false;
 }
 
 int main() {
     Model model;
-    model.setExitFunc(*exitFunc);
 
-    model.Start();
+    model.Start(*exitFunc);
 
     return 0;
 }

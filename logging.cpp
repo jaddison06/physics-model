@@ -2,19 +2,23 @@
 
 // very very simple logging
 
+// get a tm struct
 tm *getTime() {
     time_t rawTime = time(0);
     return localtime(&rawTime);
 }
 
+// take a tm and return a beautified string
 std::string formatTime(tm *someTime) {
     return someTime->tm_year + "-" + someTime->tm_mon + "-" + someTime->tm_mday + " " + someTime->tm_hour + ":" + someTime->tm_min + ":" + someTime->tm_sec;
 }
 
+// will this run? who knows
 tm *startTime = getTime();
 
+// constructor, atm just configures the ostream
 Logger::Logger() {
-    std::ofstream logfile(formatTime(startTime));
+    std::ofstream logfile("./logs/"+formatTime(startTime));
 }
 
 // set the sender of the logs
@@ -43,6 +47,8 @@ void Logger::warning(std::string msg)
 }
 
 
+// write a log entry
+// does "logfile << something" write or append? let's find out
 void Logger::writeLog(std::string level, std::string msg) {
     tm *logTime = getTime();
     logfile << formatTime(logTime) << "   " << level << " (" << sender << ") " << msg << "\n\n";
