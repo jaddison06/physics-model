@@ -10,7 +10,7 @@ tm *getTime() {
 
 // take a tm and return a beautified string
 std::string formatTime(tm *someTime) {
-    return someTime->tm_year + "-" + someTime->tm_mon + "-" + someTime->tm_mday + " " + someTime->tm_hour + ":" + someTime->tm_min + ":" + someTime->tm_sec;
+    return std::to_string(someTime->tm_year) + "-" + std::to_string(someTime->tm_mon) + "-" + std::to_string(someTime->tm_mday) + " " + std::to_string(someTime->tm_hour) + ":" + std::to_string(someTime->tm_min) + ":" + std::to_string(someTime->tm_sec);
 }
 
 // will this run? who knows
