@@ -19,20 +19,20 @@ enum bodyType {sphere, cube};
 // basically just gonna get extended by other stuff
 class ThreeDBody {
     public:
+        ThreeDBody(bodyType, coord, float);
+
         bool containsPoint(coord *coords);
 
         void addTag(std::string *tag);
         void removeTag(std::string *tag);
         bool hasTag(std::string *tag);
 
-        void setLocation(coord *newLoc);
-        coord getLocation();
+        coord location;
+        bodyType shape;
+        float size;
 
     private:
-        bodyType shape;
         std::vector<std::string> tags;
-
-        coord location;
 
         // bc this class only gets inherited, it's the responsibility of
         // whoever owns this at runtime to actually init the logger
