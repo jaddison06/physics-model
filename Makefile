@@ -3,3 +3,4 @@ main:
 
 clean:
 	./clean.sh
+	clear

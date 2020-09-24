@@ -2,6 +2,7 @@
 
 // very very simple logging
 
+// global ting
 tm *startTime;
 
 // get a tm struct
