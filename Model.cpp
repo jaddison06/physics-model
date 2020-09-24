@@ -2,6 +2,7 @@
 
 Model::Model() {
     logger.setSender("Model");
+    logger.info("Model initialised");
 }
 
 // start the Model
@@ -16,7 +17,7 @@ void Model::Start( bool (*exitFunc)(Logger *logger) ) {
             logger.info("ticking");
             Tick();
         }
-        
+
 
         // now shut down
         Shutdown();
