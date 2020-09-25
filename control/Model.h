@@ -1,6 +1,7 @@
 #pragma once
 
 #include "control/logging.h"
+#include "control/ObjectHandler.h"
 
 void initLogging();
 
@@ -15,5 +16,6 @@ class Model {
         void Shutdown();
 
         Logger logger {"Model"};
+        ObjectHandler objectHandler;
 
 };

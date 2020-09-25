@@ -8,9 +8,14 @@
 //
 // it's given a pointer to the Model's logger and once model data happens
 // it'll also get that
+
+//TESTING ONLY
+int count = 0;
+
 bool exitFunc(Logger *logger) {
     logger->info("exitFunc called");
-    return true;
+    count++;
+    return (count<5);
 }
 
 int main() {

@@ -14,10 +14,11 @@ class Object: public ThreeDBody {
 
         // obviously not actual coords but it's an x, y, z struct
         coord velocity, acceleration;
+
+        void Tick(double time);
     
     private:
         double volume, mass, density;
-        Logger logger {"Object"};
         GravField gravField;
 
 };

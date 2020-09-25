@@ -51,6 +51,16 @@ std::string coordToString(coord *coords) {
     return std::to_string(coords->x) + ", " + std::to_string(coords->y) + ", " + std::to_string(coords->z);
 }
 
+// add two coords
+// one of them gets modified in place
+coord *add_coords(coord *a, coord *b) {
+    a->x += b->x;
+    a->y += b->y;
+    a->z += b->z;
+
+    return a;
+}
+
 
 // spicy pythagoras to find distance between two 3d points
 // this may or may not work with negative coords
