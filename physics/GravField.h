@@ -8,7 +8,7 @@ class GravField: public Field {
     public:
         GravField();
         void init(double ownerMass);
-        float calcFieldStrength(coord *point, double m2);
+        double calcFieldStrength(coord *point, double m2);
 
     private:
         double bodyMass;

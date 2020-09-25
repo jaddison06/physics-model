@@ -15,7 +15,7 @@ bool exitFunc(Logger *logger) {
 
 int main() {
     Model model;
-    model.Start(*exitFunc);
+    model.Start(&exitFunc);
 
     return 0;
 }

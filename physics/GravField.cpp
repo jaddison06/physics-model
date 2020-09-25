@@ -11,7 +11,7 @@ void GravField::init(double ownerMass) {
     bodyMass = ownerMass;
 }
 
-float GravField::calcFieldStrength(coord *point, double m2) {
+double GravField::calcFieldStrength(coord *point, double m2) {
     logger.info("Calculating field strength");
     if (containsPoint(point)) {
         // newtons something of something

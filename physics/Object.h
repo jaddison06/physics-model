@@ -6,10 +6,10 @@
 
 class Object: public ThreeDBody {
     public:
-        Object(coord pos, float bigness, float massGrams, bodyType form);
+        Object(coord pos, double bigness, double massGrams, bodyType form);
     
     private:
-        float volume, mass, density;
+        double volume, mass, density;
         Logger logger {"Object"};
         GravField gravField;
 

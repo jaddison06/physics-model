@@ -8,7 +8,7 @@
 
 // it's slightly sexier this way imo
 struct coord {
-    float x, y, z;
+    double x, y, z;
 };
 
 // add more later
