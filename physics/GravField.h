@@ -9,7 +9,6 @@ class GravField: public Field {
         GravField();
         void init(double ownerMass);
         
-        
         double calcFieldStrength(coord *point, std::vector<double> *extraData);
 
     private:
