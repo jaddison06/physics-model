@@ -54,7 +54,9 @@ for f in files:
 for f in fnames:
     printedCmd("g++ -c ./"+f+".cpp -I . -std=c++17")
 
-
+# .o files are created in the current dir so we check for them separately
+#
+# this also allows us to attempt linking even if one of the compilations failed
 objFiles = ".o ./".join([ item[:-2] for item in os.listdir(".") if ".o" in item ])
 
 # the final fname won't have a .o appended
