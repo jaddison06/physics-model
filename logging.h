@@ -8,7 +8,7 @@
 
 class Logger {
     public:
-        Logger();
+        Logger(std::string someApplication);
 
         void setSender(std::string someApplication);
         void destroy();

@@ -24,11 +24,13 @@ void initLogging() {
 }
 
 // constructor, atm just configures the ostream
-Logger::Logger() {
+Logger::Logger(std::string someApplication = "") {
     // create the logs folder, if it already exists this will hopefully just fail silently (?)
     std::filesystem::create_directories("./logs/");
 
     logfile.open("./logs/"+formatTime(startTime));
+
+    setSender(someApplication);
 }
 
 // set the sender of the logs

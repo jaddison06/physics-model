@@ -24,7 +24,7 @@ class ThreeDBody {
 
         bool containsPoint(coord *coords);
 
-        std::string *addTag(std::string *tag);
+        void addTag(std::string *tag);
         void removeTag(std::string *tag);
         bool hasTag(std::string *tag);
 

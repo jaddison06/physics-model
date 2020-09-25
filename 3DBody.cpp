@@ -10,7 +10,7 @@
 
 
 // tags stuff
-std::string *ThreeDBody::addTag(std::string *tag) {
+void ThreeDBody::addTag(std::string *tag) {
     if (hasTag(tag)) {
         logger.warning("tried to add tag "+*tag+" but we already have it");
     } else {

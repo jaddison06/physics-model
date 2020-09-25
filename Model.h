@@ -14,6 +14,6 @@ class Model {
         void Tick();
         void Shutdown();
 
-        Logger logger;
+        Logger logger {"Model"};
 
 };
