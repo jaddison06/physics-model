@@ -24,20 +24,23 @@ void initLogging() {
 }
 
 // called by both versions of the constructor
-void Logger::setup() {
+void Logger::setup(std::string someApplication) {
+
     // create the logs folder, if it already exists this will hopefully just fail silently (?)
     std::filesystem::create_directories("./logs/");
 
     logfile.open("./logs/" + formatTime(startTime));
+    
+    setSender(someApplication);
 }
 
 // constructors
 Logger::Logger(std::string someApplication) {
-    setSender(someApplication);
+    setup(someApplication);
 }
 
 Logger::Logger() {
-    setSender("");
+    setup("");
 }
 
 // set the sender of the logs

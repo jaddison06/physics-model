@@ -21,7 +21,7 @@ class Logger {
         void warning(std::string msg);
     
     private:
-        void setup();
+        void setup(std::string someApplication);
 
         std::string sender;
         std::string ID;
