@@ -54,12 +54,12 @@ std::string coordToString(coord *coords) {
 
 // spicy pythagoras to find distance between two 3d points
 // this may or may not work with negative coords
-float getDist(coord *a, coord *b) {
+double getDist(coord *a, coord *b) {
     // first find the distance on the xz plane
     //
     // i'm pretty sure there's no need to root this as it just
     // gets squared again later but i'm playing it safe
-    float baseDist = sqrt(pow((b->x) - (a->x), 2) + pow((b->z) - (a->z), 2));
+    double baseDist = sqrt(pow((b->x) - (a->x), 2) + pow((b->z) - (a->z), 2));
 
     // now do that again with the y axis
     return sqrt(pow(baseDist, 2) + pow((b->y) - (a->y), 2));
@@ -70,7 +70,7 @@ bool ThreeDBody::containsPoint(coord *coords) {
     switch (shape) {
         case cube:
         {
-            float halfSideLength = size/2;
+            double halfSideLength = size/2;
             coord minimums { location.x - halfSideLength, location.y - halfSideLength, location.z - halfSideLength };
             coord maximums {location.x + halfSideLength, location.y + halfSideLength, location.z + halfSideLength};
             return ( (coords->x > minimums.x && coords->y > minimums.y && coords->z > minimums.z) && (coords->x < maximums.x && coords->y < maximums.y && coords->z < maximums.z) );
@@ -79,7 +79,7 @@ bool ThreeDBody::containsPoint(coord *coords) {
         case sphere:
         {
             // get the distance between the centre of the sphere & our point
-            float dist = getDist(&location, coords);
+            double dist = getDist(&location, coords);
 
             // now compare that to the radius of our sphere
             return (dist <= size);

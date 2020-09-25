@@ -9,5 +9,5 @@ class Field: public ThreeDBody {
 
         // we don't define this, the inheriter does as it's different for different
         // types of field
-        float calcFieldStrength(coord *point);
+        virtual float calcFieldStrength(coord *point);
 };

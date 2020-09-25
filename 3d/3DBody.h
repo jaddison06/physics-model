@@ -29,7 +29,7 @@ class ThreeDBody {
 
         coord location;
         bodyType shape;
-        float size;
+        double size;
 
     protected:
         std::vector<std::string> tags;
