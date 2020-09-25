@@ -1,6 +1,7 @@
 #include "physics/GravField.h"
 
 GravField::GravField() {
+    addTag("gravField");
     logger.setSender("GravField");
 }
 

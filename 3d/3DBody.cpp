@@ -11,29 +11,29 @@
 
 
 // tags stuff
-void ThreeDBody::addTag(std::string *tag) {
+void ThreeDBody::addTag(std::string tag) {
     if (hasTag(tag)) {
-        logger.warning("tried to add tag "+*tag+" but we already have it");
+        logger.warning("tried to add tag "+tag+" but we already have it");
     } else {
-        logger.info("adding tag "+*tag);
-        tags.push_back(*tag);
+        logger.info("adding tag "+tag);
+        tags.push_back(tag);
     }
 }
 
-void ThreeDBody::removeTag(std::string *tag) {
+void ThreeDBody::removeTag(std::string tag) {
     if (!hasTag(tag)) {
-        logger.warning("tried to remove tag "+*tag+" but we don't have it");
+        logger.warning("tried to remove tag "+tag+" but we don't have it");
     } else {
-        logger.info("removing tag "+*tag);
-        tags.erase(std::remove(tags.begin(), tags.end(), *tag), tags.end());
+        logger.info("removing tag "+tag);
+        tags.erase(std::remove(tags.begin(), tags.end(), tag), tags.end());
     }
 }
 
-bool ThreeDBody::hasTag(std::string *tag) {
-    logger.info("checking for tag "+*tag);
+bool ThreeDBody::hasTag(std::string tag) {
+    logger.info("checking for tag "+tag);
     bool tagFound = false;
     for (int i=0; i<tags.size(); i++) {
-        if (tags[i] == *tag) {
+        if (tags[i] == tag) {
             tagFound = true;
             break;
         }
