@@ -29,6 +29,7 @@ void Model::Start( bool (*exitFunc)(Logger *logger) ) {
 }
 
 // 1 tick, will eventually be equivalent to a real-world time unit but this is very early
+// probably variable as we can then calculate stuff
 void Model::Tick(){
     logger.info("ticking");
 }

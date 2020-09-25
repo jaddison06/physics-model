@@ -1,7 +1,7 @@
 #pragma once
 
-#include "logging.h"
-#include "3DBody.h"
+#include "control/logging.h"
+#include "3d/3DBody.h"
 
 class Field: public ThreeDBody {
     public:

@@ -11,6 +11,8 @@ class Logger {
         Logger(std::string someApplication);
 
         void setSender(std::string someApplication);
+        void setID(std::string someID);
+
         void destroy();
 
         void debug(std::string msg);
@@ -19,6 +21,7 @@ class Logger {
     
     private:
         std::string sender;
+        std::string ID;
         std::ofstream logfile;
         void writeLog(std::string level, std::string msg);
 };

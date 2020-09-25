@@ -1,7 +1,7 @@
 #pragma once
 
-#include "logging.h"
-#include "Field.h"
+#include "control/logging.h"
+#include "physics/Field.h"
 #include <vector>
 
 // will add more later
@@ -17,5 +17,5 @@ class FieldHandler {
     private:
         std::vector<Field> fields;
 
-        Logger logger;
+        Logger logger {"FieldHandler"};
 };

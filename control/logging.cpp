@@ -23,7 +23,7 @@ void initLogging() {
     startTime = getTime();
 }
 
-// constructor, atm just configures the ostream
+// constructor
 Logger::Logger(std::string someApplication = "") {
     // create the logs folder, if it already exists this will hopefully just fail silently (?)
     std::filesystem::create_directories("./logs/");
@@ -34,8 +34,19 @@ Logger::Logger(std::string someApplication = "") {
 }
 
 // set the sender of the logs
+//
+// you can also do this via the constructor, I recommend
+// inherited classes use setSender but standalones can be implicit
 void Logger::setSender(std::string someApplication) {
     sender = someApplication;
+}
+
+// set a unique ID if you're gonna have more than one 
+// of the same class
+//
+// this one can't be done from the constructor. this is probably a design choice
+void Logger::setID(std::string someID) {
+    ID = someID;
 }
 
 // called by someone, hopefully, when they're finished with the logger
@@ -63,6 +74,13 @@ void Logger::warning(std::string msg)
 // does "logfile << something" write or append? let's find out
 void Logger::writeLog(std::string level, std::string msg) {
     tm *logTime = getTime();
-    logfile << formatTime(logTime) << "   " << level << " (" << sender << ") " << msg << "\n\n";
+
+    // make id look slightly prettier
+    std::string fmtID = "";
+    if (ID != "") {
+        fmtID = " " + ID;
+    }
+
+    logfile << formatTime(logTime) << "   " << level << " (" << sender << fmtID << ") " << msg << "\n\n";
 
 }

@@ -45,6 +45,12 @@ bool ThreeDBody::hasTag(std::string *tag) {
     return tagFound;
 }
 
+// sexy coord
+std::string coordToString(coord *coords) {
+    return std::to_string(coords->x) + ", " + std::to_string(coords->y) + ", " + std::to_string(coords->z);
+}
+
+
 // spicy pythagoras to find distance between two 3d points
 // this may or may not work with negative coords
 float getDist(coord *a, coord *b) {
