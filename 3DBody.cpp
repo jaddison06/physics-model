@@ -4,19 +4,13 @@
 //
 // location is a struct coords
 //
-// i called it bigness cause i've already used the name
-// size, this relates to:
+// size relates to:
 //  - side length of a cube
 //  - radius of a sphere
-ThreeDBody::ThreeDBody(bodyType thisShape, coord coords, float bigness) {
-    shape = thisShape;
-    location = coords;
-    size = bigness;
-}
 
 
 // tags stuff
-void ThreeDBody::addTag(std::string *tag) {
+std::string *ThreeDBody::addTag(std::string *tag) {
     if (hasTag(tag)) {
         logger.warning("tried to add tag "+*tag+" but we already have it");
     } else {
@@ -68,16 +62,24 @@ float getDist(coord *a, coord *b) {
 bool ThreeDBody::containsPoint(coord *coords) {
     switch (shape) {
         case cube:
+        {
             float halfSideLength = size/2;
             coord minimums { location.x - halfSideLength, location.y - halfSideLength, location.z - halfSideLength };
             coord maximums {location.x + halfSideLength, location.y + halfSideLength, location.z + halfSideLength};
             return ( (coords->x > minimums.x && coords->y > minimums.y && coords->z > minimums.z) && (coords->x < maximums.x && coords->y < maximums.y && coords->z < maximums.z) );
+        }
         
         case sphere:
+        {
             // get the distance between the centre of the sphere & our point
             float dist = getDist(&location, coords);
 
             // now compare that to the radius of our sphere
             return (dist <= size);
+        }
     }
+
+    // this doesn't get used but it satisfies the compiler
+    return false;
+
 }

@@ -14,10 +14,7 @@ bool exitFunc(Logger *logger) {
 }
 
 int main() {
-    initLogging();
-
     Model model;
-
     model.Start(*exitFunc);
 
     return 0;

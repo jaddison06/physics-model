@@ -1,6 +1,8 @@
 #include "Model.h"
 
 Model::Model() {
+    initLogging();
+
     logger.setSender("Model");
     logger.info("Model initialised");
 }

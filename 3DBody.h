@@ -20,11 +20,11 @@ enum bodyType {sphere, cube};
 // basically just gonna get extended by other stuff
 class ThreeDBody {
     public:
-        ThreeDBody(bodyType, coord, float);
+        ThreeDBody();
 
         bool containsPoint(coord *coords);
 
-        void addTag(std::string *tag);
+        std::string *addTag(std::string *tag);
         void removeTag(std::string *tag);
         bool hasTag(std::string *tag);
 
