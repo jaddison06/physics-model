@@ -3,7 +3,7 @@
 
 Field* FieldHandler::addField(fieldType thisType, coord *coords) {
     logger.info("adding field");
-    Field thisField;
+    static Field thisField;
     thisField.location = *coords;
     fields.push_back(thisField);
     return &thisField;
