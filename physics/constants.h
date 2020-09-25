@@ -1,8 +1,11 @@
 #pragma once
 
-// i could do these with the preprocessor but i'd lose
-// precision as they wouldn't explicitly be defined as doubles
+// honestly fuck precision at this point
+//
+// you should've seen the linker errors
+//
+// shit ton of multiple definitions
 
-double CONST_G = 0.00000000006673;
-double M2_APPROX_KG = 200;
-double PI = 3.14159265359;
+#define CONST_G 0.00000000006673;
+#define M2_APPROX_KG 200;
+#define PI 3.14159265359;
