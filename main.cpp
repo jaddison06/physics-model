@@ -1,5 +1,6 @@
 #include "control/Model.h"
 #include "control/logging.h"
+#include <iostream>
 
 // entrypoint for the model
 
@@ -19,6 +20,14 @@ bool exitFunc(Logger *logger) {
 }
 
 int main() {
+    
+    // for posterity, this doesn't even print
+    //
+    // somehow it's segfaulting before code even
+    // starts to execute
+    std::cout << "main called";
+
+
     Model model;
     model.Start(&exitFunc);
 
