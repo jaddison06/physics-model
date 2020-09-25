@@ -7,7 +7,8 @@ class Field: public ThreeDBody {
     public:
         Field();
 
-        // we don't define this, the inheriter does as it's different for different
-        // types of field
-        virtual double calcFieldStrength(coord *point);
+        // sometimes stuff adds extra parameters to this,
+        // but apparently that doesn't break stuff so fingers crossed
+        // this can stay
+        virtual double calcFieldStrength(coord *point)=0;
 };

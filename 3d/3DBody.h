@@ -14,6 +14,12 @@ struct coord {
 // add more later
 enum bodyType {sphere, cube};
 
+
+// random stuff from 3DBody.cpp that i might want to reuse at some point
+double getDist(coord *a, coord *b);
+std::string coordToString(coord *coords);
+
+
 // class names can't start with a number apparently
 //
 // it's chill cause we don't really use this, it's
