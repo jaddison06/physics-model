@@ -1,5 +1,5 @@
-#include "Model.h"
-#include "logging.h"
+#include "control/Model.h"
+#include "control/logging.h"
 
 // entrypoint for the model
 

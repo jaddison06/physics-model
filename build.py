@@ -24,7 +24,26 @@ def getAllFiles(dirName="."):
     
     return allFiles
 
-files = list(itertools.chain.from_iterable(getAllFiles()))
+# itertools.chain.from_iterable() unfortunately counts strings as iterables
+# 
+# we take all strings that aren't in a nested list and put them in one
+filesDimensioned = getAllFiles()
+rootFiles = []
+
+# get all root strings and put them in a new list
+for item in filesDimensioned:
+    if type(item) != list:
+        rootFiles.append(item)
+
+# now remove them all from the original list
+for item in rootFiles:
+    filesDimensioned.remove(item)
+
+# now add them back within the nested list
+filesDimensioned.append(rootFiles)
+
+# NOW we can do from_iterable
+files = itertools.chain.from_iterable(filesDimensioned)
 
 fnames = []
 
