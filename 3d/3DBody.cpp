@@ -53,7 +53,7 @@ std::string coordToString(coord *coords) {
 
 // add two coords
 // one of them gets modified in place
-void add_coords(coord *a, coord *b) {
+void addCoords(coord *a, coord *b) {
     a->x += b->x;
     a->y += b->y;
     a->z += b->z;
