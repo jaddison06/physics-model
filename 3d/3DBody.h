@@ -20,7 +20,6 @@ enum bodyType {sphere, cube};
 // basically just gonna get extended by other stuff
 class ThreeDBody {
     public:
-        ThreeDBody();
 
         bool containsPoint(coord *coords);
 
@@ -32,7 +31,7 @@ class ThreeDBody {
         bodyType shape;
         float size;
 
-    private:
+    protected:
         std::vector<std::string> tags;
 
         // bc this class only gets inherited, it's the responsibility of

@@ -9,6 +9,7 @@
 class Logger {
     public:
         Logger(std::string someApplication);
+        Logger();
 
         void setSender(std::string someApplication);
         void setID(std::string someID);
@@ -20,6 +21,8 @@ class Logger {
         void warning(std::string msg);
     
     private:
+        void setup();
+
         std::string sender;
         std::string ID;
         std::ofstream logfile;
