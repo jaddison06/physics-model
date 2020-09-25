@@ -1,4 +1,4 @@
-#include "Model.h"
+#include "control/Model.h"
 
 Model::Model() {
     initLogging();

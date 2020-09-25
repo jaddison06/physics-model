@@ -28,7 +28,7 @@ Object::Object(coord pos, double bigness, double massGrams, bodyType form) {
 }
 
 // Move the object a certain interval forwards in time
-// tickTime currently does nothing here
+// tickTime currently does nothing
 void Object::Tick(double tickTime) {
     logger.info("Current location: "+coordToString(&location));
     logger.info("Current velocity: "+coordToString(&velocity));
