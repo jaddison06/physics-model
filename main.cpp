@@ -15,7 +15,7 @@ int count = 0;
 bool exitFunc(Logger *logger) {
     logger->info("exitFunc called");
     count++;
-    return (count<5);
+    return !(count<5);
 }
 
 int main() {
@@ -27,6 +27,12 @@ int main() {
     //
     // ooh could it be a stack overflow?
     // where from???
+    //
+    // ok by trial and error i have determined that the segfault
+    // is coming from instantiating the Model
+    // interesting that that stops output to cout??
+    //
+    // the plot thickens
     std::cout << "main called";
 
 
