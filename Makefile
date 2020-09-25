@@ -1,5 +1,5 @@
 main:
-	./build.sh
+	python3 ./build.py
 
 clean:
 	./clean.sh

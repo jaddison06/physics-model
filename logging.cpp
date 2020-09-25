@@ -18,6 +18,7 @@ std::string formatTime(tm *someTime) {
 
 
 // i'm used to interpreted langs so i find it difficult to put this before the getTime() definition
+// you NEED to call this before you start logging otherwise bad things will happen
 void initLogging() {
     startTime = getTime();
 }
