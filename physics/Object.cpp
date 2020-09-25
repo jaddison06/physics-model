@@ -28,14 +28,14 @@ Object::Object(coord pos, double bigness, double massGrams, bodyType form) {
 }
 
 // Move the object a certain interval forwards in time
-void Object::Tick(double time) {
+// tickTime currently does nothing here
+void Object::Tick(double tickTime) {
     logger.info("Current location: "+coordToString(&location));
     logger.info("Current velocity: "+coordToString(&velocity));
     logger.info("Current acceleration: "+coordToString(&acceleration));
 
     logger.info("ticking");
 
-    // why isn't this linking ???????
     addCoords(&location, &velocity);
     addCoords(&velocity, &acceleration);
 

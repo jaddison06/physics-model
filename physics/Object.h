@@ -15,7 +15,7 @@ class Object: public ThreeDBody {
         // obviously not actual coords but it's an x, y, z struct
         coord velocity, acceleration;
 
-        void Tick(double time);
+        void Tick(double tickTime);
     
     private:
         double volume, mass, density;

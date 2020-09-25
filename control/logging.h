@@ -6,6 +6,8 @@
 #include <iostream>
 #include <filesystem>
 
+void initLogging();
+
 class Logger {
     public:
         Logger(std::string someApplication);

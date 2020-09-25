@@ -33,11 +33,15 @@ int main() {
     // interesting that that stops output to cout??
     //
     // the plot thickens
+    //
+    // ok i have individually removed every member of Model, one 
+    // by one, and the segfault still happens
+    
     std::cout << "main called";
 
 
     Model model;
-    model.Start(&exitFunc);
+    //model.Start(&exitFunc);
 
     return 0;
 }

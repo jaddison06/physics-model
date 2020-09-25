@@ -3,13 +3,14 @@
 #include "control/logging.h"
 #include "control/ObjectHandler.h"
 
-void initLogging();
+
+// something here is causing a phat segfault
 
 class Model {
     public:
         Model();
 
-        void Start( bool (exitFunc)(Logger *logger) );
+        void Start( bool (*exitFunc)(Logger *) );
     private:
         bool isRunning;
         void Tick();

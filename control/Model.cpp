@@ -6,8 +6,9 @@ Model::Model() {
     logger.info("Model initialised");
 }
 
+
 // start the Model
-void Model::Start( bool (*exitFunc)(Logger *logger) ) {
+void Model::Start( bool (*exitFunc)(Logger *) ) {
     logger.info("Model starting");
 
     // will figure this one out after i've got everything else to work
@@ -35,6 +36,7 @@ void Model::Start( bool (*exitFunc)(Logger *logger) ) {
         logger.warning("Start was called but the model was already running");
     }
 }
+
 
 // 1 tick, will eventually be equivalent to a real-world time unit but this is very early
 // probably variable as we can then calculate stuff

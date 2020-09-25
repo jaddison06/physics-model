@@ -12,7 +12,7 @@ class ObjectHandler {
         // we can accept that instead and make this private
         std::vector<Object> objects;
 
-        void Tick(double time);
+        void Tick(double tickTime);
     
     private:
         Logger logger{"ObjectHandler"};
