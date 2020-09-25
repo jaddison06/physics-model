@@ -10,9 +10,8 @@
 // it's given a pointer to the Model's logger and once model data happens
 // it'll also get that
 
-//TESTING ONLY
+// this exitFunc for testing only
 int count = 0;
-
 bool exitFunc(Logger *logger) {
     logger->info("exitFunc called");
     count++;
@@ -20,11 +19,14 @@ bool exitFunc(Logger *logger) {
 }
 
 int main() {
-    
+
     // for posterity, this doesn't even print
     //
     // somehow it's segfaulting before code even
     // starts to execute
+    //
+    // ooh could it be a stack overflow?
+    // where from???
     std::cout << "main called";
 
 

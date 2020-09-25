@@ -52,7 +52,7 @@ for f in files:
         fnames.append(f[:-4])
 
 for f in fnames:
-    printedCmd("g++ -c ./"+f+".cpp -I . -std=c++17")
+    printedCmd("g++ -c ./"+f+".cpp -I . -Wall -std=c++17")
 
 # .o files are created in the current dir so we check for them separately
 #

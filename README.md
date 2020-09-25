@@ -1,2 +1,2 @@
 # physics-model
-never gonna give you up
+basic modelling of physics. tryna get gravity working then i'll do something else

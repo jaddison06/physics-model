@@ -10,6 +10,7 @@ Model::Model() {
 void Model::Start( bool (*exitFunc)(Logger *logger) ) {
     logger.info("Model starting");
 
+    // will figure this one out after i've got everything else to work
     /*
     Object testObject{coord {10, 0, 0}, 20, 69, cube};
     testObject.velocity = coord {-3, 1, 2};
