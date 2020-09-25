@@ -4,6 +4,7 @@
 #include <vector>
 #include <string>
 #include <algorithm>
+#include <math.h>
 
 // it's slightly sexier this way imo
 struct coord {

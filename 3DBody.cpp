@@ -35,6 +35,7 @@ void ThreeDBody::removeTag(std::string *tag) {
 }
 
 bool ThreeDBody::hasTag(std::string *tag) {
+    logger.info("checking for tag "+*tag);
     bool tagFound = false;
     for (int i=0; i<tags.size(); i++) {
         if (tags[i] == *tag) {
@@ -42,9 +43,26 @@ bool ThreeDBody::hasTag(std::string *tag) {
             break;
         }
     }
+    if (tagFound) {
+        logger.info("the tag was found");
+    } else {
+        logger.info("the tag was not found");
+    }
     return tagFound;
 }
 
+// spicy pythagoras to find distance between two 3d points
+// this may or may not work with negative coords
+float getDist(coord *a, coord *b) {
+    // first find the distance on the xz plane
+    //
+    // i'm pretty sure there's no need to root this as it just
+    // gets squared again later but i'm playing it safe
+    float baseDist = sqrt(pow((b->x) - (a->x), 2) + pow((b->z) - (a->z), 2));
+
+    // now do that again with the y axis
+    return sqrt(pow(baseDist, 2) + pow((b->y) - (a->y), 2));
+}
 
 // check if a given x, y, z is inside the body
 bool ThreeDBody::containsPoint(coord *coords) {
@@ -56,7 +74,10 @@ bool ThreeDBody::containsPoint(coord *coords) {
             return ( (coords->x > minimums.x && coords->y > minimums.y && coords->z > minimums.z) && (coords->x < maximums.x && coords->y < maximums.y && coords->z < maximums.z) );
         
         case sphere:
-            // do spicy shit here
-            logger.warning("fuck off");
+            // get the distance between the centre of the sphere & our point
+            float dist = getDist(&location, coords);
+
+            // now compare that to the radius of our sphere
+            return (dist <= size);
     }
 }

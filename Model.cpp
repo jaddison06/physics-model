@@ -17,7 +17,7 @@ void Model::Start( bool (*exitFunc)(Logger *logger) ) {
             logger.info("ticking");
             Tick();
         }
-
+        logger.info("model complete, exiting");
 
         // now shut down
         Shutdown();
@@ -29,7 +29,7 @@ void Model::Start( bool (*exitFunc)(Logger *logger) ) {
 
 // 1 tick, will eventually be equivalent to a real-world time unit but this is very early
 void Model::Tick(){
-
+    logger.info("ticking");
 }
 
 // any cleanup code goes here
