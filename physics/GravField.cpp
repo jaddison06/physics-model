@@ -11,8 +11,10 @@ void GravField::init(double ownerMass) {
     bodyMass = ownerMass;
 }
 
-double GravField::calcFieldStrength(coord *point, double m2) {
+// extraData[0] must be the 2nd object's mass
+double GravField::calcFieldStrength(coord *point, std::vector<double> *extraData) {
     logger.info("Calculating field strength");
+    double m2 = (*extraData)[0];
     if (containsPoint(point)) {
         // newton's something of something
         double r = getDist(&location, point);
