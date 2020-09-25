@@ -2,7 +2,7 @@
 
 Object::Object(coord pos, double bigness, double massGrams, bodyType form) {
     addTag("object");
-    logger.setSender("Object")
+    logger.setSender("Object");
 
     logger.info("Object initialized");
 
@@ -35,6 +35,7 @@ void Object::Tick(double time) {
 
     logger.info("ticking");
 
+    // why isn't this linking ???????
     addCoords(&location, &velocity);
     addCoords(&velocity, &acceleration);
 
