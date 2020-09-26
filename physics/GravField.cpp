@@ -24,3 +24,7 @@ double GravField::calcFieldStrength(coord *point, std::vector<double> *extraData
         return 0;
     }
 }
+
+
+// awkward
+void GravField::inheritedDestroy() {}

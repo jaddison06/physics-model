@@ -14,5 +14,7 @@ class GravField: public Field {
     private:
         double bodyMass;
 
+        void inheritedDestroy();
+
         
 };

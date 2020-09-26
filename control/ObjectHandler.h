@@ -4,6 +4,8 @@
 #include "control/GenericBaseClass.h"
 #include <vector>
 
+#include <iostream>
+
 class ObjectHandler: public GenericBaseClass {
     public:
         ObjectHandler();
