@@ -32,9 +32,48 @@ void BinaryCreator::CreateBinary(ObjectHandler *objectHandler, std::string fname
 
 
 
+std::string BinaryCreator::createBinData(ObjectHandler *objectHandler) {
+
+}
+
+std::string BinaryCreator::serializeObject(Object *object) {
+    std::string output = "";
+
+
+}
+
+std::string BinaryCreator::serializeCoord(coord *coords) {
+    std::string output = "";
+
+    return output;
+}
+
+std::string BinaryCreator::serializeDouble(double *someDouble) {
+    std::string output = "";
 
 
 
+    return output;
+}
+
+std::string BinaryCreator::serializeBodyType(bodyType *bType) {
+    std::string output = "";
+    int id;
+
+    switch(*bType) {
+        case cube: {
+            id = 0;
+            break;
+        }
+        case sphere: {
+            id = 1;
+            break;
+        }
+    }
+
+    output = decimalToBinary(id);
+    return output;
+}
 
 
 // convert binary string to writable string of chars
@@ -56,6 +95,10 @@ std::string BinaryCreator::binaryToString(std::string binary) {
     }
 
     return chars;
+
+}
+
+std::string BinaryCreator::charToString(char chars[]) {
 
 }
 
