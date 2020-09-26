@@ -1,7 +1,8 @@
 #include "physics/Object.h"
 
-Object::Object(coord pos, double bigness, double massGrams, bodyType form) {
+Object::Object(coord pos, double bigness, double massGrams, bodyType form, std::string ID) {
     logger.setSender("Object");
+    logger.setID(ID);
     addTag("object");
 
     logger.info("Object initialized");

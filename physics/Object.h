@@ -9,7 +9,7 @@
 // modifying their attributes eg location with its own
 class Object: public ThreeDBody {
     public:
-        Object(coord pos, double bigness, double massGrams, bodyType form);
+        Object(coord pos, double bigness, double massGrams, bodyType form, std::string ID);
 
         // obviously not actual coords but it's an x, y, z struct
         coord velocity, acceleration;
