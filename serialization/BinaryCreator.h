@@ -13,7 +13,7 @@ class BinaryCreator: public GenericBaseClass {
     public:
         BinaryCreator();
 
-        void CreateBinary(ObjectHandler *objectHandler);
+        void CreateBinary(ObjectHandler *objectHandler, std::string fname);
     
     private:
 
@@ -22,7 +22,7 @@ class BinaryCreator: public GenericBaseClass {
 
         std::string createBinData(ObjectHandler *objectHandler);
         std::string binaryToString(std::string binary);
-        void writeToFile(std::string chars);
+        void writeToFile(std::string chars, std::string fname);
 
         void inheritedDestroy();
 

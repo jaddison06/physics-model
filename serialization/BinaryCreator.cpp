@@ -22,13 +22,20 @@ std::string BinaryCreator::setLength(std::string input, int targetLength) {
     return prependor + input;
 }
 
-void BinaryCreator::CreateBinary(ObjectHandler *objectHandler) {
+void BinaryCreator::CreateBinary(ObjectHandler *objectHandler, std::string fname) {
     logger.info("Creating a binary");
 
     std::string binData = createBinData(objectHandler);
     std::string chars = binaryToString(binData);
-    writeToFile(chars);
+    writeToFile(chars, fname);
 }
+
+
+
+
+
+
+
 
 // convert binary string to writable string of chars
 std::string BinaryCreator::binaryToString(std::string binary) {
@@ -52,10 +59,24 @@ std::string BinaryCreator::binaryToString(std::string binary) {
 
 }
 
-void BinaryCreator::writeToFile(std::string chars) {
-    
+void BinaryCreator::writeToFile(std::string input, std::string fname) {
+    std::ofstream fh("./data/models/"+fname, std::ios::binary);
 
-    
+    // convert string to char array
+    //
+    // there's an easier way to do this but i'm on my 7th
+    // pepsi of the night and am therefore doing the absolute
+    // bare minimum to get this serialization done
+    char chars[input.length()];
+    for (int i=0; i<input.length(); i++) {
+        chars[i] = input[i];
+    }
+
+    fh.write(chars, sizeof(chars));
+
+    fh.close();
+
+
 }
 
 void BinaryCreator::inheritedDestroy() {
