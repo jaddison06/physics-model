@@ -6,7 +6,7 @@
 
 class ObjectHandler: public GenericBaseClass {
     public:
-        ObjectHandler():
+        ObjectHandler();
 
         // i hate that this has to be public
         //

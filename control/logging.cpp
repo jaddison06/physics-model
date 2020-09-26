@@ -85,7 +85,7 @@ void Logger::warning(std::string msg)
 }
 
 // format a log entry
-std::string *Logger::fmtLog(std::string *level, std::string *msg) {
+std::string Logger::fmtLog(std::string *level, std::string *msg) {
     tm *logTime = getTime();
 
     // make id look slightly prettier
@@ -95,13 +95,13 @@ std::string *Logger::fmtLog(std::string *level, std::string *msg) {
         fmtID = " " + ID;
     }
 
-    return &(formatTime(logTime) + "   " + *level + " (" + sender + fmtID + ") " + *msg + "\n\n");
+    return formatTime(logTime) + "   " + *level + " (" + sender + fmtID + ") " + *msg + "\n\n";
 }
 
 // write a log entry
 void Logger::writeLog(std::string level, std::string *msg) {
     
-    std::string output = *fmtLog(&level, msg);
+    std::string output = fmtLog(&level, msg);
     logfile << output;
 
 

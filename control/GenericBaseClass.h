@@ -23,4 +23,4 @@ class GenericBaseClass {
     protected:
         // put extra destruction stuff here
         virtual void inheritedDestroy();
-}
+};
