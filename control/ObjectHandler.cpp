@@ -10,7 +10,6 @@ ObjectHandler::ObjectHandler() {
 }
 
 void ObjectHandler::Tick(double tickTime) {
-    std::cout << "ObjectHandler ticking\n";
     logger.info("ticking");
     for (int i=0; i<objects.size(); i++) {
         objects[i].Tick(tickTime);

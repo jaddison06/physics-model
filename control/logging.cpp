@@ -2,8 +2,9 @@
 
 // very very simple logging
 
-// global ting
+// global tingz
 tm *startTime;
+std::ofstream logfile;
 
 // get a tm struct
 tm *getTime() {
@@ -26,6 +27,7 @@ std::string formatTime(tm *someTime) {
 // only runtime
 void initLogging() {
     startTime = getTime();
+    logfile.open("./logs/" + formatTime(startTime));
 }
 
 // called by both versions of the constructor
@@ -33,8 +35,6 @@ void Logger::setup(std::string someApplication) {
 
     // create the logs folder, if it already exists this will hopefully just fail silently (?)
     std::filesystem::create_directories("./logs/");
-
-    logfile.open("./logs/" + formatTime(startTime));
     
     setSender(someApplication);
 }
@@ -102,6 +102,7 @@ std::string Logger::fmtLog(std::string *level, std::string *msg) {
 void Logger::writeLog(std::string level, std::string *msg) {
     
     std::string output = fmtLog(&level, msg);
+    //std::cout << output;
     logfile << output;
 
 
