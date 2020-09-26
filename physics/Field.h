@@ -1,6 +1,5 @@
 #pragma once
 
-#include "control/logging.h"
 #include "3d/3DBody.h"
 #include <vector>
 

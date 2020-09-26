@@ -45,3 +45,7 @@ void Object::Tick(double tickTime) {
 
     gravField.location = location;
 }
+
+void Object::inheritedDestroy() {
+    gravField.Destroy();
+}

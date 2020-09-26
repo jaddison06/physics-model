@@ -1,6 +1,6 @@
 #pragma once
 
-#include "control/logging.h"
+#include "control/GenericBaseClass.h"
 #include <vector>
 #include <string>
 #include <algorithm>
@@ -25,8 +25,9 @@ void addCoords(coord *a, coord *b);
 //
 // it's chill cause we don't really use this, it's
 // basically just gonna get extended by other stuff
-class ThreeDBody {
+class ThreeDBody: public GenericBaseClass {
     public:
+        ThreeDBody();
 
         bool containsPoint(coord *coords);
 
@@ -41,10 +42,5 @@ class ThreeDBody {
     protected:
         std::vector<std::string> tags;
 
-        // bc this class only gets inherited, it's the responsibility of
-        // whoever owns this at runtime to actually init the logger
-        //
-        // make sure you do though cause some of the public methods use it :/
-        Logger logger;
 
 };

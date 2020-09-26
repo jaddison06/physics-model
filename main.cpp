@@ -20,32 +20,13 @@ bool exitFunc(Logger *logger) {
 
 int main() {
 
-    // for posterity, this doesn't even print
-    //
-    // somehow it's segfaulting before code even
-    // starts to execute
-    //
-    // ooh could it be a stack overflow?
-    // where from???
-    //
-    // ok by trial and error i have determined that the segfault
-    // is coming from instantiating the Model
-    // interesting that that stops output to cout??
-    //
-    // the plot thickens
-    //
-    // ok i have individually removed every member of Model, one 
-    // by one, and the segfault still happens
-    //
-    // update: this did in fact print but wasn't being flushed, the segfault
-    // is definitely happening on instantiation of the Model
-    // 
-    // why
-    
-    std::cout << "main called" << std::endl;
+    // we have to call this _before_
+    // instantiating the Model as it has its own Logger object
+    // that won't work without it
+    initLogging();
 
     Model model;
-    //model.Start(&exitFunc);
+    model.Start(&exitFunc);
 
     return 0;
 }

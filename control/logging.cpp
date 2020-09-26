@@ -17,8 +17,13 @@ std::string formatTime(tm *someTime) {
 }
 
 
-// i'm used to interpreted langs so i find it difficult to put this before the getTime() definition
-// you NEED to call this before you start logging otherwise bad things will happen
+// IMPORTANT:
+// call this before you try to instantiate ANY loggers
+// or you'll get a really hard to debug segfault
+//
+// it won't show up at build time
+//
+// only runtime
 void initLogging() {
     startTime = getTime();
 }
@@ -66,31 +71,38 @@ void Logger::destroy() {
 
 // wrappers for various log levels
 void Logger::debug(std::string msg) {
-    writeLog("DEBUG", msg);
+    writeLog("DEBUG", &msg);
 }
 
 void Logger::info(std::string msg)
 {
-    writeLog("INFO", msg);
+    writeLog("INFO", &msg);
 }
 
 void Logger::warning(std::string msg)
 {
-    writeLog("WARNING", msg);
+    writeLog("WARNING", &msg);
 }
 
-
-// write a log entry
-// does "logfile << something" write or append? let's find out
-void Logger::writeLog(std::string level, std::string msg) {
+// format a log entry
+std::string *Logger::fmtLog(std::string *level, std::string *msg) {
     tm *logTime = getTime();
 
     // make id look slightly prettier
     std::string fmtID = "";
-    if (ID != "") {
+    if (ID != "")
+    {
         fmtID = " " + ID;
     }
 
-    logfile << formatTime(logTime) << "   " << level << " (" << sender << fmtID << ") " << msg << "\n\n";
+    return &(formatTime(logTime) + "   " + *level + " (" + sender + fmtID + ") " + *msg + "\n\n");
+}
+
+// write a log entry
+void Logger::writeLog(std::string level, std::string *msg) {
+    
+    std::string output = *fmtLog(&level, msg);
+    logfile << output;
+
 
 }

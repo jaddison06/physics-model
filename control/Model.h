@@ -1,12 +1,12 @@
 #pragma once
 
-#include "control/logging.h"
 #include "control/ObjectHandler.h"
+#include "control/GenericBaseClass.h"
 
 
 // something here is causing a phat segfault
 
-class Model {
+class Model: public GenericBaseClass {
     public:
         Model();
 
@@ -14,9 +14,8 @@ class Model {
     private:
         bool isRunning;
         void Tick();
-        void Shutdown();
+        void inheritedDestroy();
 
-        Logger logger {"Model"};
         ObjectHandler objectHandler;
 
 };

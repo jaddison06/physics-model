@@ -1,10 +1,12 @@
 #pragma once
 
 #include "physics/Object.h"
+#include "control/GenericBaseClass.h"
 #include <vector>
 
-class ObjectHandler {
+class ObjectHandler: public GenericBaseClass {
     public:
+        ObjectHandler():
 
         // i hate that this has to be public
         //
@@ -15,5 +17,6 @@ class ObjectHandler {
         void Tick(double tickTime);
     
     private:
-        Logger logger{"ObjectHandler"};
+        void inheritedDestroy();
+        
 };

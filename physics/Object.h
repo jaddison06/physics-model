@@ -1,6 +1,5 @@
 #pragma once
 
-#include "control/logging.h"
 #include "3d/3DBody.h"
 #include "physics/GravField.h"
 #include "physics/constants.h"
@@ -20,5 +19,7 @@ class Object: public ThreeDBody {
     private:
         double volume, mass, density;
         GravField gravField;
+
+        void inheritedDestroy();
 
 };

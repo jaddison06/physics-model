@@ -28,5 +28,7 @@ class Logger {
         std::string sender;
         std::string ID;
         std::ofstream logfile;
-        void writeLog(std::string level, std::string msg);
+
+        std::string *fmtLog(std::string *level, std::string *msg);
+        void writeLog(std::string level, std::string *msg);
 };

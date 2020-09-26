@@ -1,11 +1,8 @@
 #include "control/Model.h"
 
 Model::Model() {
-    initLogging();
-    
-    logger.info("Model initialised");
+    logger.setSender("Model");
 }
-
 
 // start the Model
 void Model::Start( bool (*exitFunc)(Logger *) ) {
@@ -30,7 +27,7 @@ void Model::Start( bool (*exitFunc)(Logger *) ) {
         logger.info("model complete, exiting");
 
         // now shut down
-        Shutdown();
+        Destroy();
     
     } else {
         logger.warning("Start was called but the model was already running");
@@ -46,6 +43,7 @@ void Model::Tick(){
 }
 
 // any cleanup code goes here
-void Model::Shutdown() {
-    logger.destroy();
+void Model::inheritedDestroy() {
+    isRunning = false;
+    objectHandler.Destroy();
 }
