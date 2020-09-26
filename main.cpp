@@ -36,9 +36,13 @@ int main() {
     //
     // ok i have individually removed every member of Model, one 
     // by one, and the segfault still happens
+    //
+    // update: this did in fact print but wasn't being flushed, the segfault
+    // is definitely happening on instantiation of the Model
+    // 
+    // why
     
-    std::cout << "main called";
-
+    std::cout << "main called" << std::endl;
 
     Model model;
     //model.Start(&exitFunc);
