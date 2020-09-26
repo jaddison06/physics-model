@@ -26,14 +26,16 @@ std::string formatTime(tm *someTime) {
 // only runtime
 void initLogging() {
     tm *startTime = getTime();
-    logfile.open("./logs/" + formatTime(startTime));
+
+    // create the logs folder, if it already exists this will hopefully just fail silently (?)
+    std::filesystem::create_directories("./data/logs/");
+    
+    logfile.open("./data/logs/" + formatTime(startTime));
 }
 
 // called by both versions of the constructor
+// put construction stuff in here
 void Logger::setup(std::string someApplication) {
-
-    // create the logs folder, if it already exists this will hopefully just fail silently (?)
-    std::filesystem::create_directories("./logs/");
     
     setSender(someApplication);
 }
