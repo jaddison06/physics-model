@@ -12,7 +12,7 @@ class ObjectHandler: public GenericBaseClass {
         //
         // later, when we have some kind of model data,
         // we can accept that instead and make this private
-        std::vector<Object*> objects;
+        std::vector<Object> objects;
 
         void Tick(double tickTime);
         void Add(coord pos, coord vel, coord accel, double size, double mass, bodyType shape);

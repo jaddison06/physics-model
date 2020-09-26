@@ -27,6 +27,7 @@ void addCoords(coord *a, coord *b);
 // basically just gonna get extended by other stuff
 class ThreeDBody: public GenericBaseClass {
     public:
+        ThreeDBody();
 
         bool containsPoint(coord *coords);
 

@@ -7,28 +7,30 @@
 
 ObjectHandler::ObjectHandler() {
     logger.setSender("ObjectHandler");
+
+    logger.info("ObjectHandler initialized");
 }
 
 void ObjectHandler::Tick(double tickTime) {
     logger.info("ticking");
     for (int i=0; i<objects.size(); i++) {
-        objects[i]->Tick(tickTime);
+        objects[i].Tick(tickTime);
     }
 }
 
 void ObjectHandler::inheritedDestroy() {
     for (int i=0; i<objects.size(); i++) {
-        objects[i]->Destroy();
+        objects[i].Destroy();
     }
 }
 
 void ObjectHandler::Add(coord pos, coord vel, coord accel, double size, double mass, bodyType shape) {
     std::string ID = std::to_string(objects.size());
     
-    Object *object = new Object(pos, size, mass, shape, ID);
+    Object object(pos, size, mass, shape, ID);
 
-    object -> velocity = vel;
-    object -> acceleration = accel;
+    object.velocity = vel;
+    object.acceleration = accel;
 
     objects.push_back(object);
 }

@@ -8,6 +8,10 @@
 //  - side length of a cube
 //  - radius of a sphere
 
+ThreeDBody::ThreeDBody() {
+    logger.setSender("ThreeDBody");
+    logger.info("ThreeDBody initialized");
+}
 
 // tags stuff
 void ThreeDBody::addTag(std::string tag) {

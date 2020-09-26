@@ -3,6 +3,8 @@
 GravField::GravField() {
     logger.setSender("GravField");
     addTag("gravField");
+
+    logger.info("GravField initialized");
 }
 
 void GravField::init(double ownerMass) {

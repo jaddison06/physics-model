@@ -5,7 +5,7 @@ Object::Object(coord pos, double bigness, double massGrams, bodyType form, std::
     logger.setID(ID);
     addTag("object");
 
-    logger.info("Object initialized");
+    gravField.logger.setID("- Object "+ID);
 
     location = pos;
     size = bigness;
@@ -28,6 +28,8 @@ Object::Object(coord pos, double bigness, double massGrams, bodyType form, std::
     density = mass/volume;
 
     gravField.init(mass);
+
+    logger.info("Object initialized");
 }
 
 // Move the object a certain interval forwards in time

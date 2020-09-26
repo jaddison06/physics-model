@@ -2,6 +2,8 @@
 
 Model::Model() {
     logger.setSender("Model");
+
+    logger.info("Model initialized");
 }
 
 // start the Model
