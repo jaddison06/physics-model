@@ -1,0 +1,118 @@
+2020-8-26 20:6:35   INFO (Model) Model starting
+
+2020-8-26 20:6:35   INFO () checking for tag field
+
+2020-8-26 20:6:35   INFO () the tag was not found
+
+2020-8-26 20:6:35   INFO () adding tag field
+
+2020-8-26 20:6:35   INFO (GravField) checking for tag gravField
+
+2020-8-26 20:6:35   INFO (GravField) the tag was not found
+
+2020-8-26 20:6:35   INFO (GravField) adding tag gravField
+
+2020-8-26 20:6:35   INFO (Object) checking for tag object
+
+2020-8-26 20:6:35   INFO (Object) the tag was not found
+
+2020-8-26 20:6:35   INFO (Object) adding tag object
+
+2020-8-26 20:6:35   INFO (Object) Object initialized
+
+2020-8-26 20:6:35   INFO (Object) Object is a cube
+
+2020-8-26 20:6:35   INFO (Object) Object is a sphere
+
+2020-8-26 20:6:35   INFO (Model) exitFunc called
+
+2020-8-26 20:6:35   INFO (Model) ticking
+
+2020-8-26 20:6:35   INFO (ObjectHandler) ticking
+
+2020-8-26 20:6:35   INFO (Object) Current location: 10.000000, 0.000000, 0.000000
+
+2020-8-26 20:6:35   INFO (Object) Current velocity: -3.000000, 1.000000, 2.000000
+
+2020-8-26 20:6:35   INFO (Object) Current acceleration: 0.000000, 1.000000, 0.000000
+
+2020-8-26 20:6:35   INFO (Object) ticking
+
+2020-8-26 20:6:35   INFO (Object) New location: 7.000000, 1.000000, 2.000000
+
+2020-8-26 20:6:35   INFO (Object) New velocity: -3.000000, 2.000000, 2.000000
+
+2020-8-26 20:6:35   INFO (Object) New acceleration: 0.000000, 1.000000, 0.000000
+
+2020-8-26 20:6:35   INFO (Model) exitFunc called
+
+2020-8-26 20:6:35   INFO (Model) ticking
+
+2020-8-26 20:6:35   INFO (ObjectHandler) ticking
+
+2020-8-26 20:6:35   INFO (Object) Current location: 7.000000, 1.000000, 2.000000
+
+2020-8-26 20:6:35   INFO (Object) Current velocity: -3.000000, 2.000000, 2.000000
+
+2020-8-26 20:6:35   INFO (Object) Current acceleration: 0.000000, 1.000000, 0.000000
+
+2020-8-26 20:6:35   INFO (Object) ticking
+
+2020-8-26 20:6:35   INFO (Object) New location: 4.000000, 3.000000, 4.000000
+
+2020-8-26 20:6:35   INFO (Object) New velocity: -3.000000, 3.000000, 2.000000
+
+2020-8-26 20:6:35   INFO (Object) New acceleration: 0.000000, 1.000000, 0.000000
+
+2020-8-26 20:6:35   INFO (Model) exitFunc called
+
+2020-8-26 20:6:35   INFO (Model) ticking
+
+2020-8-26 20:6:35   INFO (ObjectHandler) ticking
+
+2020-8-26 20:6:35   INFO (Object) Current location: 4.000000, 3.000000, 4.000000
+
+2020-8-26 20:6:35   INFO (Object) Current velocity: -3.000000, 3.000000, 2.000000
+
+2020-8-26 20:6:35   INFO (Object) Current acceleration: 0.000000, 1.000000, 0.000000
+
+2020-8-26 20:6:35   INFO (Object) ticking
+
+2020-8-26 20:6:35   INFO (Object) New location: 1.000000, 6.000000, 6.000000
+
+2020-8-26 20:6:35   INFO (Object) New velocity: -3.000000, 4.000000, 2.000000
+
+2020-8-26 20:6:35   INFO (Object) New acceleration: 0.000000, 1.000000, 0.000000
+
+2020-8-26 20:6:35   INFO (Model) exitFunc called
+
+2020-8-26 20:6:35   INFO (Model) ticking
+
+2020-8-26 20:6:35   INFO (ObjectHandler) ticking
+
+2020-8-26 20:6:35   INFO (Object) Current location: 1.000000, 6.000000, 6.000000
+
+2020-8-26 20:6:35   INFO (Object) Current velocity: -3.000000, 4.000000, 2.000000
+
+2020-8-26 20:6:35   INFO (Object) Current acceleration: 0.000000, 1.000000, 0.000000
+
+2020-8-26 20:6:35   INFO (Object) ticking
+
+2020-8-26 20:6:35   INFO (Object) New location: -2.000000, 10.000000, 8.000000
+
+2020-8-26 20:6:35   INFO (Object) New velocity: -3.000000, 5.000000, 2.000000
+
+2020-8-26 20:6:35   INFO (Object) New acceleration: 0.000000, 1.000000, 0.000000
+
+2020-8-26 20:6:35   INFO (Model) exitFunc called
+
+2020-8-26 20:6:35   INFO (Model) model complete, exiting
+
+2020-8-26 20:6:35   INFO (Model) destroying
+
+2020-8-26 20:6:35   INFO (ObjectHandler) destroying
+
+2020-8-26 20:6:35   INFO (Object) destroying
+
+2020-8-26 20:6:35   INFO (GravField) destroying
+

@@ -6,10 +6,8 @@
 // important stuff:
 //  - inheriters must do logger.setSender() in their constructor
 //
-//  - inheriters must define inheritedDestroy()
-//
-//  - sike though - if a class is gonna get inherited  then only
-//    the lowest-level class should do those two
+//  - inheriters must define inheritedDestroy() if they are the last
+//    level of inheritance
 //
 //  - If a class has members which inherit GenericBaseClass, it is that class's
 //    responsibility to call Destroy() on them in its inheritedDestroy() .

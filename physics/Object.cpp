@@ -1,8 +1,8 @@
 #include "physics/Object.h"
 
 Object::Object(coord pos, double bigness, double massGrams, bodyType form) {
-    addTag("object");
     logger.setSender("Object");
+    addTag("object");
 
     logger.info("Object initialized");
 
@@ -15,10 +15,12 @@ Object::Object(coord pos, double bigness, double massGrams, bodyType form) {
         case cube: {
             logger.info("Object is a cube");
             volume = pow(size, 3);
+            break;
         }
         case sphere: {
             logger.info("Object is a sphere");
             volume = (4/3)*PI*pow(size, 3);
+            break;
         }
     }
 

@@ -1,8 +1,8 @@
 #include "physics/GravField.h"
 
 GravField::GravField() {
-    addTag("gravField");
     logger.setSender("GravField");
+    addTag("gravField");
 }
 
 void GravField::init(double ownerMass) {
