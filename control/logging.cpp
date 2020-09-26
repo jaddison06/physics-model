@@ -2,8 +2,7 @@
 
 // very very simple logging
 
-// global tingz
-tm *startTime;
+// global ting
 std::ofstream logfile;
 
 // get a tm struct
@@ -26,7 +25,7 @@ std::string formatTime(tm *someTime) {
 //
 // only runtime
 void initLogging() {
-    startTime = getTime();
+    tm *startTime = getTime();
     logfile.open("./logs/" + formatTime(startTime));
 }
 
