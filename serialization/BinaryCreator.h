@@ -2,7 +2,7 @@
 
 #include <fstream>
 #include <string>
-#include <bitset>
+#include <cstring>
 #include "control/GenericBaseClass.h"
 #include "control/ObjectHandler.h"
 #include "serialization/BinaryShared.h"

@@ -1,5 +1,26 @@
 #include "serialization/BinaryCreator.h"
 
+// TODO: clean this the fuck up
+// just convert between types
+// you've got strings which are strings
+// strings which are binary
+// ints
+// chars
+//
+// wack af
+//
+// also a bunch of functions don't actually get used
+//
+// improve logging
+//
+// do BinaryReader
+//
+// comment cause this isn't readable at all
+// 
+// thanks x
+
+
+
 BinaryCreator::BinaryCreator() {
     logger.setSender("BinaryCreator");
 
@@ -43,15 +64,22 @@ std::string BinaryCreator::serializeObject(Object *object) {
 }
 
 std::string BinaryCreator::serializeCoord(coord *coords) {
-    std::string output = "";
 
-    return output;
+    std::string x = serializeDouble(&(coords->x));
+    std::string y = serializeDouble(&(coords->y));
+    std::string z = serializeDouble(&(coords->z));
+
+    return x+y+z;
 }
 
 std::string BinaryCreator::serializeDouble(double *someDouble) {
-    std::string output = "";
+    std::string output;
 
+    char chars[sizeof(double)];
 
+    memcpy(chars, someDouble, sizeof(*someDouble));
+
+    output = charToString(chars);
 
     return output;
 }
@@ -71,7 +99,7 @@ std::string BinaryCreator::serializeBodyType(bodyType *bType) {
         }
     }
 
-    output = decimalToBinary(id);
+    output = makeByte(decimalToBinary(id));
     return output;
 }
 
@@ -99,7 +127,13 @@ std::string BinaryCreator::binaryToString(std::string binary) {
 }
 
 std::string BinaryCreator::charToString(char chars[]) {
+    // again, there's an easier way but screw that
+    std::string output;
+    for (int i=0; i<(sizeof(chars)/sizeof(char)); i++) {
+        output += i;
+    }
 
+    return output;
 }
 
 void BinaryCreator::writeToFile(std::string input, std::string fname) {
