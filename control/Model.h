@@ -3,6 +3,7 @@
 #include "control/ObjectHandler.h"
 #include "control/GenericBaseClass.h"
 #include "serialization/BinaryCreator.h"
+#include "serialization/BinaryReader.h"
 
 // something here is causing a phat segfault
 
@@ -21,5 +22,6 @@ class Model: public GenericBaseClass {
         ObjectHandler objectHandler;
 
         BinaryCreator binaryCreator;
+        BinaryReader binaryReader;
 
 };
