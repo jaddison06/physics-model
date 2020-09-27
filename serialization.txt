@@ -1,0 +1,24 @@
+expected output:
+
+start id bits
+01000101
+
+version bits
+00000001
+
+object count bits
+00000001
+
+object bits
+
+192 bits of pos
+192 bits of vel
+192 bits of accel
+
+64 bits of size
+64 bits of mass
+
+8 bits of shape
+
+end id bits
+0000000110100100

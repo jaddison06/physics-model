@@ -2,7 +2,7 @@
 
 #include "control/ObjectHandler.h"
 #include "control/GenericBaseClass.h"
-
+#include "serialization/BinaryCreator.h"
 
 // something here is causing a phat segfault
 
@@ -16,6 +16,10 @@ class Model: public GenericBaseClass {
         void Tick();
         void inheritedDestroy();
 
+        // this might have to be public so we 
+        // can pass it to the binaryCreator
         ObjectHandler objectHandler;
+
+        BinaryCreator binaryCreator;
 
 };

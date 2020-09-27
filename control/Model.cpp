@@ -21,6 +21,9 @@ void Model::Start( bool (*exitFunc)(Logger *) ) {
         }
         logger.info("model complete, exiting");
 
+        // testing only
+        binaryCreator.CreateBinary(&objectHandler, "test.model");
+
         // now shut down
         Destroy();
     

@@ -16,6 +16,16 @@
 // do BinaryReader
 //
 // comment cause this isn't readable at all
+//
+// update all the serialize whatever functions
+// bc they're pretty wank
+//
+// also serializeDouble() is very stupid
+// don't just stream variables out of memory and into
+// a file
+//
+// redo decimalToBinary & vice versa cause they're shit
+// and also might not work for negatives
 // 
 // thanks x
 
@@ -55,12 +65,29 @@ void BinaryCreator::CreateBinary(ObjectHandler *objectHandler, std::string fname
 
 std::string BinaryCreator::createBinData(ObjectHandler *objectHandler) {
     std::string output = "";
-    for (int i=0; i<(objectHandler -> objects).size(); i++) {
+    int objectCount = (objectHandler -> objects).size();
+
+    // start ID bits
+    output += "01000101";
+
+    // version bits
+    output += makeByte(decimalToBinary(VERSION));
+
+    // object count bit
+    output += makeByte(decimalToBinary(objectCount));
+
+    // objects
+    for (int i=0; i<objectCount; i++) {
         output += serializeObject(&(objectHandler->objects[i]));
     }
+
+    // end ID bits
+    output += "0000000110100100";
+    
     return output;
 
 }
+
 
 std::string BinaryCreator::serializeObject(Object *object) {
     std::string output = "";
