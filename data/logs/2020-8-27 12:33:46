@@ -1,0 +1,78 @@
+2020-8-27 12:33:46   INFO (ObjectHandler) ObjectHandler initialized
+
+2020-8-27 12:33:46   INFO (BinaryCreator) BinaryCreator initialized
+
+2020-8-27 12:33:46   INFO (BinaryReader) BinaryReader initialized
+
+2020-8-27 12:33:46   INFO (Model) Model initialized
+
+2020-8-27 12:33:46   INFO (Model) Model starting
+
+2020-8-27 12:33:46   INFO (BinaryReader) Reading binary
+
+2020-8-27 12:33:46   INFO (BinaryReader) Loaded data
+
+2020-8-27 12:33:46   INFO (BinaryShared) Converting decimal 69 to binary
+
+2020-8-27 12:33:46   INFO (BinaryShared) Result was 1000101
+
+2020-8-27 12:33:46   INFO (BinaryShared) Setting 1000101 to a byte
+
+2020-8-27 12:33:46   INFO (BinaryShared) Setting 1000101 to length 8
+
+2020-8-27 12:33:46   INFO (BinaryShared) Converting decimal -118 to binary
+
+2020-8-27 12:33:46   INFO (BinaryShared) Result was 
+
+2020-8-27 12:33:46   INFO (BinaryShared) Setting  to a byte
+
+2020-8-27 12:33:46   INFO (BinaryShared) Setting  to length 8
+
+2020-8-27 12:33:46   INFO (BinaryShared) Converting decimal 20 to binary
+
+2020-8-27 12:33:46   INFO (BinaryShared) Result was 10100
+
+2020-8-27 12:33:46   INFO (BinaryShared) Setting 10100 to a byte
+
+2020-8-27 12:33:46   INFO (BinaryShared) Setting 10100 to length 8
+
+2020-8-27 12:33:46   INFO (BinaryShared) Converting decimal 40 to binary
+
+2020-8-27 12:33:46   INFO (BinaryShared) Result was 101000
+
+2020-8-27 12:33:46   INFO (BinaryShared) Setting 101000 to a byte
+
+2020-8-27 12:33:46   INFO (BinaryShared) Setting 101000 to length 8
+
+2020-8-27 12:33:46   INFO (BinaryShared) Converting decimal 80 to binary
+
+2020-8-27 12:33:46   INFO (BinaryShared) Result was 1010000
+
+2020-8-27 12:33:46   INFO (BinaryShared) Setting 1010000 to a byte
+
+2020-8-27 12:33:46   INFO (BinaryShared) Setting 1010000 to length 8
+
+2020-8-27 12:33:46   INFO (BinaryReader) Entire binary is 0100010100000000000101000010100001010000
+
+2020-8-27 12:33:46   INFO (BinaryReader) First 8 bits: 01000101
+
+2020-8-27 12:33:46   INFO (BinaryReader) Last 16 bits: 0010100001010000
+
+2020-8-27 12:33:46   INFO (BinaryReader) Version bits: 00000000
+
+2020-8-27 12:33:46   INFO (BinaryShared) Converting binary 00000000 to decimal
+
+2020-8-27 12:33:46   INFO (BinaryShared) Result was 0
+
+2020-8-27 12:33:46   WARNING (BinaryReader) Outdated file: file version is 0, current version is 1
+
+2020-8-27 12:33:46   INFO (BinaryReader) Object count bits: 00010100
+
+2020-8-27 12:33:46   INFO (BinaryShared) Converting binary 00010100 to decimal
+
+2020-8-27 12:33:46   INFO (BinaryShared) Result was 20
+
+2020-8-27 12:33:46   INFO (BinaryReader) Object count: 20
+
+2020-8-27 12:33:46   INFO (BinaryReader) Deserializing object 0
+

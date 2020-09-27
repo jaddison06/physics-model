@@ -83,11 +83,11 @@ std::string BinaryCreator::serializeObject(Object *object) {
 
     std::string output = "";
 
-    //output += serializeCoord(&(object -> location));
-    //output += serializeCoord(&(object -> velocity));
-    //output += serializeCoord(&(object -> acceleration));
-    //output += serializeDouble(&(object -> size));
-    ///output += serializeDouble(&(object -> mass));
+    output += serializeCoord(&(object -> location));
+    output += serializeCoord(&(object -> velocity));
+    output += serializeCoord(&(object -> acceleration));
+    output += serializeDouble(&(object -> size));
+    output += serializeDouble(&(object -> mass));
     output += serializeBodyType(&(object -> shape));
 
     logger.info("object binary: "+output);

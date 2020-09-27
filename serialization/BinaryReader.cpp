@@ -35,8 +35,9 @@ void BinaryReader::ReadBinary(ObjectHandler *objectHandler, std::string fname) {
         binData += makeByte(decimalToBinary(((int)bytes[i])));
     }
 
-    // check ID bits
+    logger.info("Entire binary is "+binData);
 
+    // check ID bits
     std::string startBits = binData.substr(0, 8);
     std::string endBits = binData.substr(binData.length()-16, 16);
 
@@ -56,7 +57,7 @@ void BinaryReader::ReadBinary(ObjectHandler *objectHandler, std::string fname) {
     int version = binaryToDecimal(versionBits);
 
     if (version != VERSION) {
-        logger.warning("Outdated file: file version is "+std::to_string(version)+", current version is VERSION");
+        logger.warning("Outdated file: file version is "+std::to_string(version)+", current version is "+std::to_string(VERSION));
     }
 
     // actual parsing happens here
@@ -64,7 +65,7 @@ void BinaryReader::ReadBinary(ObjectHandler *objectHandler, std::string fname) {
     // for new versions, add extra code while trying to
     // maintain compatibility
     switch (version) {
-        case 1: {
+        case 0: {
             int objectCount;
             std::string objCountBits = binData.substr(16, 8);
 
