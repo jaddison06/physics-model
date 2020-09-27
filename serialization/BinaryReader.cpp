@@ -43,10 +43,12 @@ void BinaryReader::ReadBinary(ObjectHandler *objectHandler, std::string fname) {
     logger.info("First 8 bits: "+startBits);
     logger.info("Last 16 bits: "+endBits);
 
+    /*
     if (!(startBits == "01000101" && endBits == "0000000110100100")) {
         logger.warning("ID bits are incorrect, file corrupt");
         return;
     }
+    */
 
     std::string versionBits = binData.substr(8, 8);
     
