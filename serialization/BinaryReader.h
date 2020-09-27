@@ -2,6 +2,7 @@
 
 #include "serialization/BinaryShared.h"
 #include "control/ObjectHandler.h"
+#include <sys/stat.h>
 
 class BinaryReader: public GenericBaseClass {
     public:

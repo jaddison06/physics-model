@@ -1,6 +1,8 @@
 #pragma once
 
 #include <string>
+#include <fstream>
+#include <cstring>
 #include "control/GenericBaseClass.h"
 
 //#include <iostream>
