@@ -1,0 +1,146 @@
+2020-8-27 2:32:37   INFO (ObjectHandler) ObjectHandler initialized
+
+2020-8-27 2:32:37   INFO (BinaryCreator) BinaryCreator initialized
+
+2020-8-27 2:32:37   INFO (Model) Model initialized
+
+2020-8-27 2:32:37   INFO (Model) Model starting
+
+2020-8-27 2:32:37   INFO (ThreeDBody) ThreeDBody initialized
+
+2020-8-27 2:32:37   INFO (ThreeDBody) ThreeDBody initialized
+
+2020-8-27 2:32:37   INFO (Field) checking for tag field
+
+2020-8-27 2:32:37   INFO (Field) the tag was not found
+
+2020-8-27 2:32:37   INFO (Field) adding tag field
+
+2020-8-27 2:32:37   INFO (Field) Field initialized
+
+2020-8-27 2:32:37   INFO (GravField) checking for tag gravField
+
+2020-8-27 2:32:37   INFO (GravField) the tag was not found
+
+2020-8-27 2:32:37   INFO (GravField) adding tag gravField
+
+2020-8-27 2:32:37   INFO (GravField) GravField initialized
+
+2020-8-27 2:32:37   INFO (Object 0) checking for tag object
+
+2020-8-27 2:32:37   INFO (Object 0) the tag was not found
+
+2020-8-27 2:32:37   INFO (Object 0) adding tag object
+
+2020-8-27 2:32:37   INFO (Object 0) Object is a cube
+
+2020-8-27 2:32:37   INFO (Object 0) Object initialized
+
+2020-8-27 2:32:37   INFO (Model) exitFunc called
+
+2020-8-27 2:32:37   INFO (Model) ticking
+
+2020-8-27 2:32:37   INFO (ObjectHandler) ticking
+
+2020-8-27 2:32:37   INFO (Object 0) Current location: 10.000000, 0.000000, 0.000000
+
+2020-8-27 2:32:37   INFO (Object 0) Current velocity: -3.000000, 1.000000, 2.000000
+
+2020-8-27 2:32:37   INFO (Object 0) Current acceleration: 0.000000, 1.000000, 0.000000
+
+2020-8-27 2:32:37   INFO (Object 0) ticking
+
+2020-8-27 2:32:37   INFO (Object 0) New location: 7.000000, 1.000000, 2.000000
+
+2020-8-27 2:32:37   INFO (Object 0) New velocity: -3.000000, 2.000000, 2.000000
+
+2020-8-27 2:32:37   INFO (Object 0) New acceleration: 0.000000, 1.000000, 0.000000
+
+2020-8-27 2:32:37   INFO (Model) exitFunc called
+
+2020-8-27 2:32:37   INFO (Model) ticking
+
+2020-8-27 2:32:37   INFO (ObjectHandler) ticking
+
+2020-8-27 2:32:37   INFO (Object 0) Current location: 7.000000, 1.000000, 2.000000
+
+2020-8-27 2:32:37   INFO (Object 0) Current velocity: -3.000000, 2.000000, 2.000000
+
+2020-8-27 2:32:37   INFO (Object 0) Current acceleration: 0.000000, 1.000000, 0.000000
+
+2020-8-27 2:32:37   INFO (Object 0) ticking
+
+2020-8-27 2:32:37   INFO (Object 0) New location: 4.000000, 3.000000, 4.000000
+
+2020-8-27 2:32:37   INFO (Object 0) New velocity: -3.000000, 3.000000, 2.000000
+
+2020-8-27 2:32:37   INFO (Object 0) New acceleration: 0.000000, 1.000000, 0.000000
+
+2020-8-27 2:32:37   INFO (Model) exitFunc called
+
+2020-8-27 2:32:37   INFO (Model) ticking
+
+2020-8-27 2:32:37   INFO (ObjectHandler) ticking
+
+2020-8-27 2:32:37   INFO (Object 0) Current location: 4.000000, 3.000000, 4.000000
+
+2020-8-27 2:32:37   INFO (Object 0) Current velocity: -3.000000, 3.000000, 2.000000
+
+2020-8-27 2:32:37   INFO (Object 0) Current acceleration: 0.000000, 1.000000, 0.000000
+
+2020-8-27 2:32:37   INFO (Object 0) ticking
+
+2020-8-27 2:32:37   INFO (Object 0) New location: 1.000000, 6.000000, 6.000000
+
+2020-8-27 2:32:37   INFO (Object 0) New velocity: -3.000000, 4.000000, 2.000000
+
+2020-8-27 2:32:37   INFO (Object 0) New acceleration: 0.000000, 1.000000, 0.000000
+
+2020-8-27 2:32:37   INFO (Model) exitFunc called
+
+2020-8-27 2:32:37   INFO (Model) ticking
+
+2020-8-27 2:32:37   INFO (ObjectHandler) ticking
+
+2020-8-27 2:32:37   INFO (Object 0) Current location: 1.000000, 6.000000, 6.000000
+
+2020-8-27 2:32:37   INFO (Object 0) Current velocity: -3.000000, 4.000000, 2.000000
+
+2020-8-27 2:32:37   INFO (Object 0) Current acceleration: 0.000000, 1.000000, 0.000000
+
+2020-8-27 2:32:37   INFO (Object 0) ticking
+
+2020-8-27 2:32:37   INFO (Object 0) New location: -2.000000, 10.000000, 8.000000
+
+2020-8-27 2:32:37   INFO (Object 0) New velocity: -3.000000, 5.000000, 2.000000
+
+2020-8-27 2:32:37   INFO (Object 0) New acceleration: 0.000000, 1.000000, 0.000000
+
+2020-8-27 2:32:37   INFO (Model) exitFunc called
+
+2020-8-27 2:32:37   INFO (Model) model complete, exiting
+
+2020-8-27 2:32:37   INFO (BinaryCreator) Creating a binary
+
+2020-8-27 2:32:37   INFO (BinaryCreator) Creating binary data
+
+2020-8-27 2:32:37   INFO (BinaryCreator) Setting 1 to a byte
+
+2020-8-27 2:32:37   INFO (BinaryCreator) Setting 1 to length 8
+
+2020-8-27 2:32:37   INFO (BinaryCreator) Setting 1 to a byte
+
+2020-8-27 2:32:37   INFO (BinaryCreator) Setting 1 to length 8
+
+2020-8-27 2:32:37   INFO (BinaryCreator) Converting binary 0100010100000001000000010000000110100100 to a string
+
+2020-8-27 2:32:37   INFO (BinaryCreator) Writing string EŠ(P to file test.model
+
+2020-8-27 2:32:37   INFO (Model) destroying
+
+2020-8-27 2:32:37   INFO (ObjectHandler) destroying
+
+2020-8-27 2:32:37   INFO (Object 0) destroying
+
+2020-8-27 2:32:37   INFO (GravField - Object 0) destroying
+

@@ -95,13 +95,13 @@ std::string BinaryCreator::createBinData(ObjectHandler *objectHandler) {
 
 std::string BinaryCreator::serializeObject(Object *object) {
     std::string output = "";
-
+/*
     output += serializeCoord(&(object -> location));
     output += serializeCoord(&(object -> velocity));
     output += serializeCoord(&(object -> acceleration));
     output += serializeDouble(&(object -> size));
     output += serializeDouble(&(object -> mass));
-    output += serializeBodyType(&(object -> shape));
+    output += serializeBodyType(&(object -> shape));*/
 
     return output;
 
@@ -157,7 +157,7 @@ std::string BinaryCreator::binaryToString(std::string binary) {
 
     for (int i = 0; i < (binary.length()) / 8; i++) {
         std::string current = binary.substr(i, 8);
-        std::cout << current << std::endl;
+        //std::cout << current << std::endl;
 
         bytes.push_back(current);
     }
