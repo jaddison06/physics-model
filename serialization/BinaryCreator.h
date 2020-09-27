@@ -4,8 +4,6 @@
 #include "control/ObjectHandler.h"
 #include "serialization/BinaryShared.h"
 
-#define VERSION 1
-
 class BinaryCreator: public GenericBaseClass {
     public:
         BinaryCreator();
@@ -13,9 +11,6 @@ class BinaryCreator: public GenericBaseClass {
         void CreateBinary(ObjectHandler *objectHandler, std::string fname);
     
     private:
-
-        std::string makeByte(std::string input);
-        std::string setLength(std::string input, int targetLength);
 
         std::string charToString(char chars[]);
 

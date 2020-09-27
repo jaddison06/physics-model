@@ -11,7 +11,9 @@ class BinaryReader: public GenericBaseClass {
         void ReadBinary(ObjectHandler *objectHandler, std::string fname);
     
     private:
-
+        void deserializeCoord(std::string binary, coord *output);
+        void deserializeDouble(std::string binary, double *output);
+        void deserializeBodyType(std::string binary, bodyType *output);
 
         void inheritedDestroy();
 };

@@ -39,21 +39,6 @@ BinaryCreator::BinaryCreator() {
     logger.info("BinaryCreator initialized");
 }
 
-// set the length of a string to a multiple of 8
-std::string BinaryCreator::makeByte(std::string input) {
-    logger.info("Setting "+input+" to a byte");
-    return setLength(input, input.length() + 8 - (input.length() % 8));
-}
-
-// set a binary to a specific length
-std::string BinaryCreator::setLength(std::string input, int targetLength) {
-    logger.info("Setting "+input+" to length "+std::to_string(targetLength));
-    std::string prependor;
-    for (int i=input.length(); i<targetLength; i++){
-        prependor += "0";
-    }
-    return prependor + input;
-}
 
 void BinaryCreator::CreateBinary(ObjectHandler *objectHandler, std::string fname) {
     logger.info("Creating a binary");
@@ -94,14 +79,18 @@ std::string BinaryCreator::createBinData(ObjectHandler *objectHandler) {
 
 
 std::string BinaryCreator::serializeObject(Object *object) {
+    logger.info("serializing object");
+
     std::string output = "";
 
-    output += serializeCoord(&(object -> location));
-    output += serializeCoord(&(object -> velocity));
-    output += serializeCoord(&(object -> acceleration));
-    output += serializeDouble(&(object -> size));
-    output += serializeDouble(&(object -> mass));
+    //output += serializeCoord(&(object -> location));
+    //output += serializeCoord(&(object -> velocity));
+    //output += serializeCoord(&(object -> acceleration));
+    //output += serializeDouble(&(object -> size));
+    ///output += serializeDouble(&(object -> mass));
     output += serializeBodyType(&(object -> shape));
+
+    logger.info("object binary: "+output);
 
     return output;
 

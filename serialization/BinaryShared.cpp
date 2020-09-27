@@ -1,7 +1,10 @@
 #include "serialization/BinaryShared.h"
 
-std::string decimalToBinary(int decimal)
-{
+Logger logger("BinaryShared");
+
+std::string decimalToBinary(int decimal) {
+    logger.info("Converting decimal "+std::to_string(decimal)+" to binary");
+
     int bits[]{};
     int i;
 
@@ -17,10 +20,14 @@ std::string decimalToBinary(int decimal)
         output += std::to_string(bits[i]);
     }
 
+    logger.info("Result was "+output);
+
     return output;
 }
 
 int binaryToDecimal(std::string binary) {
+    logger.info("Converting binary "+binary+" to decimal");
+
     //std::cout << binary << std::endl;
     int num = stoi(binary);
     int cNum = 0, temp, base = 1;
@@ -33,5 +40,26 @@ int binaryToDecimal(std::string binary) {
         base = base * 2;
     }
 
+    logger.info("Result was "+std::to_string(cNum));
+
     return cNum;
+}
+
+// set the length of a string to a multiple of 8
+std::string makeByte(std::string input)
+{
+    logger.info("Setting " + input + " to a byte");
+    return setLength(input, input.length() + 8 - (input.length() % 8));
+}
+
+// set a binary to a specific length
+std::string setLength(std::string input, int targetLength)
+{
+    logger.info("Setting " + input + " to length " + std::to_string(targetLength));
+    std::string prependor;
+    for (int i = input.length(); i < targetLength; i++)
+    {
+        prependor += "0";
+    }
+    return prependor + input;
 }
