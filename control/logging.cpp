@@ -32,10 +32,12 @@ void initLogging() {
     std::filesystem::create_directories("./data/logs/");
 
     fname = "./data/logs/" + formatTime(startTime);
+
+    logfile.open(fname, std::ios::app);
 }
 
 // called by both versions of the constructor
-// put construction stuff in here
+// put Logger construction stuff in here
 void Logger::setup(std::string someApplication) {
     
     setSender(someApplication);
@@ -106,13 +108,10 @@ std::string Logger::fmtLog(std::string *level, std::string *msg) {
 // i now open and close the logfile here to make sure that
 // shit doesn't just hang around in the buffer when my code
 // inevitably crashes at runtime
-void Logger::writeLog(std::string level, std::string *msg) {
-    logfile.open(fname, std::ios::app);
-    
+void Logger::writeLog(std::string level, std::string *msg) {    
     std::string output = fmtLog(&level, msg);
     //std::cout << output;
     logfile << output;
 
-    logfile.close();
-
+    logfile.flush();
 }
