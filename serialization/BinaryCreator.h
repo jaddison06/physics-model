@@ -4,7 +4,6 @@
 #include <string>
 #include <cstring>
 #include <vector>
-#include "control/GenericBaseClass.h"
 #include "control/ObjectHandler.h"
 #include "serialization/BinaryShared.h"
 
