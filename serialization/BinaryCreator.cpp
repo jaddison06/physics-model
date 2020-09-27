@@ -40,7 +40,7 @@ BinaryCreator::BinaryCreator() {
 // set the length of a string to a multiple of 8
 std::string BinaryCreator::makeByte(std::string input) {
     logger.info("Setting "+input+" to a byte");
-    return setLength(input, input.length() % 8);
+    return setLength(input, input.length() + 8 - (input.length() % 8));
 }
 
 // set a binary to a specific length
@@ -146,7 +146,7 @@ std::string BinaryCreator::serializeBodyType(bodyType *bType) {
 
 // convert binary string to writable string of chars
 std::string BinaryCreator::binaryToString(std::string binary) {
-    logger.info("Converting binary "+binary+" to a char");
+    logger.info("Converting binary "+binary+" to a string");
 
     // first, convert the binary into bytes
     std::string bytes[] {};

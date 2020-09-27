@@ -2,8 +2,9 @@
 
 // very very simple logging
 
-// global ting
+// global tingz
 std::ofstream logfile;
+std::string fname;
 
 // get a tm struct
 tm *getTime() {
@@ -29,8 +30,8 @@ void initLogging() {
 
     // create the logs folder, if it already exists this will hopefully just fail silently (?)
     std::filesystem::create_directories("./data/logs/");
-    
-    logfile.open("./data/logs/" + formatTime(startTime));
+
+    fname = "./data/logs/" + formatTime(startTime);
 }
 
 // called by both versions of the constructor
@@ -67,7 +68,7 @@ void Logger::setID(std::string someID) {
 
 // called by someone, hopefully, when they're finished with the logger
 void Logger::destroy() {
-    logfile.close();
+    //logfile.close();
 }
 
 // wrappers for various log levels
@@ -100,11 +101,18 @@ std::string Logger::fmtLog(std::string *level, std::string *msg) {
 }
 
 // write a log entry
+//
+// although this will probs have a performance impact
+// i now open and close the logfile here to make sure that
+// shit doesn't just hang around in the buffer when my code
+// inevitably crashes at runtime
 void Logger::writeLog(std::string level, std::string *msg) {
+    logfile.open(fname, std::ios::app);
     
     std::string output = fmtLog(&level, msg);
     //std::cout << output;
     logfile << output;
 
+    logfile.close();
 
 }
