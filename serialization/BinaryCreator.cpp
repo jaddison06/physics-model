@@ -26,6 +26,8 @@
 //
 // redo decimalToBinary & vice versa cause they're shit
 // and also might not work for negatives
+//
+// get rid of unused includes
 // 
 // thanks x
 
@@ -64,6 +66,8 @@ void BinaryCreator::CreateBinary(ObjectHandler *objectHandler, std::string fname
 
 
 std::string BinaryCreator::createBinData(ObjectHandler *objectHandler) {
+    logger.info("Creating binary data");
+
     std::string output = "";
     int objectCount = (objectHandler -> objects).size();
 
@@ -149,16 +153,19 @@ std::string BinaryCreator::binaryToString(std::string binary) {
     logger.info("Converting binary "+binary+" to a string");
 
     // first, convert the binary into bytes
-    std::string bytes[] {};
+    std::vector<std::string> bytes;
 
     for (int i = 0; i < (binary.length()) / 8; i++) {
-        bytes->append(binary.substr(i, 8));
+        std::string current = binary.substr(i, 8);
+        std::cout << current << std::endl;
+
+        bytes.push_back(current);
     }
 
     // now convert those to a string of actual chars
     std::string chars;
     
-    for (int i=0; i<bytes->size(); i++) {
+    for (int i=0; i<bytes.size(); i++) {
         chars += (char)binaryToDecimal(bytes[i]);
     }
 
@@ -177,6 +184,8 @@ std::string BinaryCreator::charToString(char chars[]) {
 }
 
 void BinaryCreator::writeToFile(std::string input, std::string fname) {
+    logger.info("Writing string "+input+" to file "+fname);
+
     std::ofstream fh("./data/models/"+fname, std::ios::binary);
 
     // convert string to char array

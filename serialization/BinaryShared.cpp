@@ -21,8 +21,8 @@ std::string decimalToBinary(int decimal)
 }
 
 int binaryToDecimal(std::string binary) {
-    std::cout << binary << std::endl;
-    long long int num = stoll(binary);
+    //std::cout << binary << std::endl;
+    int num = stoi(binary);
     int cNum = 0, temp, base = 1;
 
     while (num > 0)
