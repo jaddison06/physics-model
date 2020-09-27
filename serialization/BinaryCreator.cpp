@@ -54,6 +54,11 @@ void BinaryCreator::CreateBinary(ObjectHandler *objectHandler, std::string fname
 
 
 std::string BinaryCreator::createBinData(ObjectHandler *objectHandler) {
+    std::string output = "";
+    for (int i=0; i<(objectHandler -> objects).size(); i++) {
+        output += serializeObject(&(objectHandler->objects[i]));
+    }
+    return output;
 
 }
 
