@@ -144,8 +144,11 @@ std::string BinaryCreator::binaryToString(std::string binary) {
     // first, convert the binary into bytes
     std::vector<std::string> bytes;
 
+    logger.info("Separating bytes");
     for (int i = 0; i < (binary.length()) / 8; i++) {
         std::string current = binary.substr(i, 8);
+        logger.info("Byte "+std::to_string(i)+": "+current);
+
         //std::cout << current << std::endl;
 
         bytes.push_back(current);
@@ -153,9 +156,15 @@ std::string BinaryCreator::binaryToString(std::string binary) {
 
     // now convert those to a string of actual chars
     std::string chars;
+
+    logger.info("Converting to chars");
     
     for (int i=0; i<bytes.size(); i++) {
-        chars += (char)binaryToDecimal(bytes[i]);
+        logger.info("Converting byte "+std::to_string(i));
+        char thisChar = binaryToDecimal(bytes[i]);
+
+        logger.info("Char is "+thisChar);
+        chars += thisChar;
     }
 
     return chars;
