@@ -148,7 +148,7 @@ std::string BinaryCreator::binaryToString(std::string binary) {
     for (int i = 0; i < (binary.length()) / 8; i++) {
         logger.debug(std::to_string(i));
         logger.debug(std::to_string(binary.length()));
-        std::string current = binary.substr(i, 8);
+        std::string current = binary.substr(i*8, 8);
         logger.info("Byte "+std::to_string(i)+": "+current);
 
         //std::cout << current << std::endl;
