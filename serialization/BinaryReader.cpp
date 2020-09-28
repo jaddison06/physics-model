@@ -116,7 +116,39 @@ void BinaryReader::deserializeCoord(std::string binary, coord *output) {
 }
 
 void BinaryReader::deserializeDouble(std::string binary, double *output) {
-    memcpy(output, &binary, sizeof(binary));
+    std::string sign = binary.substr(0, 8);
+
+    // get the length of the first int
+    std::string int1LengthBinary = binary.substr(8, 8);
+    int int1Length = binaryToDecimal(int1LengthBinary);
+}
+
+void BinaryReader::deserializeInt(std::string binary, int* output) {
+    // get rid of size byte, we don't care
+    binary = binary.substr(8, binary.length()-8);
+
+    int unsignedData;
+
+    std::string sign = binary.substr(0, 8);
+    std::string data = binary.substr(8, binary.length()-8);
+
+    unsignedData = binaryToDecimal(data);
+
+    if (sign == "00000000") {
+        // positive
+        *output = unsignedData;
+    } else if (sign == "00000001") { 
+        // negative
+        *output = 0 - unsignedData;
+    } else {
+        // errors are entirely possible
+        logger.warning("Tried to deserialize int, signing was "+sign);
+        *output = 69;
+    }
+
+    return;
+
+
 }
 
 void BinaryReader::deserializeBodyType(std::string binary, bodyType *output) {

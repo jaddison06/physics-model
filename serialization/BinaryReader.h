@@ -13,6 +13,7 @@ class BinaryReader: public GenericBaseClass {
     private:
         void deserializeCoord(std::string binary, coord *output);
         void deserializeDouble(std::string binary, double *output);
+        void deserializeInt(std::string binary, int *output);
         void deserializeBodyType(std::string binary, bodyType *output);
 
         void inheritedDestroy();
