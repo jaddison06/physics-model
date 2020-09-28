@@ -128,9 +128,9 @@ std::string BinaryCreator::serializeDouble(double *someDouble) {
     double decimalBit = abs(*someDouble-intBit);
 
 
-    // now we can store the int bit
+    // now we can store the int bytes
+    output += serializeInt(&intBit);
 
-    
 
     // now figure out how many dp it is
     int dpCounter = 0;
@@ -139,8 +139,38 @@ std::string BinaryCreator::serializeDouble(double *someDouble) {
         *someDouble *= 10;
     }
 
+    int decimalAsInt = (int)*someDouble;
+    output += makeByte(serializeInt(&decimalAsInt));
+
+    output += makeByte(serializeInt(&dpCounter));
+
+    return output;
+
+}
+
+std::string BinaryCreator::serializeInt(int *someInt) {
+    std::string output;
+
+    // sign
+    if (*someInt >= 0) {
+        output += "00000000";
+    } else {
+        output += "00000001";
+    }
 
 
+    int absInt = abs(*someInt);
+
+    output += makeByte(decimalToBinary(absInt));
+
+
+    // size in bytes so we know it can't overflow
+    int size = output.length()/8;
+    std::string sizeByte = makeByte(decimalToBinary(size));
+
+    output = sizeByte + output;
+
+    return output;
 }
 
 std::string BinaryCreator::serializeBodyType(bodyType *bType) {

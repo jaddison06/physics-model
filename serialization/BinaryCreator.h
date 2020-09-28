@@ -19,6 +19,7 @@ class BinaryCreator: public GenericBaseClass {
         std::string serializeObject(Object *object);
         std::string serializeCoord(coord *coords);
         std::string serializeDouble(double *someDouble);
+        std::string serializeInt(int *someInt);
         std::string serializeBodyType(bodyType *bType);
 
         std::string binaryToString(std::string binary);
