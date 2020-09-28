@@ -3,6 +3,7 @@
 #include <string>
 #include <fstream>
 #include <cstring>
+#include <math.h>
 #include "control/GenericBaseClass.h"
 
 // version of the file only, not the whole piece of software
@@ -15,3 +16,5 @@ int binaryToDecimal(std::string binary);
 
 std::string makeByte(std::string input);
 std::string setLength(std::string input, int targetLength);
+
+bool isInt(double *input);

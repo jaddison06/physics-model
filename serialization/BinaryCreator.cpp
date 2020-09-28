@@ -105,17 +105,42 @@ std::string BinaryCreator::serializeCoord(coord *coords) {
     return x+y+z;
 }
 
-// FIX THIS STUPID THING
+// there is a way to do this but i don't know it
+//
+// floating point algorithm?? TODO: research floating points
 std::string BinaryCreator::serializeDouble(double *someDouble) {
     std::string output;
 
-    char chars[sizeof(double)];
+    // ok first sign it
+    //
+    // everything has to be bytes unfortunately
+    if (*someDouble >= 0)
+    {
+        output += "00000000";
+    }
+    else
+    {
+        output += "00000001";
+    }
 
-    memcpy(chars, someDouble, sizeof(*someDouble));
+    // ok now convert it into the int bit and the decimal bit
+    int intBit = abs((int)floor(*someDouble));
+    double decimalBit = abs(*someDouble-intBit);
 
-    output = charToString(chars);
 
-    return output;
+    // now we can store the int bit
+
+    
+
+    // now figure out how many dp it is
+    int dpCounter = 0;
+    while (!isInt(someDouble)) {
+        dpCounter ++;
+        *someDouble *= 10;
+    }
+
+
+
 }
 
 std::string BinaryCreator::serializeBodyType(bodyType *bType) {

@@ -63,3 +63,9 @@ std::string setLength(std::string input, int targetLength)
     }
     return prependor + input;
 }
+
+
+// check if a double is a whole number or not
+bool isInt(double *input) {
+    return (*input == floor(*input));
+}
