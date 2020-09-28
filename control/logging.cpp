@@ -105,7 +105,7 @@ std::string Logger::fmtLog(std::string *level, std::string *msg) {
 // write a log entry
 //
 // although this will probs have a performance impact
-// i now open and close the logfile here to make sure that
+// i flush the logfile here to make sure that
 // shit doesn't just hang around in the buffer when my code
 // inevitably crashes at runtime
 void Logger::writeLog(std::string level, std::string *msg) {    

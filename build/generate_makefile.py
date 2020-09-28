@@ -6,11 +6,6 @@ import os
 import os.path as path
 import itertools
 
-def printedCmd(cmd):
-    print(cmd)
-    os.system(cmd)
-
-
 def getAllFiles(dirName="."):
     allItems = os.listdir(dirName)
     allFiles = []
@@ -21,11 +16,12 @@ def getAllFiles(dirName="."):
             allFiles.append(getAllFiles(fullPath))
         else:
             allFiles.append(fullPath)
-    
+
     return allFiles
 
+
 # itertools.chain.from_iterable() unfortunately counts strings as iterables
-# 
+#
 # we take all strings that aren't in a nested list and put them in one
 filesDimensioned = getAllFiles()
 rootFiles = []
@@ -51,14 +47,25 @@ for f in files:
     if ".cpp" in f:
         fnames.append(f[:-4])
 
+objFiles = f"build/objects/{'.o build/objects/'.join([ f[f.rfind('/')+1:] for f in fnames ])}.o"
+
+makefile = ""
+makefile += f"main: {objFiles}\n		g++ {objFiles} -o ./physics-model\n\n"
+makefile += "clean:\n		rm -r ./build/objects\n		mkdir ./build/objects\n		rm ./physics-model\n\n"
+makefile += "makefile:\n		python3 ./build/generate_makefile.py\n\n"
+
+
 for f in fnames:
-    printedCmd("g++ -c ./"+f+".cpp -I . -Wall -Wno-sign-compare -std=c++17")
+    rootF = f[f.rfind('/')+1:]
+    makefile += f"build/objects/{rootF}.o: {f}.cpp"
 
-# .o files are created in the current dir so we check for them separately
-#
-# this also allows us to attempt linking even if one of the compilations failed
-objFiles = ".o ./".join([ item[:-2] for item in os.listdir(".") if ".o" in item ])
+    # main.h doesn't exist
+    if not f=="./main":
+        makefile += f" {f}.h"
 
-# the final fname won't have a .o appended
-printedCmd("g++ ./"+objFiles+".o -o build")
+    makefile += f"\n		g++ -c {f}.cpp -I . -Wall -Wno-sign-compare -std=c++17 -o ./build/objects/{rootF}.o\n\n"
 
+
+print(f"Generated makefile:\n\n{makefile}")
+with open("./Makefile", "wt") as fh:
+    fh.write(makefile)

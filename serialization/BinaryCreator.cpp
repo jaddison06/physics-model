@@ -105,6 +105,7 @@ std::string BinaryCreator::serializeCoord(coord *coords) {
     return x+y+z;
 }
 
+// FIX THIS STUPID THING
 std::string BinaryCreator::serializeDouble(double *someDouble) {
     std::string output;
 
