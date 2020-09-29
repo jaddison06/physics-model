@@ -135,7 +135,7 @@ void BinaryReader::deserializeDouble(std::string binary, double *output) {
     
     int int1, int2, int3;
     deserializeInt(binary.substr(8, int1Length), &int1);
-    deserializeInt(binary.substr(int1Length+8, int2Length, &int2));
+    deserializeInt(binary.substr(int1Length+8, int2Length), &int2);
     deserializeInt(binary.substr(int1Length+8+int2Length, int3Length), &int3);
 
     double decimalPart = int2;

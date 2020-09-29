@@ -134,12 +134,12 @@ std::string BinaryCreator::serializeDouble(double *someDouble) {
 
     // now figure out how many dp it is
     int dpCounter = 0;
-    while (!isInt(someDouble)) {
+    while (!isInt(&decimalBit)) {
         dpCounter ++;
-        *someDouble *= 10;
+        decimalBit *= 10;
     }
 
-    int decimalAsInt = (int)*someDouble;
+    int decimalAsInt = (int)decimalBit;
     output += makeByte(serializeInt(&decimalAsInt));
 
     output += makeByte(serializeInt(&dpCounter));
