@@ -120,7 +120,33 @@ void BinaryReader::deserializeDouble(std::string binary, double *output) {
 
     // get the length of the first int
     std::string int1LengthBinary = binary.substr(8, 8);
-    int int1Length = binaryToDecimal(int1LengthBinary);
+
+    // length stored in BYTES
+    int int1Length = binaryToDecimal(int1LengthBinary) * 8;
+    
+
+    // repeat
+    std::string int2LengthBinary = binary.substr(int1Length+16, 8);
+    int int2Length = binaryToDecimal(int2LengthBinary) * 8;
+
+    // and again
+    std::string int3LengthBinary = binary.substr(int1Length+24+int2Length, 8);
+    int int3Length = binaryToDecimal(int3LengthBinary) * 8;
+    
+    int int1, int2, int3;
+    deserializeInt(binary.substr(8, int1Length), &int1);
+    deserializeInt(binary.substr(int1Length+8, int2Length, &int2));
+    deserializeInt(binary.substr(int1Length+8+int2Length, int3Length), &int3);
+
+    double decimalPart = int2;
+    for (int i=0; i < int3; i++) {
+        decimalPart *= 0.1;
+    }
+
+    *output = int1 + decimalPart;
+
+    return;
+
 }
 
 void BinaryReader::deserializeInt(std::string binary, int* output) {
