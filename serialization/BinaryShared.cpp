@@ -54,7 +54,13 @@ int binaryToDecimal(std::string binary) {
 std::string makeByte(std::string input)
 {
     logger.info("Setting " + input + " to a byte");
-    return setLength(input, input.length() + 8 - (input.length() % 8));
+    int targetLength;
+    if (input.length() % 8 == 0) {
+        targetLength = input.length();
+    } else {
+        targetLength = input.length() + 8 - (input.length() % 8);
+    }
+    return setLength(input, targetLength);
 }
 
 // set a binary to a specific length
