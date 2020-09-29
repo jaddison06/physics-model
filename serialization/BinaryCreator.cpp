@@ -96,13 +96,23 @@ std::string BinaryCreator::serializeObject(Object *object) {
 
 }
 
+// assumes length is already a multiple of 8
+void BinaryCreator::addLengthByte(std::string *binary) {
+    *binary = makeByte(decimalToBinary((binary->length() / 8))) + *binary;
+    return;
+}
+
 std::string BinaryCreator::serializeCoord(coord *coords) {
 
     std::string x = serializeDouble(&(coords->x));
     std::string y = serializeDouble(&(coords->y));
     std::string z = serializeDouble(&(coords->z));
 
-    return x+y+z;
+    std::string output = x+y+z;
+
+    addLengthByte(&output);
+
+    return output;
 }
 
 // there is a way to do this but i don't know it
@@ -140,9 +150,11 @@ std::string BinaryCreator::serializeDouble(double *someDouble) {
     }
 
     int decimalAsInt = (int)decimalBit;
-    output += makeByte(serializeInt(&decimalAsInt));
+    output += serializeInt(&decimalAsInt);
 
-    output += makeByte(serializeInt(&dpCounter));
+    output += serializeInt(&dpCounter);
+
+    addLengthByte(&output);
 
     return output;
 
@@ -163,12 +175,7 @@ std::string BinaryCreator::serializeInt(int *someInt) {
 
     output += makeByte(decimalToBinary(absInt));
 
-
-    // size in bytes so we know it can't overflow
-    int size = output.length()/8;
-    std::string sizeByte = makeByte(decimalToBinary(size));
-
-    output = sizeByte + output;
+    addLengthByte(&output);
 
     return output;
 }
@@ -189,6 +196,9 @@ std::string BinaryCreator::serializeBodyType(bodyType *bType) {
     }
 
     output = makeByte(decimalToBinary(id));
+
+    addLengthByte(&output);
+
     return output;
 }
 

@@ -15,6 +15,8 @@ class BinaryCreator: public GenericBaseClass {
         std::string charToString(unsigned char chars[]);
 
         std::string createBinData(ObjectHandler *objectHandler);
+
+        void addLengthByte(std::string *binary);
         
         std::string serializeObject(Object *object);
         std::string serializeCoord(coord *coords);

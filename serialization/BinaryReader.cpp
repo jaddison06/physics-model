@@ -66,40 +66,70 @@ void BinaryReader::ReadBinary(ObjectHandler *objectHandler, std::string fname) {
     // maintain compatibility
     switch (version) {
         case 1: {
-            int objectCount;
-            std::string objCountBits = binData.substr(16, 8);
+            // remove start, version bits
+            binData = binData.substr(16, binData.length()-16);
 
-            logger.info("Object count bits: "+objCountBits);
-            objectCount = binaryToDecimal(objCountBits);
-            logger.info("Object count: "+std::to_string(objectCount));
+            // get object count
+            int objectCount = binaryToDecimal(binData.substr(0, 8));
 
-            int objectLength = ((sizeof(double) * 11) + 8);
-            int coordLength = sizeof(double) * 3;
-            int bodyTypeLength = 8;
-            // this is the good bit
+            int startPoint = 8;
+            // fun fun fun
             for (int i=0; i<objectCount; i++) {
-                logger.info("Deserializing object "+std::to_string(i));
+                int objectSize = binaryToDecimal(binData.substr(startPoint, 8));
+                std::string thisObject = binData.substr(startPoint + 8, objectSize);
 
-                int startPos = ((i + 1) *  objectLength) + 24;
-                
-                std::string thisObject = binData.substr(startPos, objectLength);
+                startPoint += objectSize;
 
                 coord pos, vel, accel;
-
-                deserializeCoord(thisObject.substr(coordLength * 0, coordLength), &pos);
-                deserializeCoord(thisObject.substr(coordLength * 1, coordLength), &vel);
-                deserializeCoord(thisObject.substr(coordLength * 2, coordLength), &accel);
-
                 double size, mass;
-
-                deserializeDouble(thisObject.substr((coordLength * 3) + (sizeof(double) * 0), sizeof(double)), &size);
-                deserializeDouble(thisObject.substr((coordLength * 3) + (sizeof(double) * 1), sizeof(double)), &mass);
-
                 bodyType shape;
 
-                deserializeBodyType(thisObject.substr((coordLength * 3) + (sizeof(double) * 2), bodyTypeLength), &shape);
+                int cursor = 0;
+                int itemSize = binaryToDecimal(thisObject.substr(cursor, 8));
+                cursor += 8;
+
+                pos = deserializeCoord(thisObject.substr(cursor, itemSize));
+
+                cursor += itemSize;
+                itemSize = binaryToDecimal(thisObject.substr(cursor, 8));
+                cursor += 8;
+
+                vel = deserializeCoord(thisObject.substr(cursor, itemSize));
+
+                cursor += itemSize;
+                itemSize = binaryToDecimal(thisObject.substr(cursor, 8));
+                cursor += 8;
+
+                accel = deserializeCoord(thisObject.substr(cursor, itemSize));
+
+
+                cursor += itemSize;
+                itemSize = binaryToDecimal(thisObject.substr(cursor, 8));
+                cursor += 8;
+
+                size = deserializeDouble(thisObject.substr(cursor, itemSize));
+
+                cursor += itemSize;
+                itemSize = binaryToDecimal(thisObject.substr(cursor, 8));
+                cursor += 8;
+
+                mass = deserializeDouble(thisObject.substr(cursor, itemSize));
+
+
+                cursor += itemSize;
+                itemSize = binaryToDecimal(thisObject.substr(cursor, 8));
+                cursor += 8;
+
+                shape = deserializeBodyType(thisObject.substr(cursor, itemSize));
 
                 objectHandler->Add(pos, vel, accel, size, mass, shape);
+
+
+                break;
+
+            }
+            
+
             }
 
 
@@ -108,86 +138,105 @@ void BinaryReader::ReadBinary(ObjectHandler *objectHandler, std::string fname) {
     }
 }
 
-void BinaryReader::deserializeCoord(std::string binary, coord *output) {
-    deserializeDouble((binary.substr(sizeof(double) * 0, sizeof(double))), &(output->x));
-    deserializeDouble((binary.substr(sizeof(double) * 1, sizeof(double))), &(output->y));
-    deserializeDouble((binary.substr(sizeof(double) * 2, sizeof(double))), &(output->z));
 
-}
+double BinaryReader::deserializeDouble(std::string binary) {
+    double output;
 
-void BinaryReader::deserializeDouble(std::string binary, double *output) {
+    // ditch the length byte
+    binary = binary.substr(8, binary.length()-8);
+
+    logger.info("Deserializing a double: "+binary);
     std::string sign = binary.substr(0, 8);
 
     // get the length of the first int
     std::string int1LengthBinary = binary.substr(8, 8);
+
+    logger.info("Int 1 length (binary): "int1LengthBinary);
 
     // length stored in BYTES
     int int1Length = binaryToDecimal(int1LengthBinary) * 8;
     
 
     // repeat
-    std::string int2LengthBinary = binary.substr(int1Length+16, 8);
+    std::string int2LengthBinary = binary.substr(int1Length + 16, 8);
+    logger.info("Int 2 length (binary): " int2LengthBinary);
     int int2Length = binaryToDecimal(int2LengthBinary) * 8;
 
     // and again
-    std::string int3LengthBinary = binary.substr(int1Length+24+int2Length, 8);
+    std::string int3LengthBinary = binary.substr(int1Length + 24 + int2Length, 8);
+    logger.info("Int 2 length (binary): " int3LengthBinary);
     int int3Length = binaryToDecimal(int3LengthBinary) * 8;
     
     int int1, int2, int3;
-    deserializeInt(binary.substr(8, int1Length), &int1);
-    deserializeInt(binary.substr(int1Length+8, int2Length), &int2);
-    deserializeInt(binary.substr(int1Length+8+int2Length, int3Length), &int3);
+    int1 = deserializeInt(binary.substr(8, int1Length));
+    int2 = deserializeInt(binary.substr(int1Length+8, int2Length));
+    int3 = deserializeInt(binary.substr(int1Length+8+int2Length, int3Length));
 
     double decimalPart = int2;
     for (int i=0; i < int3; i++) {
         decimalPart *= 0.1;
     }
 
-    *output = int1 + decimalPart;
+    output = int1 + decimalPart;
 
-    return;
+    logger.info("double was "+std::to_string(output));
+
+    return output;
 
 }
 
-void BinaryReader::deserializeInt(std::string binary, int* output) {
+int BinaryReader::deserializeInt(std::string binary) {
+
+    int output;
+
+    logger.info("Deserializing an int: "+binary);
     // get rid of size byte, we don't care
     binary = binary.substr(8, binary.length()-8);
-
-    int unsignedData;
 
     std::string sign = binary.substr(0, 8);
     std::string data = binary.substr(8, binary.length()-8);
 
-    unsignedData = binaryToDecimal(data);
+    int unsignedData = binaryToDecimal(data);
 
     if (sign == "00000000") {
         // positive
-        *output = unsignedData;
+        logger.info("Int was positive");
+        output = unsignedData;
     } else if (sign == "00000001") { 
         // negative
-        *output = 0 - unsignedData;
+        logger.info("Int was negative");
+        output = 0 - unsignedData;
     } else {
         // errors are entirely possible
         logger.warning("Tried to deserialize int, signing was "+sign);
-        *output = 69;
+        output = 69;
     }
 
-    return;
+    logger.info("Int is "+stoi(output));
+    return output;
 
 
 }
 
-void BinaryReader::deserializeBodyType(std::string binary, bodyType *output) {
+bodyType BinaryReader::deserializeBodyType(std::string binary) {
+    logger.info("Deserializing bodyType");
+
+    bodyType output;
+
     switch(binaryToDecimal(binary)) {
         case 0: {
-            *output = cube;
+            output = cube;
+            logger.info("cube");
             break;
         }
         case 1: {
-            *output = sphere;
+            output = sphere;
+            logger.info("sphere");
             break;
         }
     }
+
+    return output;
 }
 
 void BinaryReader::inheritedDestroy() {

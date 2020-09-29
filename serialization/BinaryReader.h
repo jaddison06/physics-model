@@ -11,10 +11,10 @@ class BinaryReader: public GenericBaseClass {
         void ReadBinary(ObjectHandler *objectHandler, std::string fname);
     
     private:
-        void deserializeCoord(std::string binary, coord *output);
-        void deserializeDouble(std::string binary, double *output);
-        void deserializeInt(std::string binary, int *output);
-        void deserializeBodyType(std::string binary, bodyType *output);
+        coord deserializeCoord(std::string binary);
+        double deserializeDouble(std::string binary);
+        int deserializeInt(std::string binary);
+        bodyType deserializeBodyType(std::string binary);
 
         void inheritedDestroy();
 };
