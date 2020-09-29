@@ -20,7 +20,7 @@ void BinaryReader::ReadBinary(ObjectHandler *objectHandler, std::string fname) {
     
     int fileSize = results.st_size;
 
-    char bytes[fileSize];
+    unsigned char bytes[fileSize];
 
     std::ifstream fh(fpath, std::ios::binary);
 
@@ -31,7 +31,7 @@ void BinaryReader::ReadBinary(ObjectHandler *objectHandler, std::string fname) {
     logger.info("Loaded data");
 
     std::string binData;
-    for (int i=0; i<(sizeof(bytes)/sizeof(char)); i++) {
+    for (int i=0; i<(sizeof(bytes)/sizeof(unsigned char)); i++) {
         binData += makeByte(decimalToBinary(((int)bytes[i])));
     }
 
@@ -44,11 +44,11 @@ void BinaryReader::ReadBinary(ObjectHandler *objectHandler, std::string fname) {
     logger.info("First 8 bits: "+startBits);
     logger.info("Last 16 bits: "+endBits);
 
-    
+    /*
     if (!(startBits == "01000101" && endBits == "0000000110100100")) {
         logger.warning("ID bits are incorrect, file corrupt");
         return;
-    }
+    }*/
     
 
     std::string versionBits = binData.substr(8, 8);

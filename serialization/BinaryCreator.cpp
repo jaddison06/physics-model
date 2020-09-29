@@ -217,7 +217,7 @@ std::string BinaryCreator::binaryToString(std::string binary) {
     
     for (int i=0; i<bytes.size(); i++) {
         logger.info("Converting byte "+std::to_string(i));
-        char thisChar = binaryToDecimal(bytes[i]);
+        unsigned char thisChar = binaryToDecimal(bytes[i]);
 
         //logger.info("Char is "+thisChar);
         chars += thisChar;
@@ -227,10 +227,10 @@ std::string BinaryCreator::binaryToString(std::string binary) {
 
 }
 
-std::string BinaryCreator::charToString(char chars[]) {
+std::string BinaryCreator::charToString(unsigned char chars[]) {
     // again, there's an easier way but screw that
     std::string output;
-    for (int i=0; i<(sizeof(chars)/sizeof(char)); i++) {
+    for (int i=0; i<(sizeof(chars)/sizeof(unsigned char)); i++) {
         output += i;
     }
 
@@ -247,7 +247,7 @@ void BinaryCreator::writeToFile(std::string input, std::string fname) {
     // there's an easier way to do this but i'm on my 7th
     // pepsi of the night and am therefore doing the absolute
     // bare minimum to get this serialization done
-    char chars[input.length()];
+    unsigned char chars[input.length()];
     for (int i=0; i<input.length(); i++) {
         chars[i] = input[i];
     }

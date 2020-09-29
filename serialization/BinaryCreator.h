@@ -12,7 +12,7 @@ class BinaryCreator: public GenericBaseClass {
     
     private:
 
-        std::string charToString(char chars[]);
+        std::string charToString(unsigned char chars[]);
 
         std::string createBinData(ObjectHandler *objectHandler);
         

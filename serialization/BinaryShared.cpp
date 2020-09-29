@@ -61,7 +61,11 @@ std::string setLength(std::string input, int targetLength)
     {
         prependor += "0";
     }
-    return prependor + input;
+
+    std::string output = prependor + input;
+
+    logger.info("Result was "+output);
+    return output;
 }
 
 
