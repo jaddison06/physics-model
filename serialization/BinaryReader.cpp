@@ -124,18 +124,34 @@ void BinaryReader::ReadBinary(ObjectHandler *objectHandler, std::string fname) {
 
                 objectHandler->Add(pos, vel, accel, size, mass, shape);
 
-
-                break;
-
-            }
-            
-
             }
 
 
             break;
         }
     }
+}
+
+coord BinaryReader::deserializeCoord(std::string binary) {
+    coord output;
+    
+    // remove length byte
+    binary = binary.substr(8, binary.length()-8);
+
+    for (int i=0; i<3; i++) {
+        int nextLength = binaryToDecimal(binary.substr(0, 8));
+        std::string nextValBin = binary.substr(8, nextLength);
+        int nextVal = deserializeDouble(nextValBin);
+        switch(i) {
+            case 0: {output.x = nextVal; break;}
+            case 1: {output.y = nextVal; break;}
+            case 2: {output.z = nextVal; break;}
+        }
+
+        binary = binary.substr(nextLength + 8, binary.length() - nextLength - 8);
+    }
+
+    return output;
 }
 
 
@@ -151,7 +167,7 @@ double BinaryReader::deserializeDouble(std::string binary) {
     // get the length of the first int
     std::string int1LengthBinary = binary.substr(8, 8);
 
-    logger.info("Int 1 length (binary): "int1LengthBinary);
+    logger.info("Int 1 length (binary): " +int1LengthBinary);
 
     // length stored in BYTES
     int int1Length = binaryToDecimal(int1LengthBinary) * 8;
@@ -159,12 +175,12 @@ double BinaryReader::deserializeDouble(std::string binary) {
 
     // repeat
     std::string int2LengthBinary = binary.substr(int1Length + 16, 8);
-    logger.info("Int 2 length (binary): " int2LengthBinary);
+    logger.info("Int 2 length (binary): " +int2LengthBinary);
     int int2Length = binaryToDecimal(int2LengthBinary) * 8;
 
     // and again
     std::string int3LengthBinary = binary.substr(int1Length + 24 + int2Length, 8);
-    logger.info("Int 2 length (binary): " int3LengthBinary);
+    logger.info("Int 2 length (binary): " +int3LengthBinary);
     int int3Length = binaryToDecimal(int3LengthBinary) * 8;
     
     int int1, int2, int3;
@@ -212,7 +228,7 @@ int BinaryReader::deserializeInt(std::string binary) {
         output = 69;
     }
 
-    logger.info("Int is "+stoi(output));
+    logger.info("Int is "+std::to_string(output));
     return output;
 
 
