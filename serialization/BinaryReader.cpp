@@ -71,12 +71,19 @@ void BinaryReader::ReadBinary(ObjectHandler *objectHandler, std::string fname) {
 
             // get object count
             int objectCount = binaryToDecimal(binData.substr(0, 8));
+            logger.info("Object count is "+std::to_string(objectCount));
 
             int startPoint = 8;
             // fun fun fun
             for (int i=0; i<objectCount; i++) {
-                int objectSize = binaryToDecimal(binData.substr(startPoint, 8));
+                logger.info("Deserializing object #"+std::to_string(i));
+
+                int objectSize = binaryToDecimal(binData.substr(startPoint, 8))*8;
+                logger.info("Object size: "+std::to_string(objectSize));
+                
                 std::string thisObject = binData.substr(startPoint + 8, objectSize);
+
+                logger.info("Object binary: "+thisObject);
 
                 startPoint += objectSize;
 
@@ -85,44 +92,33 @@ void BinaryReader::ReadBinary(ObjectHandler *objectHandler, std::string fname) {
                 bodyType shape;
 
                 int cursor = 0;
-                int itemSize = binaryToDecimal(thisObject.substr(cursor, 8));
+                int itemSize = binaryToDecimal(thisObject.substr(cursor, 8))*8;
                 cursor += 8;
-
+                
                 pos = deserializeCoord(thisObject.substr(cursor, itemSize));
-
-                cursor += itemSize;
-                itemSize = binaryToDecimal(thisObject.substr(cursor, 8));
-                cursor += 8;
+                shiftCursor(&thisObject, &cursor, &itemSize);
 
                 vel = deserializeCoord(thisObject.substr(cursor, itemSize));
-
-                cursor += itemSize;
-                itemSize = binaryToDecimal(thisObject.substr(cursor, 8));
-                cursor += 8;
+                shiftCursor(&thisObject, &cursor, &itemSize);
 
                 accel = deserializeCoord(thisObject.substr(cursor, itemSize));
+                shiftCursor(&thisObject, &cursor, &itemSize);
 
-
-                cursor += itemSize;
-                itemSize = binaryToDecimal(thisObject.substr(cursor, 8));
-                cursor += 8;
 
                 size = deserializeDouble(thisObject.substr(cursor, itemSize));
-
-                cursor += itemSize;
-                itemSize = binaryToDecimal(thisObject.substr(cursor, 8));
-                cursor += 8;
+                shiftCursor(&thisObject, &cursor, &itemSize);
 
                 mass = deserializeDouble(thisObject.substr(cursor, itemSize));
+                shiftCursor(&thisObject, &cursor, &itemSize);
 
-
-                cursor += itemSize;
-                itemSize = binaryToDecimal(thisObject.substr(cursor, 8));
-                cursor += 8;
 
                 shape = deserializeBodyType(thisObject.substr(cursor, itemSize));
 
+
                 objectHandler->Add(pos, vel, accel, size, mass, shape);
+
+                // this could be wrong, haven't tested with multiple objecte yet so idk
+                startPoint = cursor + 8;
 
             }
 
@@ -132,15 +128,31 @@ void BinaryReader::ReadBinary(ObjectHandler *objectHandler, std::string fname) {
     }
 }
 
+void BinaryReader::shiftCursor(std::string *thisObject, int *cursor, int *itemSize) {
+    *cursor += *itemSize;
+    *itemSize = binaryToDecimal(thisObject->substr(*cursor, 8)) * 8;
+    *cursor += 8;
+}
+
+//  all deserialize...() functions take input _WITH_ LENGTH BYTE
+// ATTACHED
+//
+// SORT THIS THE FUCK OUT IT'S DISORGANISED
 coord BinaryReader::deserializeCoord(std::string binary) {
+    logger.info("Deserializing a coord: "+binary);
+
     coord output;
     
     // remove length byte
     binary = binary.substr(8, binary.length()-8);
 
     for (int i=0; i<3; i++) {
-        int nextLength = binaryToDecimal(binary.substr(0, 8));
-        std::string nextValBin = binary.substr(8, nextLength);
+        logger.info("Getting coord item #"+std::to_string(i+1));
+        int nextLength = binaryToDecimal(binary.substr(0, 8))*8;
+        logger.info("Item length is "+std::to_string(nextLength));
+        std::string nextValBin = binary.substr(8, nextLength*8);
+        logger.info("Item binary: "+nextValBin);
+
         int nextVal = deserializeDouble(nextValBin);
         switch(i) {
             case 0: {output.x = nextVal; break;}

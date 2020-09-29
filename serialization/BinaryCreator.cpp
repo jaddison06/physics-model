@@ -66,7 +66,9 @@ std::string BinaryCreator::createBinData(ObjectHandler *objectHandler) {
     output += makeByte(decimalToBinary(objectCount));
 
     // objects
+    logger.info("Object count is "+std::to_string(objectCount));
     for (int i=0; i<objectCount; i++) {
+        logger.info("Serializing object #"+std::to_string(i));
         output += serializeObject(&(objectHandler->objects[i]));
     }
 
@@ -90,6 +92,8 @@ std::string BinaryCreator::serializeObject(Object *object) {
     output += serializeDouble(&(object -> mass));
     output += serializeBodyType(&(object -> shape));
 
+    addLengthByte(&output);
+
     logger.info("object binary: "+output);
 
     return output;
@@ -98,11 +102,14 @@ std::string BinaryCreator::serializeObject(Object *object) {
 
 // assumes length is already a multiple of 8
 void BinaryCreator::addLengthByte(std::string *binary) {
+    logger.info("Adding a length byte to binary "+*binary);
     *binary = makeByte(decimalToBinary((binary->length() / 8))) + *binary;
+    logger.info("New binary: "+*binary);
     return;
 }
 
 std::string BinaryCreator::serializeCoord(coord *coords) {
+    logger.info("Serializing a coord");
 
     std::string x = serializeDouble(&(coords->x));
     std::string y = serializeDouble(&(coords->y));
@@ -112,6 +119,8 @@ std::string BinaryCreator::serializeCoord(coord *coords) {
 
     addLengthByte(&output);
 
+    logger.info("Coord binary: "+output);
+
     return output;
 }
 
@@ -119,6 +128,7 @@ std::string BinaryCreator::serializeCoord(coord *coords) {
 //
 // floating point algorithm?? TODO: research floating points
 std::string BinaryCreator::serializeDouble(double *someDouble) {
+    logger.info("Serializing a double");
     std::string output;
 
     // ok first sign it
@@ -156,17 +166,23 @@ std::string BinaryCreator::serializeDouble(double *someDouble) {
 
     addLengthByte(&output);
 
+    logger.info("Double binary: "+output);
+
     return output;
 
 }
 
 std::string BinaryCreator::serializeInt(int *someInt) {
+    logger.info("Serializing int");
     std::string output;
 
     // sign
+    logger.info("Signing int");
     if (*someInt >= 0) {
+        logger.info("Positive");
         output += "00000000";
     } else {
+        logger.info("Negative");
         output += "00000001";
     }
 
@@ -176,6 +192,8 @@ std::string BinaryCreator::serializeInt(int *someInt) {
     output += makeByte(decimalToBinary(absInt));
 
     addLengthByte(&output);
+
+    logger.info("Int binary: "+output);
 
     return output;
 }

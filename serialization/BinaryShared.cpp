@@ -20,6 +20,9 @@ std::string decimalToBinary(int decimal) {
         output += std::to_string(bits[i]);
     }
 
+    if (output == "") {
+        output = "0";
+    }
     logger.info("Result was "+output);
 
     return output;
@@ -46,11 +49,6 @@ int binaryToDecimal(std::string binary) {
 }
 
 // set the length of a string to a multiple of 8
-// IF IT'S ALREADY A MULTIPLE IT DOES TO THE NEXT 8 WTF?
-// FIX THIS IT'S THE ONLY THING STOPPING THE PROGRAM FROM RUNNING
-//
-// OR IS IT?
-// YES
 std::string makeByte(std::string input)
 {
     logger.info("Setting " + input + " to a byte");
