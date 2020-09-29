@@ -252,7 +252,7 @@ void BinaryCreator::writeToFile(std::string input, std::string fname) {
         chars[i] = input[i];
     }
 
-    fh.write(chars, sizeof(chars));
+    fh.write((char*)&chars, sizeof(chars));
 
     fh.close();
 

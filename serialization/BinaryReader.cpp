@@ -24,7 +24,7 @@ void BinaryReader::ReadBinary(ObjectHandler *objectHandler, std::string fname) {
 
     std::ifstream fh(fpath, std::ios::binary);
 
-    fh.read(bytes, fileSize);
+    fh.read((char*)&bytes, fileSize);
 
     fh.close();
 
@@ -44,11 +44,11 @@ void BinaryReader::ReadBinary(ObjectHandler *objectHandler, std::string fname) {
     logger.info("First 8 bits: "+startBits);
     logger.info("Last 16 bits: "+endBits);
 
-    /*
+    
     if (!(startBits == "01000101" && endBits == "0000000110100100")) {
         logger.warning("ID bits are incorrect, file corrupt");
         return;
-    }*/
+    }
     
 
     std::string versionBits = binData.substr(8, 8);
@@ -65,7 +65,7 @@ void BinaryReader::ReadBinary(ObjectHandler *objectHandler, std::string fname) {
     // for new versions, add extra code while trying to
     // maintain compatibility
     switch (version) {
-        case 0: {
+        case 1: {
             int objectCount;
             std::string objCountBits = binData.substr(16, 8);
 
