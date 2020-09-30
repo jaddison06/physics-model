@@ -73,7 +73,9 @@ void BinaryReader::ReadBinary(ObjectHandler *objectHandler, std::string fname) {
             int objectCount = binaryToDecimal(binData.substr(0, 8));
             logger.info("Object count is "+std::to_string(objectCount));
 
+            // startPoint is the start of the object
             int startPoint = 8;
+
             // fun fun fun
             for (int i=0; i<objectCount; i++) {
                 logger.info("Deserializing object #"+std::to_string(i));
@@ -81,6 +83,8 @@ void BinaryReader::ReadBinary(ObjectHandler *objectHandler, std::string fname) {
                 int objectSize = binaryToDecimal(binData.substr(startPoint, 8))*8;
                 logger.info("Object size: "+std::to_string(objectSize));
                 
+                // get the binary data for just this object
+                // starts after size byte
                 std::string thisObject = binData.substr(startPoint + 8, objectSize);
 
                 logger.info("Object binary: "+thisObject);
@@ -91,9 +95,9 @@ void BinaryReader::ReadBinary(ObjectHandler *objectHandler, std::string fname) {
                 double size, mass;
                 bodyType shape;
 
+                // cursor tells us where to read from in the object
                 int cursor = 0;
                 int itemSize = binaryToDecimal(thisObject.substr(cursor, 8))*8;
-                cursor += 8;
                 
                 pos = deserializeCoord(thisObject.substr(cursor, itemSize));
                 shiftCursor(&thisObject, &cursor, &itemSize);
@@ -248,6 +252,9 @@ int BinaryReader::deserializeInt(std::string binary) {
 
 bodyType BinaryReader::deserializeBodyType(std::string binary) {
     logger.info("Deserializing bodyType");
+
+    // remove length byte
+    binary = binary.substr(8, binary.length() - 8);
 
     bodyType output;
 
