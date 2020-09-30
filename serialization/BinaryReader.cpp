@@ -80,7 +80,7 @@ void BinaryReader::ReadBinary(ObjectHandler *objectHandler, std::string fname) {
             for (int i=0; i<objectCount; i++) {
                 logger.info("Deserializing object #"+std::to_string(i));
 
-                int objectSize = binaryToDecimal(binData.substr(startPoint, 8))*8;
+                int objectSize = getSize(&binData, startPoint);
                 logger.info("Object size: "+std::to_string(objectSize));
                 
                 // get the binary data for just this object
@@ -97,7 +97,7 @@ void BinaryReader::ReadBinary(ObjectHandler *objectHandler, std::string fname) {
 
                 // cursor tells us where to read from in the object
                 int cursor = 0;
-                int itemSize = binaryToDecimal(thisObject.substr(cursor, 8))*8;
+                int itemSize = getSize(&thisObject, cursor);
                 
                 pos = deserializeCoord(thisObject.substr(cursor, itemSize));
                 shiftCursor(&thisObject, &cursor, &itemSize);
@@ -132,9 +132,25 @@ void BinaryReader::ReadBinary(ObjectHandler *objectHandler, std::string fname) {
     }
 }
 
+// get item size in BITS
+int BinaryReader::getSize(std::string *binary, int startPoint) {
+    logger.info("Getting size from item "+*binary+",\nstarting at bit #"+std::to_string(startPoint));
+
+    std::string binSize = binary->substr(startPoint, 8);
+    logger.info("Size bits: "+binSize);
+
+    int size = binaryToDecimal(binSize);
+    logger.info("Size in bytes: "+std::to_string(size));
+
+    size *= 8;
+    logger.info("Size in bits: "+std::to_string(size));
+
+    return size;
+}
+
 void BinaryReader::shiftCursor(std::string *thisObject, int *cursor, int *itemSize) {
     *cursor += *itemSize;
-    *itemSize = binaryToDecimal(thisObject->substr(*cursor, 8)) * 8;
+    *itemSize = getSize(thisObject, *cursor);
     *cursor += 8;
 }
 
@@ -152,9 +168,9 @@ coord BinaryReader::deserializeCoord(std::string binary) {
 
     for (int i=0; i<3; i++) {
         logger.info("Getting coord item #"+std::to_string(i+1));
-        int nextLength = binaryToDecimal(binary.substr(0, 8))*8;
+        int nextLength = getSize(&binary);
         logger.info("Item length is "+std::to_string(nextLength));
-        std::string nextValBin = binary.substr(8, nextLength*8);
+        std::string nextValBin = binary.substr(0, nextLength*8);
         logger.info("Item binary: "+nextValBin);
 
         int nextVal = deserializeDouble(nextValBin);
@@ -174,35 +190,26 @@ coord BinaryReader::deserializeCoord(std::string binary) {
 double BinaryReader::deserializeDouble(std::string binary) {
     double output;
 
+    logger.info("Deserializing a double: " + binary);
+
     // ditch the length byte
     binary = binary.substr(8, binary.length()-8);
 
-    logger.info("Deserializing a double: "+binary);
     std::string sign = binary.substr(0, 8);
 
     // get the length of the first int
-    std::string int1LengthBinary = binary.substr(8, 8);
-
-    logger.info("Int 1 length (binary): " +int1LengthBinary);
-
-    // length stored in BYTES
-    int int1Length = binaryToDecimal(int1LengthBinary) * 8;
-    
+    int int1Length = getSize(&binary, 8);
 
     // repeat
-    std::string int2LengthBinary = binary.substr(int1Length + 16, 8);
-    logger.info("Int 2 length (binary): " +int2LengthBinary);
-    int int2Length = binaryToDecimal(int2LengthBinary) * 8;
+    int int2Length = getSize(&binary, int1Length + 16);
 
     // and again
-    std::string int3LengthBinary = binary.substr(int1Length + 24 + int2Length, 8);
-    logger.info("Int 2 length (binary): " +int3LengthBinary);
-    int int3Length = binaryToDecimal(int3LengthBinary) * 8;
+    int int3Length = getSize(&binary, int1Length + 24 + int2Length);
     
     int int1, int2, int3;
-    int1 = deserializeInt(binary.substr(8, int1Length));
-    int2 = deserializeInt(binary.substr(int1Length+8, int2Length));
-    int3 = deserializeInt(binary.substr(int1Length+8+int2Length, int3Length));
+    int1 = deserializeInt(binary.substr(8, int1Length+8));
+    int2 = deserializeInt(binary.substr(int1Length+8, int2Length+8));
+    int3 = deserializeInt(binary.substr(int1Length+8+int2Length, int3Length+8));
 
     double decimalPart = int2;
     for (int i=0; i < int3; i++) {

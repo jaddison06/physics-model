@@ -17,6 +17,7 @@ class BinaryReader: public GenericBaseClass {
         bodyType deserializeBodyType(std::string binary);
 
         void shiftCursor(std::string *thisObject, int *cursor, int *itemSize);
+        int getSize(std::string *binary, int startPoint = 0);
 
         void inheritedDestroy();
 };
