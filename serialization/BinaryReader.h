@@ -19,5 +19,8 @@ class BinaryReader: public GenericBaseClass {
         void shiftCursor(std::string *thisObject, int *cursor, int *itemSize);
         int getSize(std::string *binary, int startPoint = 0);
 
+        int signInt(int *unsignedData, std::string *sign);
+        double signDouble(double *unsignedData, std::string *sign);
+
         void inheritedDestroy();
 };

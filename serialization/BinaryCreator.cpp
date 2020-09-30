@@ -135,7 +135,7 @@ std::string BinaryCreator::serializeCoord(coord *coords) {
 //
 // floating point algorithm?? TODO: research floating points
 std::string BinaryCreator::serializeDouble(double *someDouble) {
-    logger.info("Serializing a double");
+    logger.info("Serializing a double: "+std::to_string(*someDouble));
     std::string output;
 
     // ok first sign it
@@ -150,9 +150,15 @@ std::string BinaryCreator::serializeDouble(double *someDouble) {
         output += "00000001";
     }
 
+    logger.info("Signed double, is now "+output);
+
     // ok now convert it into the int bit and the decimal bit
-    int intBit = abs((int)floor(*someDouble));
+    int intBit = (int)floor(*someDouble);
     double decimalBit = abs(*someDouble-intBit);
+
+    // make positive AFTER getting the decimal bit otherwise we end
+    // up subtracting weird things and it all goes wrong
+    intBit = abs(intBit);
 
 
     // now we can store the int bytes
@@ -180,7 +186,7 @@ std::string BinaryCreator::serializeDouble(double *someDouble) {
 }
 
 std::string BinaryCreator::serializeInt(int *someInt) {
-    logger.info("Serializing int");
+    logger.info("Serializing int: "+std::to_string(*someInt));
     std::string output;
 
     // sign

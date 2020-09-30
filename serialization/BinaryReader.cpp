@@ -170,7 +170,7 @@ coord BinaryReader::deserializeCoord(std::string binary) {
         logger.info("Getting coord item #"+std::to_string(i+1));
         int nextLength = getSize(&binary);
         logger.info("Item length is "+std::to_string(nextLength));
-        std::string nextValBin = binary.substr(0, nextLength*8);
+        std::string nextValBin = binary.substr(0, nextLength);
         logger.info("Item binary: "+nextValBin);
 
         int nextVal = deserializeDouble(nextValBin);
@@ -197,19 +197,21 @@ double BinaryReader::deserializeDouble(std::string binary) {
 
     std::string sign = binary.substr(0, 8);
 
+    int int1, int2, int3;
+
     // get the length of the first int
     int int1Length = getSize(&binary, 8);
 
+    // now deserialize it
+    int1 = deserializeInt(binary.substr(8, int1Length + 8));
+
     // repeat
     int int2Length = getSize(&binary, int1Length + 16);
+    int2 = deserializeInt(binary.substr(int1Length + 16, int2Length + 16));
 
     // and again
     int int3Length = getSize(&binary, int1Length + 24 + int2Length);
-    
-    int int1, int2, int3;
-    int1 = deserializeInt(binary.substr(8, int1Length+8));
-    int2 = deserializeInt(binary.substr(int1Length+8, int2Length+8));
-    int3 = deserializeInt(binary.substr(int1Length+8+int2Length, int3Length+8));
+    int3 = deserializeInt(binary.substr(int1Length + 16 + int2Length, int3Length+16));
 
     double decimalPart = int2;
     for (int i=0; i < int3; i++) {
@@ -217,6 +219,8 @@ double BinaryReader::deserializeDouble(std::string binary) {
     }
 
     output = int1 + decimalPart;
+
+    output = signDouble(&output, &sign);
 
     logger.info("double was "+std::to_string(output));
 
@@ -237,24 +241,52 @@ int BinaryReader::deserializeInt(std::string binary) {
 
     int unsignedData = binaryToDecimal(data);
 
-    if (sign == "00000000") {
-        // positive
-        logger.info("Int was positive");
-        output = unsignedData;
-    } else if (sign == "00000001") { 
-        // negative
-        logger.info("Int was negative");
-        output = 0 - unsignedData;
-    } else {
-        // errors are entirely possible
-        logger.warning("Tried to deserialize int, signing was "+sign);
-        output = 69;
-    }
+    output = signInt(&unsignedData, &sign);
 
     logger.info("Int is "+std::to_string(output));
     return output;
 
 
+}
+
+int BinaryReader::signInt(int *unsignedData, std::string *sign) {
+    int output;
+
+    if (*sign == "00000000") {
+        // positive
+        logger.info("Int was positive");
+        output = *unsignedData;
+    } else if (*sign == "00000001") {
+        // negative
+        logger.info("Int was negative");
+        output = 0 - *unsignedData;
+    } else {
+        // errors are entirely possible
+        logger.warning("Tried to deserialize int, signing was " + *sign);
+        output = 69;
+    }
+
+    return output;
+}
+
+double BinaryReader::signDouble(double *unsignedData, std::string *sign) {
+    double output;
+
+    if (*sign == "00000000") {
+        // positive
+        logger.info("Int was positive");
+        output = *unsignedData;
+    } else if (*sign == "00000001") {
+        // negative
+        logger.info("Int was negative");
+        output = 0 - *unsignedData;
+    } else {
+        // errors are entirely possible
+        logger.warning("Tried to deserialize double, signing was " + *sign);
+        output = 69;
+    }
+
+    return output;
 }
 
 bodyType BinaryReader::deserializeBodyType(std::string binary) {
