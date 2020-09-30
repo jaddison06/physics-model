@@ -282,15 +282,16 @@ int BinaryReader::signInt(int *unsignedData, std::string *sign) {
 }
 
 double BinaryReader::signDouble(double *unsignedData, std::string *sign) {
+    logger.info("Signing double");
     double output;
 
     if (*sign == "00000000") {
         // positive
-        logger.info("Int was positive");
+        logger.info("Double was positive");
         output = *unsignedData;
     } else if (*sign == "00000001") {
         // negative
-        logger.info("Int was negative");
+        logger.info("Double was negative");
         output = 0 - *unsignedData;
     } else {
         // errors are entirely possible
