@@ -103,7 +103,14 @@ std::string BinaryCreator::serializeObject(Object *object) {
 // assumes length is already a multiple of 8
 void BinaryCreator::addLengthByte(std::string *binary) {
     logger.info("Adding a length byte to binary "+*binary);
-    *binary = makeByte(decimalToBinary((binary->length() / 8))) + *binary;
+    std::string lengthByte = makeByte(decimalToBinary((binary->length() / 8)));
+
+    // if we ever need to extend the length byte we're told about it
+    if (lengthByte.length() > 8) {
+        logger.warning("Length byte is "+lengthByte+", has length "+std::to_string(lengthByte.length()));
+    }
+
+    *binary = lengthByte + *binary;
     logger.info("New binary: "+*binary);
     return;
 }
