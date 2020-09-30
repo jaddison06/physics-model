@@ -1399,9 +1399,9 @@ starting at bit #0
 
 2020-8-30 20:54:22   INFO (BinaryReader) Size in bits: 80
 
-2020-8-30 20:54:22   INFO (BinaryReader) Item length is 80
+2020-8-30 20:54:22   INFO (BinaryReader) Item length is 80 NOT INC LENGTH BYTE !!!
 
-2020-8-30 20:54:22   INFO (BinaryReader) Item binary: 00001010000000010000001000000000000000100000001000000000000000000000001000000000
+2020-8-30 20:54:22   INFO (BinaryReader) Item binary: 00001010 00000001 00000010 00000000 00000010 00000010 00000000 00000000 00000010 00000000
 
                                                                  dlen      dsign    i1len    i1sign    i1     i2len    i2sign   i2       i3len     i3sign   i3 JUST DOESN'T FUCKIGN EXIST APPARENTLY
 2020-8-30 20:54:22   INFO (BinaryReader) Deserializing a double: 00001010 00000001 00000010 00000000 00000010 00000010 00000000 00000000 00000010 00000000

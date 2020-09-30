@@ -144,6 +144,9 @@ int BinaryReader::getSize(std::string *binary, int startPoint) {
 
     size *= 8;
     logger.info("Size in bits: "+std::to_string(size));
+    
+    size += 8;
+    logger.info("Size in bits (inc size byte): "+std::to_string(size));
 
     return size;
 }
@@ -199,19 +202,28 @@ double BinaryReader::deserializeDouble(std::string binary) {
 
     int int1, int2, int3;
 
-    // get the length of the first int
-    int int1Length = getSize(&binary, 8);
+    // we read the string starting at the cursor point
+    // cursor starts after the double's sign bit
+    int cursor = 8;
 
-    // now deserialize it
-    int1 = deserializeInt(binary.substr(8, int1Length + 8));
+    // get the length of the first int
+    // includes sign bit
+    int int1Length = getSize(&binary, cursor);
+
+    int1 = deserializeInt(binary.substr(cursor, int1Length));
+
+    // increment cursor
+    cursor += int1Length;
 
     // repeat
-    int int2Length = getSize(&binary, int1Length + 16);
-    int2 = deserializeInt(binary.substr(int1Length + 16, int2Length + 16));
+    int int2Length = getSize(&binary, cursor);
+    int2 = deserializeInt(binary.substr(cursor, int2Length));
+    cursor += int2Length;
+
 
     // and again
-    int int3Length = getSize(&binary, int1Length + 24 + int2Length);
-    int3 = deserializeInt(binary.substr(int1Length + 16 + int2Length, int3Length+16));
+    int int3Length = getSize(&binary, cursor);
+    int3 = deserializeInt(binary.substr(cursor, int3Length));
 
     double decimalPart = int2;
     for (int i=0; i < int3; i++) {
