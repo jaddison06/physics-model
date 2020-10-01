@@ -156,7 +156,7 @@ int BinaryReader::getSize(std::string *binary, int startPoint) {
 void BinaryReader::shiftCursor(std::string *thisObject, int *cursor, int *itemSize) {
     *cursor += *itemSize;
     *itemSize = getSize(thisObject, *cursor);
-    *cursor += 8;
+    //*cursor += 8;
 }
 
 //  all deserialize...() functions take input _WITH_ LENGTH BYTE
