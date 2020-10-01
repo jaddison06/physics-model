@@ -183,7 +183,7 @@ coord BinaryReader::deserializeCoord(std::string binary) {
             case 2: {output.z = nextVal; break;}
         }
 
-        binary = binary.substr(nextLength + 8, binary.length() - nextLength - 8);
+        binary = binary.substr(nextLength, binary.length() - nextLength);
     }
 
     return output;
