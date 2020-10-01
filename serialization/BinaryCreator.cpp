@@ -1,38 +1,5 @@
 #include "serialization/BinaryCreator.h"
 
-// TODO: clean this the fuck up
-// just convert between types
-// you've got strings which are strings
-// strings which are binary
-// ints
-// chars
-//
-// wack af
-//
-// also a bunch of functions don't actually get used
-//
-// improve logging
-//
-// do BinaryReader
-//
-// comment cause this isn't readable at all
-//
-// update all the serialize whatever functions
-// bc they're pretty wank
-//
-// also serializeDouble() is very stupid
-// don't just stream variables out of memory and into
-// a file
-//
-// redo decimalToBinary & vice versa cause they're shit
-// and also might not work for negatives
-//
-// get rid of unused includes
-// 
-// thanks x
-
-
-
 BinaryCreator::BinaryCreator() {
     logger.setSender("BinaryCreator");
 

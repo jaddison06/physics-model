@@ -151,18 +151,13 @@ int BinaryReader::getSize(std::string *binary, int startPoint) {
     return size;
 }
 
-// fix this one
-// *cursor += 8; could be wrong since reimplementing getSize() ?
+
 void BinaryReader::shiftCursor(std::string *thisObject, int *cursor, int *itemSize) {
     *cursor += *itemSize;
     *itemSize = getSize(thisObject, *cursor);
-    //*cursor += 8;
-}
 
 //  all deserialize...() functions take input _WITH_ LENGTH BYTE
 // ATTACHED
-//
-// SORT THIS THE FUCK OUT IT'S DISORGANISED
 coord BinaryReader::deserializeCoord(std::string binary) {
     logger.info("Deserializing a coord: "+binary);
 
