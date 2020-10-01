@@ -30,6 +30,12 @@ Object::Object(coord pos, double bigness, double massGrams, bodyType form, std::
     gravField.init(mass);
 
     logger.info("Object initialized");
+
+    logger.info("Location: "+coordToString(&location));
+    logger.info("Size: "+std::to_string(size));
+    logger.info("Mass: "+std::to_string(mass));
+    logger.info("Volume: "+std::to_string(volume));
+    logger.info("Density: "+std::to_string(density));
 }
 
 // Move the object a certain interval forwards in time
