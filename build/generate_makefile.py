@@ -50,7 +50,7 @@ for f in files:
 objFiles = f"build/objects/{'.o build/objects/'.join([ f[f.rfind('/')+1:] for f in fnames ])}.o"
 
 makefile = ""
-makefile += f"main: {objFiles}\n		g++ {objFiles} -o ./physics-model\n\n"
+makefile += f"main: {objFiles}\n		g++-8 {objFiles} -o ./physics-model\n\n"
 makefile += "clean:\n		rm -r ./build/objects\n		mkdir ./build/objects\n		rm ./physics-model\n\n"
 makefile += "makefile:\n		python3 ./build/generate_makefile.py\n\n"
 
@@ -63,7 +63,7 @@ for f in fnames:
     if not f=="./main":
         makefile += f" {f}.h"
 
-    makefile += f"\n		g++ -c {f}.cpp -I . -Wall -Wno-sign-compare -std=c++17 -o ./build/objects/{rootF}.o\n\n"
+    makefile += f"\n		g++-8 -c {f}.cpp -I . -Wall -Wno-sign-compare -std=c++17 -o ./build/objects/{rootF}.o\n\n"
 
 
 print(f"Generated makefile:\n\n{makefile}")
