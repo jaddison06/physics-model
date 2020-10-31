@@ -1,5 +1,5 @@
 main: build/objects/Model.o build/objects/logging.o build/objects/GenericBaseClass.o build/objects/ObjectHandler.o build/objects/Object.o build/objects/Field.o build/objects/GravField.o build/objects/3DBody.o build/objects/BinaryCreator.o build/objects/BinaryShared.o build/objects/BinaryReader.o build/objects/main.o
-		g++-8 build/objects/Model.o build/objects/logging.o build/objects/GenericBaseClass.o build/objects/ObjectHandler.o build/objects/Object.o build/objects/Field.o build/objects/GravField.o build/objects/3DBody.o build/objects/BinaryCreator.o build/objects/BinaryShared.o build/objects/BinaryReader.o build/objects/main.o -o ./physics-model
+		g++-8 build/objects/Model.o build/objects/logging.o build/objects/GenericBaseClass.o build/objects/ObjectHandler.o build/objects/Object.o build/objects/Field.o build/objects/GravField.o build/objects/3DBody.o build/objects/BinaryCreator.o build/objects/BinaryShared.o build/objects/BinaryReader.o build/objects/main.o -o ./physics-model -lstdc++fs
 
 clean:
 		rm -r ./build/objects
