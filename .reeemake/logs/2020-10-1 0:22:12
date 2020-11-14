@@ -1,0 +1,558 @@
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.main) Initialized
+
+2020-10-1 0:22:12   INFO (../reeemake/reeemake.Reeemake) Reeemake initialized
+
+2020-10-1 0:22:12   INFO (../reeemake/reeemake.ArgParser) Super-Fast, Cross-Platform Build System For C++! Simple And Exciting! (version 0.2)
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.ArgParser) ArgParser created
+
+2020-10-1 0:22:12   INFO (../reeemake/reeemake.ArgParser) Parsing args
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.ArgParser) Checking for duplicate arg names
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.ArgParser) Checking optional conf
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.ArgParser) Optional conf OK
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.ArgParser) Checking optional help
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.ArgParser) Optional help OK
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.ArgParser) Got arg ../reeemake/reeemake
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.ArgParser) Is first arg - program name
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.ArgParser) Checking for illegal duplicates
+
+2020-10-1 0:22:12   INFO (../reeemake/reeemake.Reeemake) Config arg wasn't supplied
+
+2020-10-1 0:22:12   INFO (../reeemake/reeemake.Reeemake) No conf files in dir, using default config
+
+2020-10-1 0:22:12   INFO (../reeemake/reeemake.Reeemake) Using config default
+
+2020-10-1 0:22:12   INFO (../reeemake/reeemake.Reeemake) Getting all files in dir .
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.Reeemake) Got dir entry ./control
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.Reeemake) Got dir entry ./.vscode
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.Reeemake) Got dir entry ./physics
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.Reeemake) Got dir entry ./data
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.Reeemake) Got dir entry ./main.cpp
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.Reeemake) Got dir entry ./3d
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.Reeemake) Got dir entry ./.reeemake
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.Reeemake) Got dir entry ./serialization
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.Reeemake) Got dir entry ./README.md
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.Reeemake) Got dir entry ./Makefile
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.Reeemake) Got dir entry ./build
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.Reeemake) Got dir entry ./.git
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.Reeemake) Found directory ./control, searching it
+
+2020-10-1 0:22:12   INFO (../reeemake/reeemake.Reeemake) Getting all files in dir ./control
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.Reeemake) Got dir entry ./control/GenericBaseClass.h
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.Reeemake) Got dir entry ./control/Model.cpp
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.Reeemake) Got dir entry ./control/logging.h
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.Reeemake) Got dir entry ./control/Model.h
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.Reeemake) Got dir entry ./control/logging.cpp
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.Reeemake) Got dir entry ./control/GenericBaseClass.cpp
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.Reeemake) Got dir entry ./control/ObjectHandler.cpp
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.Reeemake) Got dir entry ./control/ObjectHandler.h
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.Reeemake) Found directory ./.vscode, searching it
+
+2020-10-1 0:22:12   INFO (../reeemake/reeemake.Reeemake) Getting all files in dir ./.vscode
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.Reeemake) Got dir entry ./.vscode/settings.json
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.Reeemake) Got dir entry ./.vscode/c_cpp_properties.json
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.Reeemake) Found directory ./physics, searching it
+
+2020-10-1 0:22:12   INFO (../reeemake/reeemake.Reeemake) Getting all files in dir ./physics
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.Reeemake) Got dir entry ./physics/Object.cpp
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.Reeemake) Got dir entry ./physics/Field.cpp
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.Reeemake) Got dir entry ./physics/constants.h
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.Reeemake) Got dir entry ./physics/GravField.h
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.Reeemake) Got dir entry ./physics/GravField.cpp
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.Reeemake) Got dir entry ./physics/Object.h
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.Reeemake) Got dir entry ./physics/Field.h
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.Reeemake) Found directory ./data, searching it
+
+2020-10-1 0:22:12   INFO (../reeemake/reeemake.Reeemake) Getting all files in dir ./data
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.Reeemake) Got dir entry ./data/logs
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.Reeemake) Got dir entry ./data/models
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.Reeemake) Found directory ./3d, searching it
+
+2020-10-1 0:22:12   INFO (../reeemake/reeemake.Reeemake) Getting all files in dir ./3d
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.Reeemake) Got dir entry ./3d/3DBody.h
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.Reeemake) Got dir entry ./3d/3DBody.cpp
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.Reeemake) Found directory ./serialization, searching it
+
+2020-10-1 0:22:12   INFO (../reeemake/reeemake.Reeemake) Getting all files in dir ./serialization
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.Reeemake) Got dir entry ./serialization/BinaryCreator.cpp
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.Reeemake) Got dir entry ./serialization/BinaryCreator.h
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.Reeemake) Got dir entry ./serialization/BinaryShared.cpp
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.Reeemake) Got dir entry ./serialization/BinaryShared.h
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.Reeemake) Got dir entry ./serialization/BinaryReader.cpp
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.Reeemake) Got dir entry ./serialization/BinaryReader.h
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.Reeemake) Found directory ./build, searching it
+
+2020-10-1 0:22:12   INFO (../reeemake/reeemake.Reeemake) Getting all files in dir ./build
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.Reeemake) Got dir entry ./build/objects
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.Reeemake) Got dir entry ./build/generate_makefile.py
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.Reeemake) Found directory ./data/logs, searching it
+
+2020-10-1 0:22:12   INFO (../reeemake/reeemake.Reeemake) Getting all files in dir ./data/logs
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.Reeemake) Got dir entry ./data/logs/2020-8-29 16:44:10
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.Reeemake) Got dir entry ./data/logs/2020-8-30 8:53:39
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.Reeemake) Got dir entry ./data/logs/2020-8-26 20:58:38
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.Reeemake) Got dir entry ./data/logs/2020-9-1 17:36:24
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.Reeemake) Got dir entry ./data/logs/2020-8-27 12:33:46
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.Reeemake) Got dir entry ./data/logs/2020-8-27 12:45:22
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.Reeemake) Got dir entry ./data/logs/2020-8-29 20:48:57
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.Reeemake) Got dir entry ./data/logs/2020-8-27 2:3:25
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.Reeemake) Got dir entry ./data/logs/2020-8-29 12:44:2
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.Reeemake) Got dir entry ./data/logs/2020-8-30 8:52:21
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.Reeemake) Got dir entry ./data/logs/2020-8-27 1:40:49
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.Reeemake) Got dir entry ./data/logs/2020-8-27 12:11:21
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.Reeemake) Got dir entry ./data/logs/2020-8-27 12:4:11
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.Reeemake) Got dir entry ./data/logs/2020-8-27 1:41:10
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.Reeemake) Got dir entry ./data/logs/2020-8-27 12:14:43
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.Reeemake) Got dir entry ./data/logs/2020-8-29 20:17:50
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.Reeemake) Got dir entry ./data/logs/2020-8-29 13:24:36
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.Reeemake) Got dir entry ./data/logs/2020-8-29 19:56:7
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.Reeemake) Got dir entry ./data/logs/2020-8-27 12:35:36
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.Reeemake) Got dir entry ./data/logs/2020-8-26 19:56:39
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.Reeemake) Got dir entry ./data/logs/2020-8-26 20:2:56
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.Reeemake) Got dir entry ./data/logs/2020-8-29 20:59:11
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.Reeemake) Got dir entry ./data/logs/2020-8-29 19:54:53
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.Reeemake) Got dir entry ./data/logs/2020-8-27 11:33:31
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.Reeemake) Got dir entry ./data/logs/2020-8-29 20:49:57
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.Reeemake) Got dir entry ./data/logs/2020-8-30 17:16:29
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.Reeemake) Got dir entry ./data/logs/2020-8-27 12:0:54
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.Reeemake) Got dir entry ./data/logs/2020-8-30 21:29:26
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.Reeemake) Got dir entry ./data/logs/2020-8-27 13:28:15
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.Reeemake) Got dir entry ./data/logs/2020-8-29 19:30:34
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.Reeemake) Got dir entry ./data/logs/2020-8-29 16:45:35
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.Reeemake) Got dir entry ./data/logs/2020-8-27 12:48:53
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.Reeemake) Got dir entry ./data/logs/2020-8-25 9:31:13
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.Reeemake) Got dir entry ./data/logs/2020-8-29 13:2:6
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.Reeemake) Got dir entry ./data/logs/2020-8-29 20:56:56
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.Reeemake) Got dir entry ./data/logs/2020-8-29 11:34:29
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.Reeemake) Got dir entry ./data/logs/2020-8-30 13:20:7
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.Reeemake) Got dir entry ./data/logs/2020-8-25 0:41:21
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.Reeemake) Got dir entry ./data/logs/2020-8-26 20:9:54
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.Reeemake) Got dir entry ./data/logs/2020-8-27 1:39:4
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.Reeemake) Got dir entry ./data/logs/2020-9-31 2:48:32
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.Reeemake) Got dir entry ./data/logs/2020-8-26 20:4:30
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.Reeemake) Got dir entry ./data/logs/2020-8-27 1:49:1
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.Reeemake) Got dir entry ./data/logs/2020-8-30 20:51:10
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.Reeemake) Got dir entry ./data/logs/2020-8-28 18:41:25
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.Reeemake) Got dir entry ./data/logs/2020-8-26 19:51:51
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.Reeemake) Got dir entry ./data/logs/2020-8-26 21:10:48
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.Reeemake) Got dir entry ./data/logs/2020-8-29 13:21:29
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.Reeemake) Got dir entry ./data/logs/2020-8-30 21:25:17
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.Reeemake) Got dir entry ./data/logs/2020-8-30 20:52:44
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.Reeemake) Got dir entry ./data/logs/2020-8-30 20:54:22
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.Reeemake) Got dir entry ./data/logs/2020-8-24 23:54:40
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.Reeemake) Got dir entry ./data/logs/2020-8-26 20:6:35
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.Reeemake) Got dir entry ./data/logs/2020-8-27 1:36:37
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.Reeemake) Got dir entry ./data/logs/2020-8-27 12:44:39
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.Reeemake) Got dir entry ./data/logs/2020-9-1 12:39:42
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.Reeemake) Got dir entry ./data/logs/2020-8-29 20:16:12
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.Reeemake) Got dir entry ./data/logs/2020-8-25 11:11:9
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.Reeemake) Got dir entry ./data/logs/2020-8-27 2:32:37
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.Reeemake) Got dir entry ./data/logs/2020-8-30 17:0:12
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.Reeemake) Got dir entry ./data/logs/2020-8-30 16:51:13
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.Reeemake) Got dir entry ./data/logs/2020-8-27 12:34:28
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.Reeemake) Got dir entry ./data/logs/2020-8-29 21:6:24
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.Reeemake) Got dir entry ./data/logs/2020-8-29 21:9:39
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.Reeemake) Got dir entry ./data/logs/2020-8-29 16:40:11
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.Reeemake) Got dir entry ./data/logs/2020-8-26 20:0:8
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.Reeemake) Got dir entry ./data/logs/2020-8-27 11:35:4
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.Reeemake) Got dir entry ./data/logs/2020-8-26 21:17:27
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.Reeemake) Got dir entry ./data/logs/2020-8-29 11:32:10
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.Reeemake) Got dir entry ./data/logs/2020-8-28 18:32:4
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.Reeemake) Got dir entry ./data/logs/2020-8-29 21:11:41
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.Reeemake) Got dir entry ./data/logs/2020-8-29 19:34:31
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.Reeemake) Got dir entry ./data/logs/2020-8-29 16:41:1
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.Reeemake) Got dir entry ./data/logs/2020-8-29 21:9:33
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.Reeemake) Got dir entry ./data/logs/2020-8-24 23:55:23
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.Reeemake) Got dir entry ./data/logs/2020-8-30 21:21:26
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.Reeemake) Got dir entry ./data/logs/2020-8-29 13:22:41
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.Reeemake) Got dir entry ./data/logs/2020-8-26 18:34:35
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.Reeemake) Got dir entry ./data/logs/2020-8-30 16:57:19
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.Reeemake) Got dir entry ./data/logs/2020-8-30 8:41:1
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.Reeemake) Got dir entry ./data/logs/2020-8-27 12:51:3
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.Reeemake) Got dir entry ./data/logs/2020-8-30 8:26:25
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.Reeemake) Got dir entry ./data/logs/2020-8-26 18:34:56
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.Reeemake) Got dir entry ./data/logs/2020-8-27 13:28:43
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.Reeemake) Got dir entry ./data/logs/2020-9-1 10:27:50
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.Reeemake) Got dir entry ./data/logs/2020-8-27 1:39:40
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.Reeemake) Got dir entry ./data/logs/2020-8-26 20:8:22
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.Reeemake) Got dir entry ./data/logs/2020-8-27 13:14:42
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.Reeemake) Got dir entry ./data/logs/2020-8-29 21:8:28
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.Reeemake) Got dir entry ./data/logs/2020-8-27 2:4:30
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.Reeemake) Got dir entry ./data/logs/2020-8-29 19:46:21
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.Reeemake) Got dir entry ./data/logs/2020-8-27 12:9:4
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.Reeemake) Got dir entry ./data/logs/2020-8-27 2:31:1
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.Reeemake) Got dir entry ./data/logs/2020-8-27 2:31:26
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.Reeemake) Got dir entry ./data/logs/2020-8-29 13:23:56
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.Reeemake) Got dir entry ./data/logs/2020-8-27 2:18:27
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.Reeemake) Got dir entry ./data/logs/2020-8-29 13:24:45
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.Reeemake) Got dir entry ./data/logs/2020-8-26 21:22:39
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.Reeemake) Got dir entry ./data/logs/2020-8-27 12:43:13
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.Reeemake) Got dir entry ./data/logs/2020-8-27 2:4:12
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.Reeemake) Got dir entry ./data/logs/2020-8-30 21:11:45
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.Reeemake) Got dir entry ./data/logs/2020-8-29 21:12:15
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.Reeemake) Got dir entry ./data/logs/2020-8-30 21:11:48
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.Reeemake) Got dir entry ./data/logs/2020-8-30 20:25:35
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.Reeemake) Got dir entry ./data/logs/2020-8-29 20:57:49
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.Reeemake) Got dir entry ./data/logs/2020-8-26 19:54:17
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.Reeemake) Got dir entry ./data/logs/2020-8-27 2:13:9
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.Reeemake) Got dir entry ./data/logs/2020-8-27 2:16:45
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.Reeemake) Got dir entry ./data/logs/2020-8-30 17:1:2
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.Reeemake) Got dir entry ./data/logs/2020-8-26 18:35:19
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.Reeemake) Got dir entry ./data/logs/2020-8-29 20:5:39
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.Reeemake) Got dir entry ./data/logs/2020-8-27 2:11:45
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.Reeemake) Got dir entry ./data/logs/2020-8-29 12:45:16
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.Reeemake) Got dir entry ./data/logs/2020-8-29 13:3:21
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.Reeemake) Got dir entry ./data/logs/2020-8-30 8:51:9
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.Reeemake) Got dir entry ./data/logs/2020-8-27 1:46:51
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.Reeemake) Got dir entry ./data/logs/2020-8-27 2:2:52
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.Reeemake) Got dir entry ./data/logs/2020-8-29 19:55:48
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.Reeemake) Got dir entry ./data/logs/120-8-24 23:52:23
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.Reeemake) Got dir entry ./data/logs/2020-8-30 8:54:57
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.Reeemake) Got dir entry ./data/logs/2020-8-29 19:54:7
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.Reeemake) Got dir entry ./data/logs/2020-8-29 12:44:28
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.Reeemake) Got dir entry ./data/logs/2020-8-29 19:58:54
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.Reeemake) Got dir entry ./data/logs/2020-8-29 19:45:0
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.Reeemake) Got dir entry ./data/logs/2020-8-29 20:54:27
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.Reeemake) Got dir entry ./data/logs/2020-8-30 21:11:40
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.Reeemake) Got dir entry ./data/logs/2020-8-27 12:47:1
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.Reeemake) Got dir entry ./data/logs/2020-8-30 16:56:59
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.Reeemake) Got dir entry ./data/logs/2020-8-29 20:28:59
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.Reeemake) Got dir entry ./data/logs/2020-8-27 2:8:56
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.Reeemake) Got dir entry ./data/logs/2020-8-30 13:20:13
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.Reeemake) Got dir entry ./data/logs/2020-8-29 13:1:37
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.Reeemake) Got dir entry ./data/logs/2020-8-30 16:58:22
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.Reeemake) Got dir entry ./data/logs/2020-8-26 18:30:23
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.Reeemake) Got dir entry ./data/logs/2020-8-26 21:1:14
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.Reeemake) Got dir entry ./data/logs/2020-8-29 19:57:55
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.Reeemake) Got dir entry ./data/logs/2020-8-29 13:0:34
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.Reeemake) Got dir entry ./data/logs/2020-8-29 20:10:0
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.Reeemake) Got dir entry ./data/logs/2020-8-30 8:49:50
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.Reeemake) Got dir entry ./data/logs/2020-8-27 1:44:33
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.Reeemake) Got dir entry ./data/logs/2020-8-29 12:43:24
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.Reeemake) Found directory ./data/models, searching it
+
+2020-10-1 0:22:12   INFO (../reeemake/reeemake.Reeemake) Getting all files in dir ./data/models
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.Reeemake) Got dir entry ./data/models/test.model
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.Reeemake) Found directory ./build/objects, searching it
+
+2020-10-1 0:22:12   INFO (../reeemake/reeemake.Reeemake) Getting all files in dir ./build/objects
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.Reeemake) Found c++ source file ./main.cpp
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.Reeemake) Found c++ source file ./control/Model.cpp
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.Reeemake) Found c++ source file ./control/logging.cpp
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.Reeemake) Found c++ source file ./control/GenericBaseClass.cpp
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.Reeemake) Found c++ source file ./control/ObjectHandler.cpp
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.Reeemake) Found c++ source file ./physics/Object.cpp
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.Reeemake) Found c++ source file ./physics/Field.cpp
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.Reeemake) Found c++ source file ./physics/GravField.cpp
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.Reeemake) Found c++ source file ./3d/3DBody.cpp
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.Reeemake) Found c++ source file ./serialization/BinaryCreator.cpp
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.Reeemake) Found c++ source file ./serialization/BinaryShared.cpp
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.Reeemake) Found c++ source file ./serialization/BinaryReader.cpp
+
+2020-10-1 0:22:12   INFO (../reeemake/reeemake.Reeemake) Checking whether to build ./main.cpp
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.Reeemake) This source file is new, adding it to the build list
+
+2020-10-1 0:22:12   INFO (../reeemake/reeemake.Reeemake) Checking whether to build ./control/Model.cpp
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.Reeemake) This source file is new, adding it to the build list
+
+2020-10-1 0:22:12   INFO (../reeemake/reeemake.Reeemake) Checking whether to build ./control/logging.cpp
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.Reeemake) This source file is new, adding it to the build list
+
+2020-10-1 0:22:12   INFO (../reeemake/reeemake.Reeemake) Checking whether to build ./control/GenericBaseClass.cpp
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.Reeemake) This source file is new, adding it to the build list
+
+2020-10-1 0:22:12   INFO (../reeemake/reeemake.Reeemake) Checking whether to build ./control/ObjectHandler.cpp
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.Reeemake) This source file is new, adding it to the build list
+
+2020-10-1 0:22:12   INFO (../reeemake/reeemake.Reeemake) Checking whether to build ./physics/Object.cpp
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.Reeemake) This source file is new, adding it to the build list
+
+2020-10-1 0:22:12   INFO (../reeemake/reeemake.Reeemake) Checking whether to build ./physics/Field.cpp
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.Reeemake) This source file is new, adding it to the build list
+
+2020-10-1 0:22:12   INFO (../reeemake/reeemake.Reeemake) Checking whether to build ./physics/GravField.cpp
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.Reeemake) This source file is new, adding it to the build list
+
+2020-10-1 0:22:12   INFO (../reeemake/reeemake.Reeemake) Checking whether to build ./3d/3DBody.cpp
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.Reeemake) This source file is new, adding it to the build list
+
+2020-10-1 0:22:12   INFO (../reeemake/reeemake.Reeemake) Checking whether to build ./serialization/BinaryCreator.cpp
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.Reeemake) This source file is new, adding it to the build list
+
+2020-10-1 0:22:12   INFO (../reeemake/reeemake.Reeemake) Checking whether to build ./serialization/BinaryShared.cpp
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.Reeemake) This source file is new, adding it to the build list
+
+2020-10-1 0:22:12   INFO (../reeemake/reeemake.Reeemake) Checking whether to build ./serialization/BinaryReader.cpp
+
+2020-10-1 0:22:12   DEBUG (../reeemake/reeemake.Reeemake) This source file is new, adding it to the build list
+
+2020-10-1 0:22:12   INFO (../reeemake/reeemake.Reeemake) Compiling objects
+
+2020-10-1 0:22:12   INFO (../reeemake/reeemake.Reeemake) Running system command g++-8 -c ./main.cpp -I . -Wall -std=c++17 -o ./.reeemake/default/build/main.o -Wno-sign-compare -Wno-return-type
+
+2020-10-1 0:22:13   INFO (../reeemake/reeemake.Reeemake) Running system command g++-8 -c ./control/Model.cpp -I . -Wall -std=c++17 -o ./.reeemake/default/build/Model.o -Wno-sign-compare -Wno-return-type
+
+2020-10-1 0:22:13   INFO (../reeemake/reeemake.Reeemake) Running system command g++-8 -c ./control/logging.cpp -I . -Wall -std=c++17 -o ./.reeemake/default/build/logging.o -Wno-sign-compare -Wno-return-type
+
+2020-10-1 0:22:14   INFO (../reeemake/reeemake.Reeemake) Running system command g++-8 -c ./control/GenericBaseClass.cpp -I . -Wall -std=c++17 -o ./.reeemake/default/build/GenericBaseClass.o -Wno-sign-compare -Wno-return-type
+
+2020-10-1 0:22:14   INFO (../reeemake/reeemake.Reeemake) Running system command g++-8 -c ./control/ObjectHandler.cpp -I . -Wall -std=c++17 -o ./.reeemake/default/build/ObjectHandler.o -Wno-sign-compare -Wno-return-type
+
+2020-10-1 0:22:15   INFO (../reeemake/reeemake.Reeemake) Running system command g++-8 -c ./physics/Object.cpp -I . -Wall -std=c++17 -o ./.reeemake/default/build/Object.o -Wno-sign-compare -Wno-return-type
+
+2020-10-1 0:22:15   INFO (../reeemake/reeemake.Reeemake) Running system command g++-8 -c ./physics/Field.cpp -I . -Wall -std=c++17 -o ./.reeemake/default/build/Field.o -Wno-sign-compare -Wno-return-type
+
+2020-10-1 0:22:16   INFO (../reeemake/reeemake.Reeemake) Running system command g++-8 -c ./physics/GravField.cpp -I . -Wall -std=c++17 -o ./.reeemake/default/build/GravField.o -Wno-sign-compare -Wno-return-type
+
+2020-10-1 0:22:16   INFO (../reeemake/reeemake.Reeemake) Running system command g++-8 -c ./3d/3DBody.cpp -I . -Wall -std=c++17 -o ./.reeemake/default/build/3DBody.o -Wno-sign-compare -Wno-return-type
+
+2020-10-1 0:22:17   INFO (../reeemake/reeemake.Reeemake) Running system command g++-8 -c ./serialization/BinaryCreator.cpp -I . -Wall -std=c++17 -o ./.reeemake/default/build/BinaryCreator.o -Wno-sign-compare -Wno-return-type
+
+2020-10-1 0:22:17   INFO (../reeemake/reeemake.Reeemake) Running system command g++-8 -c ./serialization/BinaryShared.cpp -I . -Wall -std=c++17 -o ./.reeemake/default/build/BinaryShared.o -Wno-sign-compare -Wno-return-type
+
+2020-10-1 0:22:18   INFO (../reeemake/reeemake.Reeemake) Running system command g++-8 -c ./serialization/BinaryReader.cpp -I . -Wall -std=c++17 -o ./.reeemake/default/build/BinaryReader.o -Wno-sign-compare -Wno-return-type
+
+2020-10-1 0:22:19   INFO (../reeemake/reeemake.Reeemake) Building
+
+2020-10-1 0:22:19   INFO (../reeemake/reeemake.Reeemake) Running system command g++-8 ./.reeemake/default/build/main.o ./.reeemake/default/build/Model.o ./.reeemake/default/build/logging.o ./.reeemake/default/build/GenericBaseClass.o ./.reeemake/default/build/ObjectHandler.o ./.reeemake/default/build/Object.o ./.reeemake/default/build/Field.o ./.reeemake/default/build/GravField.o ./.reeemake/default/build/3DBody.o ./.reeemake/default/build/BinaryCreator.o ./.reeemake/default/build/BinaryShared.o ./.reeemake/default/build/BinaryReader.o -o ./reeemake -lstdc++fs
+
+2020-10-1 0:22:19   INFO (../reeemake/reeemake.Reeemake) Updating fileData
+
+2020-10-1 0:22:19   DEBUG (../reeemake/reeemake.Reeemake) Updating fileData for file ./main.cpp
+
+2020-10-1 0:22:19   INFO (Reeemake/SourceFile) Serializing source file ./.reeemake/default/fileData/./main.cpp.dat
+
+2020-10-1 0:22:19   DEBUG (Reeemake/SourceFile) Opening file handle
+
+2020-10-1 0:22:19   DEBUG (Reeemake/SourceFile) Adding path
+
+2020-10-1 0:22:19   DEBUG (Reeemake/SourceFile) Getting lastBuildTime
+
+2020-10-1 0:22:19   DEBUG (Reeemake/SourceFile) Adding lastBuildTime
+
+2020-10-1 0:22:19   DEBUG (Reeemake/SourceFile) Adding dependencies
+
