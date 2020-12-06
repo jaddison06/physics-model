@@ -8,7 +8,11 @@
 
 void initLogging();
 
-class Logger {
+
+void print(std::string someString);
+
+class Logger
+{
     public:
         Logger(std::string someApplication);
         Logger();

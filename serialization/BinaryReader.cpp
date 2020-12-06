@@ -1,14 +1,16 @@
 #include "serialization/BinaryReader.h"
 
-BinaryReader::BinaryReader() {
-    logger.setSender("BinaryReader");
+BinaryReader::BinaryReader()
+{
+    logger->setSender("BinaryReader");
 
-    logger.info("BinaryReader initialized");
+    logger->info("BinaryReader initialized");
 }
 
 
-void BinaryReader::ReadBinary(ObjectHandler *objectHandler, std::string fname) {
-    logger.info("Reading binary");
+void BinaryReader::ReadBinary(ObjectHandler *objectHandler, std::string fname)
+{
+    logger->info("Reading binary");
 
     std::string fpath = "./data/models/" + fname;
 
@@ -28,66 +30,72 @@ void BinaryReader::ReadBinary(ObjectHandler *objectHandler, std::string fname) {
 
     fh.close();
 
-    logger.info("Loaded data");
+    logger->info("Loaded data");
 
     std::string binData;
-    for (int i=0; i<(sizeof(bytes)/sizeof(unsigned char)); i++) {
+    for (int i=0; i<(sizeof(bytes)/sizeof(unsigned char)); i++)
+    {
         binData += makeByte(decimalToBinary(((int)bytes[i])));
     }
 
-    logger.info("Entire binary is "+binData);
+    logger->info("Entire binary is "+binData);
 
     // check ID bits
     std::string startBits = binData.substr(0, 8);
     std::string endBits = binData.substr(binData.length()-16, 16);
 
-    logger.info("First 8 bits: "+startBits);
-    logger.info("Last 16 bits: "+endBits);
+    logger->info("First 8 bits: "+startBits);
+    logger->info("Last 16 bits: "+endBits);
 
     
-    if (!(startBits == "01000101" && endBits == "0000000110100100")) {
-        logger.warning("ID bits are incorrect, file corrupt");
+    if (!(startBits == "01000101" && endBits == "0000000110100100"))
+    {
+        logger->warning("ID bits are incorrect, file corrupt");
         return;
     }
     
 
     std::string versionBits = binData.substr(8, 8);
     
-    logger.info("Version bits: "+versionBits);
+    logger->info("Version bits: "+versionBits);
     int version = binaryToDecimal(versionBits);
 
-    if (version != VERSION) {
-        logger.warning("Outdated file: file version is "+std::to_string(version)+", current version is "+std::to_string(VERSION));
+    if (version != VERSION)
+    {
+        logger->warning("Outdated file: file version is "+std::to_string(version)+", current version is "+std::to_string(VERSION));
     }
 
     // actual parsing happens here
     //
     // for new versions, add extra code while trying to
     // maintain compatibility
-    switch (version) {
-        case 1: {
+    switch (version)
+    {
+        case 1:
+        {
             // remove start, version bits
             binData = binData.substr(16, binData.length()-16);
 
             // get object count
             int objectCount = binaryToDecimal(binData.substr(0, 8));
-            logger.info("Object count is "+std::to_string(objectCount));
+            logger->info("Object count is "+std::to_string(objectCount));
 
             // startPoint is the start of the object
             int startPoint = 8;
 
             // fun fun fun
-            for (int i=0; i<objectCount; i++) {
-                logger.info("Deserializing object #"+std::to_string(i));
+            for (int i=0; i<objectCount; i++)
+            {
+                logger->info("Deserializing object #"+std::to_string(i));
 
                 int objectSize = getSize(&binData, startPoint);
-                logger.info("Object size: "+std::to_string(objectSize));
+                logger->info("Object size: "+std::to_string(objectSize));
                 
                 // get the binary data for just this object
                 // starts after size byte
                 std::string thisObject = binData.substr(startPoint + 8, objectSize);
 
-                logger.info("Object binary: "+thisObject);
+                logger->info("Object binary: "+thisObject);
 
                 startPoint += objectSize;
 
@@ -119,7 +127,7 @@ void BinaryReader::ReadBinary(ObjectHandler *objectHandler, std::string fname) {
                 shape = deserializeBodyType(thisObject.substr(cursor, itemSize));
 
 
-                objectHandler->Add(pos, vel, accel, size, mass, shape);
+                objectHandler->Add(&pos, &vel, &accel, &size, &mass, &shape);
 
                 // this could be wrong, haven't tested with multiple objecte yet so idk
                 startPoint = cursor + 8;
@@ -133,49 +141,55 @@ void BinaryReader::ReadBinary(ObjectHandler *objectHandler, std::string fname) {
 }
 
 // get item size in BITS
-int BinaryReader::getSize(std::string *binary, int startPoint) {
-    logger.info("Getting size from item "+*binary+",\nstarting at bit #"+std::to_string(startPoint));
+int BinaryReader::getSize(std::string *binary, int startPoint)
+{
+    logger->info("Getting size from item "+*binary+",\nstarting at bit #"+std::to_string(startPoint));
 
     std::string binSize = binary->substr(startPoint, 8);
-    logger.info("Size bits: "+binSize);
+    logger->info("Size bits: "+binSize);
 
     int size = binaryToDecimal(binSize);
-    logger.info("Size in bytes: "+std::to_string(size));
+    logger->info("Size in bytes: "+std::to_string(size));
 
     size *= 8;
-    logger.info("Size in bits: "+std::to_string(size));
+    logger->info("Size in bits: "+std::to_string(size));
     
     size += 8;
-    logger.info("Size in bits (inc size byte): "+std::to_string(size));
+    logger->info("Size in bits (inc size byte): "+std::to_string(size));
 
     return size;
 }
 
 
-void BinaryReader::shiftCursor(std::string *thisObject, int *cursor, int *itemSize) {
+void BinaryReader::shiftCursor(std::string *thisObject, int *cursor, int *itemSize)
+{
     *cursor += *itemSize;
     *itemSize = getSize(thisObject, *cursor);
 
 }
+
 //  all deserialize...() functions take input _WITH_ LENGTH BYTE
 // ATTACHED
-coord BinaryReader::deserializeCoord(std::string binary) {
-    logger.info("Deserializing a coord: "+binary);
+coord BinaryReader::deserializeCoord(std::string binary)
+{
+    logger->info("Deserializing a coord: "+binary);
 
     coord output;
     
     // remove length byte
     binary = binary.substr(8, binary.length()-8);
 
-    for (int i=0; i<3; i++) {
-        logger.info("Getting coord item #"+std::to_string(i+1));
+    for (int i=0; i<3; i++)
+    {
+        logger->info("Getting coord item #"+std::to_string(i+1));
         int nextLength = getSize(&binary);
-        logger.info("Item length is "+std::to_string(nextLength));
+        logger->info("Item length is "+std::to_string(nextLength));
         std::string nextValBin = binary.substr(0, nextLength);
-        logger.info("Item binary: "+nextValBin);
+        logger->info("Item binary: "+nextValBin);
 
         int nextVal = deserializeDouble(nextValBin);
-        switch(i) {
+        switch(i)
+        {
             case 0: {output.x = nextVal; break;}
             case 1: {output.y = nextVal; break;}
             case 2: {output.z = nextVal; break;}
@@ -188,10 +202,11 @@ coord BinaryReader::deserializeCoord(std::string binary) {
 }
 
 
-double BinaryReader::deserializeDouble(std::string binary) {
+double BinaryReader::deserializeDouble(std::string binary)
+{
     double output;
 
-    logger.info("Deserializing a double: " + binary);
+    logger->info("Deserializing a double: " + binary);
 
     // ditch the length byte
     binary = binary.substr(8, binary.length()-8);
@@ -224,7 +239,8 @@ double BinaryReader::deserializeDouble(std::string binary) {
     int3 = deserializeInt(binary.substr(cursor, int3Length));
 
     double decimalPart = int2;
-    for (int i=0; i < int3; i++) {
+    for (int i=0; i < int3; i++)
+    {
         decimalPart *= 0.1;
     }
 
@@ -232,17 +248,18 @@ double BinaryReader::deserializeDouble(std::string binary) {
 
     output = signDouble(&output, &sign);
 
-    logger.info("double was "+std::to_string(output));
+    logger->info("double was "+std::to_string(output));
 
     return output;
 
 }
 
-int BinaryReader::deserializeInt(std::string binary) {
+int BinaryReader::deserializeInt(std::string binary)
+{
 
     int output;
 
-    logger.info("Deserializing an int: "+binary);
+    logger->info("Deserializing an int: "+binary);
     // get rid of size byte, we don't care
     binary = binary.substr(8, binary.length()-8);
 
@@ -253,77 +270,85 @@ int BinaryReader::deserializeInt(std::string binary) {
 
     output = signInt(&unsignedData, &sign);
 
-    logger.info("Int is "+std::to_string(output));
+    logger->info("Int is "+std::to_string(output));
     return output;
 
 
 }
 
-int BinaryReader::signInt(int *unsignedData, std::string *sign) {
+int BinaryReader::signInt(int *unsignedData, std::string *sign)
+{
     int output;
 
-    if (*sign == "00000000") {
+    if (*sign == "00000000")
+    {
         // positive
-        logger.info("Int was positive");
+        logger->info("Int was positive");
         output = *unsignedData;
-    } else if (*sign == "00000001") {
+    } else if (*sign == "00000001")
+    {
         // negative
-        logger.info("Int was negative");
+        logger->info("Int was negative");
         output = 0 - *unsignedData;
-    } else {
+    } else
+    {
         // errors are entirely possible
-        logger.warning("Tried to deserialize int, signing was " + *sign);
+        logger->warning("Tried to deserialize int, signing was " + *sign);
         output = 69;
     }
 
     return output;
 }
 
-double BinaryReader::signDouble(double *unsignedData, std::string *sign) {
-    logger.info("Signing double");
+double BinaryReader::signDouble(double *unsignedData, std::string *sign)
+{
+    logger->info("Signing double");
     double output;
 
-    if (*sign == "00000000") {
+    if (*sign == "00000000")
+    {
         // positive
-        logger.info("Double was positive");
+        logger->info("Double was positive");
         output = *unsignedData;
-    } else if (*sign == "00000001") {
+    } else if (*sign == "00000001")
+    {
         // negative
-        logger.info("Double was negative");
+        logger->info("Double was negative");
         output = 0 - *unsignedData;
-    } else {
+    } else
+    {
         // errors are entirely possible
-        logger.warning("Tried to deserialize double, signing was " + *sign);
+        logger->warning("Tried to deserialize double, signing was " + *sign);
         output = 69;
     }
 
     return output;
 }
 
-bodyType BinaryReader::deserializeBodyType(std::string binary) {
-    logger.info("Deserializing bodyType");
+bodyType BinaryReader::deserializeBodyType(std::string binary)
+{
+    logger->info("Deserializing bodyType");
 
     // remove length byte
     binary = binary.substr(8, binary.length() - 8);
 
     bodyType output;
 
-    switch(binaryToDecimal(binary)) {
-        case 0: {
+    switch(binaryToDecimal(binary))
+    {
+        case 0:
+        {
             output = cube;
-            logger.info("cube");
+            logger->info("cube");
             break;
         }
-        case 1: {
+        case 1:
+        {
             output = sphere;
-            logger.info("sphere");
+            logger->info("sphere");
             break;
         }
     }
 
     return output;
-}
-
-void BinaryReader::inheritedDestroy() {
-
 }

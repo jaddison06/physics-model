@@ -24,9 +24,10 @@ int main() {
     // instantiating the Model as it has its own Logger object
     // that won't work without it
     initLogging();
+    Model *model = new Model;
+    model->Start(&exitFunc);
 
-    Model model;
-    model.Start(&exitFunc);
+    delete model;
 
     return 0;
 }

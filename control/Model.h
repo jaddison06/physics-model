@@ -5,23 +5,23 @@
 #include "serialization/BinaryCreator.h"
 #include "serialization/BinaryReader.h"
 
-// something here is causing a phat segfault
+#include <SDL/SDL.h>
 
 class Model: public GenericBaseClass {
     public:
         Model();
+        ~Model();
 
         void Start( bool (*exitFunc)(Logger *) );
     private:
         bool isRunning;
         void Tick();
-        void inheritedDestroy();
 
         // this might have to be public so we 
         // can pass it to the binaryCreator
-        ObjectHandler objectHandler;
+        ObjectHandler *objectHandler;
 
-        BinaryCreator binaryCreator;
-        BinaryReader binaryReader;
+        BinaryCreator *binaryCreator;
+        BinaryReader *binaryReader;
 
 };

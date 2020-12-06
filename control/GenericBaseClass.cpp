@@ -1,7 +1,15 @@
 #include "control/GenericBaseClass.h"
 
-void GenericBaseClass::Destroy() {
-    logger.info("destroying");
-    inheritedDestroy();
-    logger.destroy();
+
+GenericBaseClass::GenericBaseClass()
+{
+    logger = new Logger;
+}
+
+GenericBaseClass::~GenericBaseClass()
+{
+    logger->info("destroying");
+    logger->destroy();
+
+    delete logger;
 }

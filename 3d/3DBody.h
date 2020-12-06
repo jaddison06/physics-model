@@ -7,12 +7,17 @@
 #include <math.h>
 
 // it's slightly sexier this way imo
-struct coord {
+struct coord
+{
     double x, y, z;
 };
 
 // add more later
-enum bodyType {sphere, cube};
+enum bodyType
+{
+    sphere,
+    cube
+};
 
 
 // random stuff from 3DBody.cpp that i might want to reuse at some point
@@ -25,9 +30,11 @@ void addCoords(coord *a, coord *b);
 //
 // it's chill cause we don't really use this, it's
 // basically just gonna get extended by other stuff
-class ThreeDBody: public GenericBaseClass {
+class ThreeDBody: public GenericBaseClass
+{
     public:
         ThreeDBody();
+        ~ThreeDBody();
 
         bool containsPoint(coord *coords);
 
@@ -35,12 +42,12 @@ class ThreeDBody: public GenericBaseClass {
         void removeTag(std::string tag);
         bool hasTag(std::string tag);
 
-        coord location;
-        bodyType shape;
-        double size;
+        coord *location;
+        bodyType *shape;
+        double *size;
 
     protected:
-        std::vector<std::string> tags;
+        std::vector<std::string> *tags;
 
 
 };

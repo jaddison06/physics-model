@@ -4,7 +4,8 @@
 #include "control/ObjectHandler.h"
 #include <sys/stat.h>
 
-class BinaryReader: public GenericBaseClass {
+class BinaryReader: public GenericBaseClass
+{
     public:
         BinaryReader();
 
@@ -21,6 +22,4 @@ class BinaryReader: public GenericBaseClass {
 
         int signInt(int *unsignedData, std::string *sign);
         double signDouble(double *unsignedData, std::string *sign);
-
-        void inheritedDestroy();
 };

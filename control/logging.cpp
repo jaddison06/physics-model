@@ -6,14 +6,23 @@
 std::ofstream logfile;
 std::string fname;
 
+
+// print and flush
+void print(std::string someString)
+{
+    std::cout << someString << std::endl;
+}
+
 // get a tm struct
-tm *getTime() {
+tm *getTime()
+{
     time_t rawTime = time(0);
     return localtime(&rawTime);
 }
 
 // take a tm and return a beautified string
-std::string formatTime(tm *someTime) {
+std::string formatTime(tm *someTime)
+{
     return std::to_string(someTime->tm_year + 1900) + "-" + std::to_string(someTime->tm_mon) + "-" + std::to_string(someTime->tm_mday) + " " + std::to_string(someTime->tm_hour) + ":" + std::to_string(someTime->tm_min) + ":" + std::to_string(someTime->tm_sec);
 }
 
@@ -25,7 +34,8 @@ std::string formatTime(tm *someTime) {
 // it won't show up at build time
 //
 // only runtime
-void initLogging() {
+void initLogging()
+{
     tm *startTime = getTime();
 
     // create the logs folder, if it already exists this will hopefully just fail silently (?)
@@ -38,17 +48,20 @@ void initLogging() {
 
 // called by both versions of the constructor
 // put Logger construction stuff in here
-void Logger::setup(std::string someApplication) {
+void Logger::setup(std::string someApplication)
+{
     
     setSender(someApplication);
 }
 
 // constructors
-Logger::Logger(std::string someApplication) {
+Logger::Logger(std::string someApplication)
+{
     setup(someApplication);
 }
 
-Logger::Logger() {
+Logger::Logger()
+{
     setup("");
 }
 
@@ -56,7 +69,8 @@ Logger::Logger() {
 //
 // you can also do this via the constructor, I recommend
 // inherited classes use setSender but standalones can be implicit
-void Logger::setSender(std::string someApplication) {
+void Logger::setSender(std::string someApplication)
+{
     sender = someApplication;
 }
 
@@ -64,17 +78,20 @@ void Logger::setSender(std::string someApplication) {
 // of the same class
 //
 // this one can't be done from the constructor. this is probably a design choice
-void Logger::setID(std::string someID) {
+void Logger::setID(std::string someID)
+{
     ID = someID;
 }
 
 // called by someone, hopefully, when they're finished with the logger
-void Logger::destroy() {
+void Logger::destroy()
+{
     //logfile.close();
 }
 
 // wrappers for various log levels
-void Logger::debug(std::string msg) {
+void Logger::debug(std::string msg)
+{
     writeLog("DEBUG", &msg);
 }
 
@@ -89,15 +106,17 @@ void Logger::warning(std::string msg)
 }
 
 // format a log entry
-std::string Logger::fmtLog(std::string *level, std::string *msg) {
+std::string Logger::fmtLog(std::string *level, std::string *msg)
+{
     tm *logTime = getTime();
-
+    
     // make id look slightly prettier
     std::string fmtID = "";
     if (ID != "")
     {
         fmtID = " " + ID;
     }
+
 
     return formatTime(logTime) + "   " + *level + " (" + sender + fmtID + ") " + *msg + "\n\n";
 }
@@ -108,9 +127,10 @@ std::string Logger::fmtLog(std::string *level, std::string *msg) {
 // i flush the logfile here to make sure that
 // shit doesn't just hang around in the buffer when my code
 // inevitably crashes at runtime
-void Logger::writeLog(std::string level, std::string *msg) {    
+void Logger::writeLog(std::string level, std::string *msg)
+{
     std::string output = fmtLog(&level, msg);
-    //std::cout << output;
+    //std::cout << output << std::endl;
     logfile << output;
 
     logfile.flush();

@@ -3,7 +3,8 @@
 #include "3d/3DBody.h"
 #include <vector>
 
-class Field: public ThreeDBody {
+class Field: public ThreeDBody
+{
     public:
         Field();
 

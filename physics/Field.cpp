@@ -1,10 +1,12 @@
 #include "physics/Field.h"
 
-Field::Field() {
-    logger.setSender("Field");
+Field::Field()
+{
+    logger->setSender("Field");
     addTag("field");
 
-    shape = sphere;
+    auto temp = sphere;
+    shape = &temp;
 
-    logger.info("Field initialized");
+    logger->info("Field initialized");
 }

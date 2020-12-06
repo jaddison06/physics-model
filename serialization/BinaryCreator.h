@@ -4,7 +4,8 @@
 #include "control/ObjectHandler.h"
 #include "serialization/BinaryShared.h"
 
-class BinaryCreator: public GenericBaseClass {
+class BinaryCreator: public GenericBaseClass
+{
     public:
         BinaryCreator();
 
@@ -26,8 +27,6 @@ class BinaryCreator: public GenericBaseClass {
 
         std::string binaryToString(std::string binary);
         void writeToFile(std::string chars, std::string fname);
-
-        void inheritedDestroy();
 
 
 };

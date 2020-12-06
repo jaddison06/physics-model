@@ -4,17 +4,16 @@
 #include "physics/constants.h"
 #include <math.h>
 
-class GravField: public Field {
+class GravField: public Field
+{
     public:
         GravField();
-        void init(double ownerMass);
+        void init(double *ownerMass);
         
         double calcFieldStrength(coord *point, std::vector<double> *extraData);
 
     private:
-        double bodyMass;
-
-        void inheritedDestroy();
+        double *bodyMass;
 
         
 };
