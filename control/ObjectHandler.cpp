@@ -7,7 +7,7 @@
 
 ObjectHandler::ObjectHandler()
 {
-    objects = new std::vector<Object>;
+    objects = *(new std::vector<Object>);
 
     logger->setSender("ObjectHandler");
 
@@ -16,22 +16,22 @@ ObjectHandler::ObjectHandler()
 
 ObjectHandler::~ObjectHandler()
 {
-    delete objects;
+    //delete objects;
 }
 
 void ObjectHandler::Tick(double tickTime)
 {
     printf("oh tick\n");
     logger->info("ticking");
-    for (int i=0; i<objects->size(); i++)
+    for (int i=0; i<objects.size(); i++)
     {
-        objects->at(i).Tick(tickTime);
+        objects[i].Tick(tickTime);
     }
 }
 
 void ObjectHandler::Add(coord *pos, coord *vel, coord *accel, double *size, double *mass, bodyType *shape)
 {
-    auto temp = std::to_string(objects->size());
+    auto temp = std::to_string(objects.size());
     std::string *ID = &temp;
     
     Object object(pos, size, mass, shape, ID);
@@ -39,5 +39,5 @@ void ObjectHandler::Add(coord *pos, coord *vel, coord *accel, double *size, doub
     object.velocity = *vel;
     object.acceleration = *accel;
 
-    objects->push_back(object);
+    objects.push_back(object);
 }
