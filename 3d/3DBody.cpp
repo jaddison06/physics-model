@@ -12,8 +12,8 @@ ThreeDBody::ThreeDBody()
 {
     tags = new std::vector<std::string>;
 
-    logger->setSender("ThreeDBody");
-    logger->info("ThreeDBody initialized");
+    logger.setSender("ThreeDBody");
+    logger.info("ThreeDBody initialized");
 }
 
 ThreeDBody::~ThreeDBody()
@@ -26,10 +26,10 @@ void ThreeDBody::addTag(std::string tag)
 {
     if (hasTag(tag))
     {
-        logger->warning("tried to add tag "+tag+" but we already have it");
+        logger.warning("tried to add tag "+tag+" but we already have it");
     } else
     {
-        logger->info("adding tag "+tag);
+        logger.info("adding tag "+tag);
         tags->push_back(tag);
     }
 }
@@ -38,17 +38,17 @@ void ThreeDBody::removeTag(std::string tag)
 {
     if (!hasTag(tag))
     {
-        logger->warning("tried to remove tag "+tag+" but we don't have it");
+        logger.warning("tried to remove tag "+tag+" but we don't have it");
     } else
     {
-        logger->info("removing tag "+tag);
+        logger.info("removing tag "+tag);
         tags->erase(std::remove(tags->begin(), tags->end(), tag), tags->end());
     }
 }
 
 bool ThreeDBody::hasTag(std::string tag)
 {
-    logger->info("checking for tag "+tag);
+    logger.info("checking for tag "+tag);
     bool tagFound = false;
     for (int i=0; i<tags->size(); i++)
     {
@@ -60,10 +60,10 @@ bool ThreeDBody::hasTag(std::string tag)
     }
     if (tagFound)
     {
-        logger->info("the tag was found");
+        logger.info("the tag was found");
     } else
     {
-        logger->info("the tag was not found");
+        logger.info("the tag was not found");
     }
     return tagFound;
 }

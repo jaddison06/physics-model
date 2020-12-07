@@ -2,15 +2,15 @@
 
 BinaryCreator::BinaryCreator()
 {
-    logger->setSender("BinaryCreator");
+    logger.setSender("BinaryCreator");
 
-    logger->info("BinaryCreator initialized");
+    logger.info("BinaryCreator initialized");
 }
 
 
 void BinaryCreator::CreateBinary(ObjectHandler *objectHandler, std::string fname)
 {
-    logger->info("Creating a binary");
+    logger.info("Creating a binary");
 
     std::string binData = createBinData(objectHandler);
     std::string chars = binaryToString(binData);
@@ -21,10 +21,10 @@ void BinaryCreator::CreateBinary(ObjectHandler *objectHandler, std::string fname
 
 std::string BinaryCreator::createBinData(ObjectHandler *objectHandler)
 {
-    logger->info("Creating binary data");
+    logger.info("Creating binary data");
 
     std::string output = "";
-    int objectCount = objectHandler->objects->size();
+    int objectCount = objectHandler->objects.size();
 
     // start ID bits
     output += "01000101";
@@ -36,11 +36,11 @@ std::string BinaryCreator::createBinData(ObjectHandler *objectHandler)
     output += makeByte(decimalToBinary(objectCount));
 
     // objects
-    logger->info("Object count is "+std::to_string(objectCount));
+    logger.info("Object count is "+std::to_string(objectCount));
     for (int i=0; i<objectCount; i++)
     {
-        logger->info("Serializing object #"+std::to_string(i));
-        output += serializeObject(&(*objectHandler->objects)[i]);
+        logger.info("Serializing object #"+std::to_string(i));
+        output += serializeObject(&(objectHandler->objects)[i]);
     }
 
     // end ID bits
@@ -53,7 +53,7 @@ std::string BinaryCreator::createBinData(ObjectHandler *objectHandler)
 
 std::string BinaryCreator::serializeObject(Object *object)
 {
-    logger->info("serializing object");
+    logger.info("serializing object");
 
     std::string output = "";
 
@@ -66,7 +66,7 @@ std::string BinaryCreator::serializeObject(Object *object)
 
     addLengthByte(&output);
 
-    logger->info("object binary: "+output);
+    logger.info("object binary: "+output);
 
     return output;
 
@@ -75,22 +75,22 @@ std::string BinaryCreator::serializeObject(Object *object)
 // assumes length is already a multiple of 8
 void BinaryCreator::addLengthByte(std::string *binary)
 {
-    logger->info("Adding a length byte to binary "+*binary);
+    logger.info("Adding a length byte to binary "+*binary);
     std::string lengthByte = makeByte(decimalToBinary((binary->length() / 8)));
 
     // if we ever need to extend the length byte we're told about it
     if (lengthByte.length() > 8) {
-        logger->warning("Length byte is "+lengthByte+", has length "+std::to_string(lengthByte.length()));
+        logger.warning("Length byte is "+lengthByte+", has length "+std::to_string(lengthByte.length()));
     }
 
     *binary = lengthByte + *binary;
-    logger->info("New binary: "+*binary);
+    logger.info("New binary: "+*binary);
     return;
 }
 
 std::string BinaryCreator::serializeCoord(coord *coords)
 {
-    logger->info("Serializing a coord");
+    logger.info("Serializing a coord");
 
     std::string x = serializeDouble(&(coords->x));
     std::string y = serializeDouble(&(coords->y));
@@ -100,7 +100,7 @@ std::string BinaryCreator::serializeCoord(coord *coords)
 
     addLengthByte(&output);
 
-    logger->info("Coord binary: "+output);
+    logger.info("Coord binary: "+output);
 
     return output;
 }
@@ -110,7 +110,7 @@ std::string BinaryCreator::serializeCoord(coord *coords)
 // floating point algorithm?? TODO: research floating points
 std::string BinaryCreator::serializeDouble(double *someDouble)
 {
-    logger->info("Serializing a double: "+std::to_string(*someDouble));
+    logger.info("Serializing a double: "+std::to_string(*someDouble));
     std::string output;
 
     // ok first sign it
@@ -125,7 +125,7 @@ std::string BinaryCreator::serializeDouble(double *someDouble)
         output += "00000001";
     }
 
-    logger->info("Signed double, is now "+output);
+    logger.info("Signed double, is now "+output);
 
     // ok now convert it into the int bit and the decimal bit
     int intBit = (int)floor(*someDouble);
@@ -154,7 +154,7 @@ std::string BinaryCreator::serializeDouble(double *someDouble)
 
     addLengthByte(&output);
 
-    logger->info("Double binary: "+output);
+    logger.info("Double binary: "+output);
 
     return output;
 
@@ -162,16 +162,16 @@ std::string BinaryCreator::serializeDouble(double *someDouble)
 
 std::string BinaryCreator::serializeInt(int *someInt)
 {
-    logger->info("Serializing int: "+std::to_string(*someInt));
+    logger.info("Serializing int: "+std::to_string(*someInt));
     std::string output;
 
     // sign
-    logger->info("Signing int");
+    logger.info("Signing int");
     if (*someInt >= 0) {
-        logger->info("Positive");
+        logger.info("Positive");
         output += "00000000";
     } else {
-        logger->info("Negative");
+        logger.info("Negative");
         output += "00000001";
     }
 
@@ -182,7 +182,7 @@ std::string BinaryCreator::serializeInt(int *someInt)
 
     addLengthByte(&output);
 
-    logger->info("Int binary: "+output);
+    logger.info("Int binary: "+output);
 
     return output;
 }
@@ -214,15 +214,15 @@ std::string BinaryCreator::serializeBodyType(bodyType *bType)
 // convert binary string to writable string of chars
 std::string BinaryCreator::binaryToString(std::string binary)
 {
-    logger->info("Converting binary "+binary+" to a string");
+    logger.info("Converting binary "+binary+" to a string");
 
     // first, convert the binary into bytes
     std::vector<std::string> bytes;
 
-    logger->info("Separating bytes");
+    logger.info("Separating bytes");
     for (int i = 0; i < (binary.length()) / 8; i++) {
         std::string current = binary.substr(i*8, 8);
-        logger->info("Byte "+std::to_string(i)+": "+current);
+        logger.info("Byte "+std::to_string(i)+": "+current);
 
         //std::cout << current << std::endl;
 
@@ -232,10 +232,10 @@ std::string BinaryCreator::binaryToString(std::string binary)
     // now convert those to a string of actual chars
     std::string chars;
 
-    logger->info("Converting to chars");
+    logger.info("Converting to chars");
     
     for (int i=0; i<bytes.size(); i++) {
-        logger->info("Converting byte "+std::to_string(i));
+        logger.info("Converting byte "+std::to_string(i));
         unsigned char thisChar = binaryToDecimal(bytes[i]);
 
         //logger.info("Char is "+thisChar);
@@ -259,7 +259,7 @@ std::string BinaryCreator::charToString(unsigned char chars[])
 
 void BinaryCreator::writeToFile(std::string input, std::string fname)
 {
-    logger->info("Writing string "+input+" to file "+fname);
+    logger.info("Writing string "+input+" to file "+fname);
 
     std::ofstream fh("./data/models/"+fname, std::ios::binary);
 

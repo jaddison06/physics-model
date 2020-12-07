@@ -9,9 +9,9 @@ ObjectHandler::ObjectHandler()
 {
     objects = *(new std::vector<Object>);
 
-    logger->setSender("ObjectHandler");
+    logger.setSender("ObjectHandler");
 
-    logger->info("ObjectHandler initialized");
+    logger.info("ObjectHandler initialized");
 }
 
 ObjectHandler::~ObjectHandler()
@@ -22,7 +22,7 @@ ObjectHandler::~ObjectHandler()
 void ObjectHandler::Tick(double tickTime)
 {
     printf("oh tick\n");
-    logger->info("ticking");
+    logger.info("ticking");
     for (int i=0; i<objects.size(); i++)
     {
         objects[i].Tick(tickTime);

@@ -2,10 +2,10 @@
 
 Field::Field()
 {
-    logger->setSender("Field");
+    logger.setSender("Field");
     addTag("field");
 
     shape = sphere;
 
-    logger->info("Field initialized");
+    logger.info("Field initialized");
 }

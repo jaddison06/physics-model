@@ -2,10 +2,10 @@
 
 GravField::GravField()
 {
-    logger->setSender("GravField");
+    logger.setSender("GravField");
     addTag("gravField");
 
-    logger->info("GravField initialized");
+    logger.info("GravField initialized");
 }
 
 void GravField::init(double *ownerMass)
@@ -20,7 +20,7 @@ void GravField::init(double *ownerMass)
 // extraData[0] must be the 2nd object's mass
 double GravField::calcFieldStrength(coord *point, std::vector<double> *extraData)
 {
-    logger->info("Calculating field strength");
+    logger.info("Calculating field strength");
     double m2 = (*extraData)[0];
     if (containsPoint(point))
     {

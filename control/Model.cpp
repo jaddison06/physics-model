@@ -6,9 +6,9 @@ Model::Model()
     binaryCreator = new BinaryCreator;
     binaryReader = new BinaryReader;
     
-    logger->setSender("Model");
+    logger.setSender("Model");
 
-    logger->info("Model initialized");
+    logger.info("Model initialized");
 }
 
 
@@ -22,7 +22,7 @@ Model::~Model()
 // start the Model
 void Model::Start( bool (*exitFunc)(Logger *) )
 {
-    logger->info("Model starting");
+    logger.info("Model starting");
 
     //objectHandler.Add({10, 0, 0}, {-3, 1, 2}, {0, 1, 0}, 20, 69, cube);
     binaryReader->ReadBinary(objectHandler, "test.model");
@@ -32,19 +32,19 @@ void Model::Start( bool (*exitFunc)(Logger *) )
     {
         
         // tick until we're told to stop
-        while ( !exitFunc(logger) )
+        while ( !exitFunc(&logger) )
         {
             printf("tick\n");
             Tick();
         }
-        logger->info("model complete, exiting");
+        logger.info("model complete, exiting");
 
         // testing only
         binaryCreator->CreateBinary(objectHandler, "test.model");
     
     } else
     {
-        logger->warning("Start was called but the model was already running");
+        logger.warning("Start was called but the model was already running");
     }
 }
 
@@ -53,7 +53,7 @@ void Model::Start( bool (*exitFunc)(Logger *) )
 // probably variable as we can then calculate stuff
 void Model::Tick()
 {
-    logger->info("ticking");
+    logger.info("ticking");
     // update the window here
     objectHandler->Tick(1);
 }

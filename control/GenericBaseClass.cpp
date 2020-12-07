@@ -3,13 +3,13 @@
 
 GenericBaseClass::GenericBaseClass()
 {
-    logger = new Logger;
+    logger = *(new Logger);
 }
 
 GenericBaseClass::~GenericBaseClass()
 {
-    logger->info("destroying");
-    logger->destroy();
+    logger.info("destroying");
+    logger.destroy();
 
-    delete logger;
+    delete &logger;
 }

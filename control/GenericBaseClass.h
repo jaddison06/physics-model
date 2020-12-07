@@ -15,5 +15,5 @@ class GenericBaseClass
         GenericBaseClass();
         ~GenericBaseClass();
         
-        Logger *logger;
+        Logger logger;
 };
