@@ -51,8 +51,8 @@ objFiles = f"build/objects/{'.o build/objects/'.join([ f[f.rfind('/')+1:] for f 
 debugFiles = f"build/objects/{'-debug.o build/objects/'.join([ f[f.rfind('/')+1:] for f in fnames ])}-debug.o"
 
 makefile = ""
-makefile += f"main: {objFiles}\n		g++ {objFiles} -o ./physics-model\n\n"
-makefile += f"debug: {debugFiles}\n		g++ {debugFiles} -g -o ./physics-model\n\n"
+makefile += f"main: {objFiles}\n		g++ {objFiles} -o ./physics-model -lstdc++fs\n\n"
+makefile += f"debug: {debugFiles}\n		g++ {debugFiles} -g -o ./physics-model -lstdc++fs\n\n"
 makefile += "clean:\n		rm -r ./build/objects\n		mkdir ./build/objects\n		rm ./physics-model\n\n"
 makefile += "makefile:\n		python3 ./build/generate_makefile.py\n\n"
 
