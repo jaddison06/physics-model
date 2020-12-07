@@ -25,6 +25,7 @@ int main() {
     // that won't work without it
     initLogging();
     Model *model = new Model;
+    print("start");
     model->Start(&exitFunc);
 
     delete model;

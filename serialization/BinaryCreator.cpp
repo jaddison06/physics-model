@@ -1,6 +1,7 @@
 #include "serialization/BinaryCreator.h"
 
-BinaryCreator::BinaryCreator() {
+BinaryCreator::BinaryCreator()
+{
     logger->setSender("BinaryCreator");
 
     logger->info("BinaryCreator initialized");
@@ -56,12 +57,12 @@ std::string BinaryCreator::serializeObject(Object *object)
 
     std::string output = "";
 
-    output += serializeCoord(object -> location);
-    output += serializeCoord(object -> velocity);
-    output += serializeCoord(object -> acceleration);
-    output += serializeDouble(object -> size);
+    output += serializeCoord(& object -> location);
+    output += serializeCoord(& object -> velocity);
+    output += serializeCoord(& object -> acceleration);
+    output += serializeDouble(& object -> size);
     output += serializeDouble(& object -> mass);
-    output += serializeBodyType(object -> shape);
+    output += serializeBodyType(& object -> shape);
 
     addLengthByte(&output);
 

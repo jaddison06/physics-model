@@ -14,7 +14,7 @@ class Object: public ThreeDBody
         ~Object();
 
         // obviously not actual coords but it's an x, y, z struct
-        coord *velocity, *acceleration;
+        coord velocity, acceleration;
 
         double volume, mass, density;
         

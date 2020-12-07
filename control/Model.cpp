@@ -27,7 +27,6 @@ void Model::Start( bool (*exitFunc)(Logger *) )
     //objectHandler.Add({10, 0, 0}, {-3, 1, 2}, {0, 1, 0}, 20, 69, cube);
     binaryReader->ReadBinary(objectHandler, "test.model");
 
-    print("rb done");
     // are we already running?
     if (!isRunning)
     {
@@ -35,6 +34,7 @@ void Model::Start( bool (*exitFunc)(Logger *) )
         // tick until we're told to stop
         while ( !exitFunc(logger) )
         {
+            print("ticccc");
             Tick();
         }
         logger->info("model complete, exiting");

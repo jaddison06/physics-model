@@ -1,0 +1,2689 @@
+2020-11-7 12:53:28   INFO (ObjectHandler) ObjectHandler initialized
+
+2020-11-7 12:53:28   INFO (BinaryCreator) BinaryCreator initialized
+
+2020-11-7 12:53:28   INFO (BinaryReader) BinaryReader initialized
+
+2020-11-7 12:53:28   INFO (Model) Model initialized
+
+2020-11-7 12:53:28   INFO (Model) Model starting
+
+2020-11-7 12:53:28   INFO (BinaryReader) Reading binary
+
+2020-11-7 12:53:28   INFO (BinaryReader) Loaded data
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting decimal 69 to binary
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 1000101
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 1000101 to a byte
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 1000101 to length 8
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 01000101
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting decimal 1 to binary
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 1
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 1 to a byte
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 1 to length 8
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 00000001
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting decimal 1 to binary
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 1
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 1 to a byte
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 1 to length 8
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 00000001
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting decimal 132 to binary
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 10000100
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 10000100 to a byte
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 10000100 to length 8
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 10000100
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting decimal 33 to binary
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 100001
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 100001 to a byte
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 100001 to length 8
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 00100001
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting decimal 10 to binary
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 1010
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 1010 to a byte
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 1010 to length 8
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 00001010
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting decimal 0 to binary
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 0
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 0 to a byte
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 0 to length 8
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 00000000
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting decimal 2 to binary
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 10
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 10 to a byte
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 10 to length 8
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 00000010
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting decimal 0 to binary
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 0
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 0 to a byte
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 0 to length 8
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 00000000
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting decimal 0 to binary
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 0
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 0 to a byte
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 0 to length 8
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 00000000
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting decimal 2 to binary
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 10
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 10 to a byte
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 10 to length 8
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 00000010
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting decimal 0 to binary
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 0
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 0 to a byte
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 0 to length 8
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 00000000
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting decimal 0 to binary
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 0
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 0 to a byte
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 0 to length 8
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 00000000
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting decimal 2 to binary
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 10
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 10 to a byte
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 10 to length 8
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 00000010
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting decimal 0 to binary
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 0
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 0 to a byte
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 0 to length 8
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 00000000
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting decimal 0 to binary
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 0
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 0 to a byte
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 0 to length 8
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 00000000
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting decimal 10 to binary
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 1010
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 1010 to a byte
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 1010 to length 8
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 00001010
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting decimal 0 to binary
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 0
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 0 to a byte
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 0 to length 8
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 00000000
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting decimal 2 to binary
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 10
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 10 to a byte
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 10 to length 8
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 00000010
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting decimal 0 to binary
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 0
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 0 to a byte
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 0 to length 8
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 00000000
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting decimal 0 to binary
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 0
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 0 to a byte
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 0 to length 8
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 00000000
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting decimal 2 to binary
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 10
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 10 to a byte
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 10 to length 8
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 00000010
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting decimal 0 to binary
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 0
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 0 to a byte
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 0 to length 8
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 00000000
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting decimal 0 to binary
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 0
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 0 to a byte
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 0 to length 8
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 00000000
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting decimal 2 to binary
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 10
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 10 to a byte
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 10 to length 8
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 00000010
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting decimal 0 to binary
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 0
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 0 to a byte
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 0 to length 8
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 00000000
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting decimal 0 to binary
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 0
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 0 to a byte
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 0 to length 8
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 00000000
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting decimal 10 to binary
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 1010
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 1010 to a byte
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 1010 to length 8
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 00001010
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting decimal 0 to binary
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 0
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 0 to a byte
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 0 to length 8
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 00000000
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting decimal 2 to binary
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 10
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 10 to a byte
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 10 to length 8
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 00000010
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting decimal 0 to binary
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 0
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 0 to a byte
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 0 to length 8
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 00000000
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting decimal 0 to binary
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 0
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 0 to a byte
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 0 to length 8
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 00000000
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting decimal 2 to binary
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 10
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 10 to a byte
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 10 to length 8
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 00000010
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting decimal 0 to binary
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 0
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 0 to a byte
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 0 to length 8
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 00000000
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting decimal 0 to binary
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 0
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 0 to a byte
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 0 to length 8
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 00000000
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting decimal 2 to binary
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 10
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 10 to a byte
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 10 to length 8
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 00000010
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting decimal 0 to binary
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 0
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 0 to a byte
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 0 to length 8
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 00000000
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting decimal 0 to binary
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 0
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 0 to a byte
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 0 to length 8
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 00000000
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting decimal 36 to binary
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 100100
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 100100 to a byte
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 100100 to length 8
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 00100100
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting decimal 11 to binary
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 1011
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 1011 to a byte
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 1011 to length 8
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 00001011
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting decimal 0 to binary
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 0
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 0 to a byte
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 0 to length 8
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 00000000
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting decimal 2 to binary
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 10
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 10 to a byte
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 10 to length 8
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 00000010
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting decimal 0 to binary
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 0
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 0 to a byte
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 0 to length 8
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 00000000
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting decimal 0 to binary
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 0
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 0 to a byte
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 0 to length 8
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 00000000
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting decimal 2 to binary
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 10
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 10 to a byte
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 10 to length 8
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 00000010
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting decimal 1 to binary
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 1
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 1 to a byte
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 1 to length 8
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 00000001
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting decimal 0 to binary
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 0
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 0 to a byte
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 0 to length 8
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 00000000
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting decimal 3 to binary
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 11
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 11 to a byte
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 11 to length 8
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 00000011
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting decimal 0 to binary
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 0
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 0 to a byte
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 0 to length 8
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 00000000
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting decimal 1 to binary
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 1
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 1 to a byte
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 1 to length 8
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 00000001
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting decimal 69 to binary
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 1000101
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 1000101 to a byte
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 1000101 to length 8
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 01000101
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting decimal 11 to binary
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 1011
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 1011 to a byte
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 1011 to length 8
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 00001011
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting decimal 0 to binary
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 0
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 0 to a byte
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 0 to length 8
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 00000000
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting decimal 2 to binary
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 10
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 10 to a byte
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 10 to length 8
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 00000010
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting decimal 0 to binary
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 0
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 0 to a byte
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 0 to length 8
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 00000000
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting decimal 0 to binary
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 0
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 0 to a byte
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 0 to length 8
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 00000000
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting decimal 2 to binary
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 10
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 10 to a byte
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 10 to length 8
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 00000010
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting decimal 1 to binary
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 1
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 1 to a byte
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 1 to length 8
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 00000001
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting decimal 0 to binary
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 0
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 0 to a byte
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 0 to length 8
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 00000000
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting decimal 3 to binary
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 11
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 11 to a byte
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 11 to length 8
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 00000011
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting decimal 0 to binary
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 0
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 0 to a byte
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 0 to length 8
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 00000000
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting decimal 1 to binary
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 1
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 1 to a byte
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 1 to length 8
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 00000001
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting decimal 81 to binary
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 1010001
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 1010001 to a byte
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 1010001 to length 8
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 01010001
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting decimal 11 to binary
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 1011
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 1011 to a byte
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 1011 to length 8
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 00001011
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting decimal 0 to binary
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 0
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 0 to a byte
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 0 to length 8
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 00000000
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting decimal 2 to binary
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 10
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 10 to a byte
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 10 to length 8
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 00000010
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting decimal 0 to binary
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 0
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 0 to a byte
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 0 to length 8
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 00000000
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting decimal 0 to binary
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 0
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 0 to a byte
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 0 to length 8
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 00000000
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting decimal 2 to binary
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 10
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 10 to a byte
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 10 to length 8
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 00000010
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting decimal 1 to binary
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 1
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 1 to a byte
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 1 to length 8
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 00000001
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting decimal 0 to binary
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 0
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 0 to a byte
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 0 to length 8
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 00000000
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting decimal 3 to binary
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 11
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 11 to a byte
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 11 to length 8
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 00000011
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting decimal 0 to binary
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 0
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 0 to a byte
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 0 to length 8
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 00000000
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting decimal 1 to binary
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 1
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 1 to a byte
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 1 to length 8
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 00000001
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting decimal 69 to binary
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 1000101
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 1000101 to a byte
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 1000101 to length 8
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 01000101
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting decimal 36 to binary
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 100100
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 100100 to a byte
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 100100 to length 8
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 00100100
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting decimal 11 to binary
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 1011
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 1011 to a byte
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 1011 to length 8
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 00001011
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting decimal 0 to binary
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 0
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 0 to a byte
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 0 to length 8
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 00000000
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting decimal 2 to binary
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 10
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 10 to a byte
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 10 to length 8
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 00000010
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting decimal 0 to binary
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 0
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 0 to a byte
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 0 to length 8
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 00000000
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting decimal 0 to binary
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 0
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 0 to a byte
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 0 to length 8
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 00000000
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting decimal 2 to binary
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 10
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 10 to a byte
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 10 to length 8
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 00000010
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting decimal 1 to binary
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 1
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 1 to a byte
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 1 to length 8
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 00000001
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting decimal 0 to binary
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 0
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 0 to a byte
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 0 to length 8
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 00000000
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting decimal 3 to binary
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 11
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 11 to a byte
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 11 to length 8
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 00000011
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting decimal 0 to binary
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 0
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 0 to a byte
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 0 to length 8
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 00000000
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting decimal 1 to binary
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 1
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 1 to a byte
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 1 to length 8
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 00000001
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting decimal 69 to binary
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 1000101
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 1000101 to a byte
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 1000101 to length 8
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 01000101
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting decimal 11 to binary
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 1011
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 1011 to a byte
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 1011 to length 8
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 00001011
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting decimal 0 to binary
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 0
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 0 to a byte
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 0 to length 8
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 00000000
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting decimal 2 to binary
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 10
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 10 to a byte
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 10 to length 8
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 00000010
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting decimal 0 to binary
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 0
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 0 to a byte
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 0 to length 8
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 00000000
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting decimal 0 to binary
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 0
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 0 to a byte
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 0 to length 8
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 00000000
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting decimal 2 to binary
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 10
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 10 to a byte
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 10 to length 8
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 00000010
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting decimal 1 to binary
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 1
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 1 to a byte
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 1 to length 8
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 00000001
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting decimal 0 to binary
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 0
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 0 to a byte
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 0 to length 8
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 00000000
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting decimal 3 to binary
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 11
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 11 to a byte
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 11 to length 8
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 00000011
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting decimal 0 to binary
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 0
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 0 to a byte
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 0 to length 8
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 00000000
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting decimal 1 to binary
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 1
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 1 to a byte
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 1 to length 8
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 00000001
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting decimal 69 to binary
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 1000101
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 1000101 to a byte
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 1000101 to length 8
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 01000101
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting decimal 11 to binary
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 1011
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 1011 to a byte
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 1011 to length 8
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 00001011
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting decimal 0 to binary
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 0
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 0 to a byte
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 0 to length 8
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 00000000
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting decimal 2 to binary
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 10
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 10 to a byte
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 10 to length 8
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 00000010
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting decimal 0 to binary
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 0
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 0 to a byte
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 0 to length 8
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 00000000
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting decimal 0 to binary
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 0
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 0 to a byte
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 0 to length 8
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 00000000
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting decimal 2 to binary
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 10
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 10 to a byte
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 10 to length 8
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 00000010
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting decimal 1 to binary
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 1
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 1 to a byte
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 1 to length 8
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 00000001
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting decimal 0 to binary
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 0
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 0 to a byte
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 0 to length 8
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 00000000
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting decimal 3 to binary
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 11
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 11 to a byte
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 11 to length 8
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 00000011
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting decimal 0 to binary
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 0
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 0 to a byte
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 0 to length 8
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 00000000
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting decimal 1 to binary
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 1
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 1 to a byte
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 1 to length 8
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 00000001
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting decimal 69 to binary
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 1000101
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 1000101 to a byte
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 1000101 to length 8
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 01000101
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting decimal 10 to binary
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 1010
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 1010 to a byte
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 1010 to length 8
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 00001010
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting decimal 0 to binary
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 0
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 0 to a byte
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 0 to length 8
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 00000000
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting decimal 2 to binary
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 10
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 10 to a byte
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 10 to length 8
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 00000010
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting decimal 0 to binary
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 0
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 0 to a byte
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 0 to length 8
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 00000000
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting decimal 0 to binary
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 0
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 0 to a byte
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 0 to length 8
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 00000000
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting decimal 2 to binary
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 10
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 10 to a byte
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 10 to length 8
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 00000010
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting decimal 0 to binary
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 0
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 0 to a byte
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 0 to length 8
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 00000000
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting decimal 0 to binary
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 0
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 0 to a byte
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 0 to length 8
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 00000000
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting decimal 2 to binary
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 10
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 10 to a byte
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 10 to length 8
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 00000010
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting decimal 0 to binary
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 0
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 0 to a byte
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 0 to length 8
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 00000000
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting decimal 0 to binary
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 0
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 0 to a byte
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 0 to length 8
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 00000000
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting decimal 10 to binary
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 1010
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 1010 to a byte
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 1010 to length 8
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 00001010
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting decimal 0 to binary
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 0
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 0 to a byte
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 0 to length 8
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 00000000
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting decimal 2 to binary
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 10
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 10 to a byte
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 10 to length 8
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 00000010
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting decimal 0 to binary
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 0
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 0 to a byte
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 0 to length 8
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 00000000
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting decimal 69 to binary
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 1000101
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 1000101 to a byte
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 1000101 to length 8
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 01000101
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting decimal 2 to binary
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 10
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 10 to a byte
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 10 to length 8
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 00000010
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting decimal 0 to binary
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 0
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 0 to a byte
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 0 to length 8
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 00000000
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting decimal 0 to binary
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 0
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 0 to a byte
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 0 to length 8
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 00000000
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting decimal 2 to binary
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 10
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 10 to a byte
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 10 to length 8
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 00000010
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting decimal 0 to binary
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 0
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 0 to a byte
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 0 to length 8
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 00000000
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting decimal 0 to binary
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 0
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 0 to a byte
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 0 to length 8
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 00000000
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting decimal 1 to binary
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 1
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 1 to a byte
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 1 to length 8
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 00000001
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting decimal 1 to binary
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 1
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 1 to a byte
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 1 to length 8
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 00000001
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting decimal 1 to binary
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 1
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 1 to a byte
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 1 to length 8
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 00000001
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting decimal 164 to binary
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 10100100
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 10100100 to a byte
+
+2020-11-7 12:53:28   INFO (BinaryShared) Setting 10100100 to length 8
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 10100100
+
+2020-11-7 12:53:28   INFO (BinaryReader) Entire binary is 010001010000000100000001100001000010000100001010000000000000001000000000000000000000001000000000000000000000001000000000000000000000101000000000000000100000000000000000000000100000000000000000000000100000000000000000000010100000000000000010000000000000000000000010000000000000000000000010000000000000000000100100000010110000000000000010000000000000000000000010000000010000000000000011000000000000000101000101000010110000000000000010000000000000000000000010000000010000000000000011000000000000000101010001000010110000000000000010000000000000000000000010000000010000000000000011000000000000000101000101001001000000101100000000000000100000000000000000000000100000000100000000000000110000000000000001010001010000101100000000000000100000000000000000000000100000000100000000000000110000000000000001010001010000101100000000000000100000000000000000000000100000000100000000000000110000000000000001010001010000101000000000000000100000000000000000000000100000000000000000000000100000000000000000000010100000000000000010000000000100010100000010000000000000000000000010000000000000000000000001000000010000000110100100
+
+2020-11-7 12:53:28   INFO (BinaryReader) First 8 bits: 01000101
+
+2020-11-7 12:53:28   INFO (BinaryReader) Last 16 bits: 0000000110100100
+
+2020-11-7 12:53:28   INFO (BinaryReader) Version bits: 00000001
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting binary 00000001 to decimal
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 1
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting binary 00000001 to decimal
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 1
+
+2020-11-7 12:53:28   INFO (BinaryReader) Object count is 1
+
+2020-11-7 12:53:28   INFO (BinaryReader) Deserializing object #0
+
+2020-11-7 12:53:28   INFO (BinaryReader) Getting size from item 00000001100001000010000100001010000000000000001000000000000000000000001000000000000000000000001000000000000000000000101000000000000000100000000000000000000000100000000000000000000000100000000000000000000010100000000000000010000000000000000000000010000000000000000000000010000000000000000000100100000010110000000000000010000000000000000000000010000000010000000000000011000000000000000101000101000010110000000000000010000000000000000000000010000000010000000000000011000000000000000101010001000010110000000000000010000000000000000000000010000000010000000000000011000000000000000101000101001001000000101100000000000000100000000000000000000000100000000100000000000000110000000000000001010001010000101100000000000000100000000000000000000000100000000100000000000000110000000000000001010001010000101100000000000000100000000000000000000000100000000100000000000000110000000000000001010001010000101000000000000000100000000000000000000000100000000000000000000000100000000000000000000010100000000000000010000000000100010100000010000000000000000000000010000000000000000000000001000000010000000110100100,
+starting at bit #8
+
+2020-11-7 12:53:28   INFO (BinaryReader) Size bits: 10000100
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting binary 10000100 to decimal
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 132
+
+2020-11-7 12:53:28   INFO (BinaryReader) Size in bytes: 132
+
+2020-11-7 12:53:28   INFO (BinaryReader) Size in bits: 1056
+
+2020-11-7 12:53:28   INFO (BinaryReader) Size in bits (inc size byte): 1064
+
+2020-11-7 12:53:28   INFO (BinaryReader) Object size: 1064
+
+2020-11-7 12:53:28   INFO (BinaryReader) Object binary: 00100001000010100000000000000010000000000000000000000010000000000000000000000010000000000000000000001010000000000000001000000000000000000000001000000000000000000000001000000000000000000000101000000000000000100000000000000000000000100000000000000000000000100000000000000000001001000000101100000000000000100000000000000000000000100000000100000000000000110000000000000001010001010000101100000000000000100000000000000000000000100000000100000000000000110000000000000001010100010000101100000000000000100000000000000000000000100000000100000000000000110000000000000001010001010010010000001011000000000000001000000000000000000000001000000001000000000000001100000000000000010100010100001011000000000000001000000000000000000000001000000001000000000000001100000000000000010100010100001011000000000000001000000000000000000000001000000001000000000000001100000000000000010100010100001010000000000000001000000000000000000000001000000000000000000000001000000000000000000000101000000000000000100000000001000101000000100000000000000000000000100000000000000000000000010000000100000001
+
+2020-11-7 12:53:28   INFO (BinaryReader) Getting size from item 00100001000010100000000000000010000000000000000000000010000000000000000000000010000000000000000000001010000000000000001000000000000000000000001000000000000000000000001000000000000000000000101000000000000000100000000000000000000000100000000000000000000000100000000000000000001001000000101100000000000000100000000000000000000000100000000100000000000000110000000000000001010001010000101100000000000000100000000000000000000000100000000100000000000000110000000000000001010100010000101100000000000000100000000000000000000000100000000100000000000000110000000000000001010001010010010000001011000000000000001000000000000000000000001000000001000000000000001100000000000000010100010100001011000000000000001000000000000000000000001000000001000000000000001100000000000000010100010100001011000000000000001000000000000000000000001000000001000000000000001100000000000000010100010100001010000000000000001000000000000000000000001000000000000000000000001000000000000000000000101000000000000000100000000001000101000000100000000000000000000000100000000000000000000000010000000100000001,
+starting at bit #0
+
+2020-11-7 12:53:28   INFO (BinaryReader) Size bits: 00100001
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting binary 00100001 to decimal
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 33
+
+2020-11-7 12:53:28   INFO (BinaryReader) Size in bytes: 33
+
+2020-11-7 12:53:28   INFO (BinaryReader) Size in bits: 264
+
+2020-11-7 12:53:28   INFO (BinaryReader) Size in bits (inc size byte): 272
+
+2020-11-7 12:53:28   INFO (BinaryReader) Deserializing a coord: 00100001000010100000000000000010000000000000000000000010000000000000000000000010000000000000000000001010000000000000001000000000000000000000001000000000000000000000001000000000000000000000101000000000000000100000000000000000000000100000000000000000000000100000000000000000
+
+2020-11-7 12:53:28   INFO (BinaryReader) Getting coord item #1
+
+2020-11-7 12:53:28   INFO (BinaryReader) Getting size from item 000010100000000000000010000000000000000000000010000000000000000000000010000000000000000000001010000000000000001000000000000000000000001000000000000000000000001000000000000000000000101000000000000000100000000000000000000000100000000000000000000000100000000000000000,
+starting at bit #0
+
+2020-11-7 12:53:28   INFO (BinaryReader) Size bits: 00001010
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting binary 00001010 to decimal
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 10
+
+2020-11-7 12:53:28   INFO (BinaryReader) Size in bytes: 10
+
+2020-11-7 12:53:28   INFO (BinaryReader) Size in bits: 80
+
+2020-11-7 12:53:28   INFO (BinaryReader) Size in bits (inc size byte): 88
+
+2020-11-7 12:53:28   INFO (BinaryReader) Item length is 88
+
+2020-11-7 12:53:28   INFO (BinaryReader) Item binary: 0000101000000000000000100000000000000000000000100000000000000000000000100000000000000000
+
+2020-11-7 12:53:28   INFO (BinaryReader) Deserializing a double: 0000101000000000000000100000000000000000000000100000000000000000000000100000000000000000
+
+2020-11-7 12:53:28   INFO (BinaryReader) Getting size from item 00000000000000100000000000000000000000100000000000000000000000100000000000000000,
+starting at bit #8
+
+2020-11-7 12:53:28   INFO (BinaryReader) Size bits: 00000010
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting binary 00000010 to decimal
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 2
+
+2020-11-7 12:53:28   INFO (BinaryReader) Size in bytes: 2
+
+2020-11-7 12:53:28   INFO (BinaryReader) Size in bits: 16
+
+2020-11-7 12:53:28   INFO (BinaryReader) Size in bits (inc size byte): 24
+
+2020-11-7 12:53:28   INFO (BinaryReader) Deserializing an int: 000000100000000000000000
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting binary 00000000 to decimal
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 0
+
+2020-11-7 12:53:28   INFO (BinaryReader) Int was positive
+
+2020-11-7 12:53:28   INFO (BinaryReader) Int is 0
+
+2020-11-7 12:53:28   INFO (BinaryReader) Getting size from item 00000000000000100000000000000000000000100000000000000000000000100000000000000000,
+starting at bit #32
+
+2020-11-7 12:53:28   INFO (BinaryReader) Size bits: 00000010
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting binary 00000010 to decimal
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 2
+
+2020-11-7 12:53:28   INFO (BinaryReader) Size in bytes: 2
+
+2020-11-7 12:53:28   INFO (BinaryReader) Size in bits: 16
+
+2020-11-7 12:53:28   INFO (BinaryReader) Size in bits (inc size byte): 24
+
+2020-11-7 12:53:28   INFO (BinaryReader) Deserializing an int: 000000100000000000000000
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting binary 00000000 to decimal
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 0
+
+2020-11-7 12:53:28   INFO (BinaryReader) Int was positive
+
+2020-11-7 12:53:28   INFO (BinaryReader) Int is 0
+
+2020-11-7 12:53:28   INFO (BinaryReader) Getting size from item 00000000000000100000000000000000000000100000000000000000000000100000000000000000,
+starting at bit #56
+
+2020-11-7 12:53:28   INFO (BinaryReader) Size bits: 00000010
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting binary 00000010 to decimal
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 2
+
+2020-11-7 12:53:28   INFO (BinaryReader) Size in bytes: 2
+
+2020-11-7 12:53:28   INFO (BinaryReader) Size in bits: 16
+
+2020-11-7 12:53:28   INFO (BinaryReader) Size in bits (inc size byte): 24
+
+2020-11-7 12:53:28   INFO (BinaryReader) Deserializing an int: 000000100000000000000000
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting binary 00000000 to decimal
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 0
+
+2020-11-7 12:53:28   INFO (BinaryReader) Int was positive
+
+2020-11-7 12:53:28   INFO (BinaryReader) Int is 0
+
+2020-11-7 12:53:28   INFO (BinaryReader) Signing double
+
+2020-11-7 12:53:28   INFO (BinaryReader) Double was positive
+
+2020-11-7 12:53:28   INFO (BinaryReader) double was 0.000000
+
+2020-11-7 12:53:28   INFO (BinaryReader) Getting coord item #2
+
+2020-11-7 12:53:28   INFO (BinaryReader) Getting size from item 00001010000000000000001000000000000000000000001000000000000000000000001000000000000000000000101000000000000000100000000000000000000000100000000000000000000000100000000000000000,
+starting at bit #0
+
+2020-11-7 12:53:28   INFO (BinaryReader) Size bits: 00001010
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting binary 00001010 to decimal
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 10
+
+2020-11-7 12:53:28   INFO (BinaryReader) Size in bytes: 10
+
+2020-11-7 12:53:28   INFO (BinaryReader) Size in bits: 80
+
+2020-11-7 12:53:28   INFO (BinaryReader) Size in bits (inc size byte): 88
+
+2020-11-7 12:53:28   INFO (BinaryReader) Item length is 88
+
+2020-11-7 12:53:28   INFO (BinaryReader) Item binary: 0000101000000000000000100000000000000000000000100000000000000000000000100000000000000000
+
+2020-11-7 12:53:28   INFO (BinaryReader) Deserializing a double: 0000101000000000000000100000000000000000000000100000000000000000000000100000000000000000
+
+2020-11-7 12:53:28   INFO (BinaryReader) Getting size from item 00000000000000100000000000000000000000100000000000000000000000100000000000000000,
+starting at bit #8
+
+2020-11-7 12:53:28   INFO (BinaryReader) Size bits: 00000010
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting binary 00000010 to decimal
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 2
+
+2020-11-7 12:53:28   INFO (BinaryReader) Size in bytes: 2
+
+2020-11-7 12:53:28   INFO (BinaryReader) Size in bits: 16
+
+2020-11-7 12:53:28   INFO (BinaryReader) Size in bits (inc size byte): 24
+
+2020-11-7 12:53:28   INFO (BinaryReader) Deserializing an int: 000000100000000000000000
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting binary 00000000 to decimal
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 0
+
+2020-11-7 12:53:28   INFO (BinaryReader) Int was positive
+
+2020-11-7 12:53:28   INFO (BinaryReader) Int is 0
+
+2020-11-7 12:53:28   INFO (BinaryReader) Getting size from item 00000000000000100000000000000000000000100000000000000000000000100000000000000000,
+starting at bit #32
+
+2020-11-7 12:53:28   INFO (BinaryReader) Size bits: 00000010
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting binary 00000010 to decimal
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 2
+
+2020-11-7 12:53:28   INFO (BinaryReader) Size in bytes: 2
+
+2020-11-7 12:53:28   INFO (BinaryReader) Size in bits: 16
+
+2020-11-7 12:53:28   INFO (BinaryReader) Size in bits (inc size byte): 24
+
+2020-11-7 12:53:28   INFO (BinaryReader) Deserializing an int: 000000100000000000000000
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting binary 00000000 to decimal
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 0
+
+2020-11-7 12:53:28   INFO (BinaryReader) Int was positive
+
+2020-11-7 12:53:28   INFO (BinaryReader) Int is 0
+
+2020-11-7 12:53:28   INFO (BinaryReader) Getting size from item 00000000000000100000000000000000000000100000000000000000000000100000000000000000,
+starting at bit #56
+
+2020-11-7 12:53:28   INFO (BinaryReader) Size bits: 00000010
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting binary 00000010 to decimal
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 2
+
+2020-11-7 12:53:28   INFO (BinaryReader) Size in bytes: 2
+
+2020-11-7 12:53:28   INFO (BinaryReader) Size in bits: 16
+
+2020-11-7 12:53:28   INFO (BinaryReader) Size in bits (inc size byte): 24
+
+2020-11-7 12:53:28   INFO (BinaryReader) Deserializing an int: 000000100000000000000000
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting binary 00000000 to decimal
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 0
+
+2020-11-7 12:53:28   INFO (BinaryReader) Int was positive
+
+2020-11-7 12:53:28   INFO (BinaryReader) Int is 0
+
+2020-11-7 12:53:28   INFO (BinaryReader) Signing double
+
+2020-11-7 12:53:28   INFO (BinaryReader) Double was positive
+
+2020-11-7 12:53:28   INFO (BinaryReader) double was 0.000000
+
+2020-11-7 12:53:28   INFO (BinaryReader) Getting coord item #3
+
+2020-11-7 12:53:28   INFO (BinaryReader) Getting size from item 0000101000000000000000100000000000000000000000100000000000000000000000100000000000000000,
+starting at bit #0
+
+2020-11-7 12:53:28   INFO (BinaryReader) Size bits: 00001010
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting binary 00001010 to decimal
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 10
+
+2020-11-7 12:53:28   INFO (BinaryReader) Size in bytes: 10
+
+2020-11-7 12:53:28   INFO (BinaryReader) Size in bits: 80
+
+2020-11-7 12:53:28   INFO (BinaryReader) Size in bits (inc size byte): 88
+
+2020-11-7 12:53:28   INFO (BinaryReader) Item length is 88
+
+2020-11-7 12:53:28   INFO (BinaryReader) Item binary: 0000101000000000000000100000000000000000000000100000000000000000000000100000000000000000
+
+2020-11-7 12:53:28   INFO (BinaryReader) Deserializing a double: 0000101000000000000000100000000000000000000000100000000000000000000000100000000000000000
+
+2020-11-7 12:53:28   INFO (BinaryReader) Getting size from item 00000000000000100000000000000000000000100000000000000000000000100000000000000000,
+starting at bit #8
+
+2020-11-7 12:53:28   INFO (BinaryReader) Size bits: 00000010
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting binary 00000010 to decimal
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 2
+
+2020-11-7 12:53:28   INFO (BinaryReader) Size in bytes: 2
+
+2020-11-7 12:53:28   INFO (BinaryReader) Size in bits: 16
+
+2020-11-7 12:53:28   INFO (BinaryReader) Size in bits (inc size byte): 24
+
+2020-11-7 12:53:28   INFO (BinaryReader) Deserializing an int: 000000100000000000000000
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting binary 00000000 to decimal
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 0
+
+2020-11-7 12:53:28   INFO (BinaryReader) Int was positive
+
+2020-11-7 12:53:28   INFO (BinaryReader) Int is 0
+
+2020-11-7 12:53:28   INFO (BinaryReader) Getting size from item 00000000000000100000000000000000000000100000000000000000000000100000000000000000,
+starting at bit #32
+
+2020-11-7 12:53:28   INFO (BinaryReader) Size bits: 00000010
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting binary 00000010 to decimal
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 2
+
+2020-11-7 12:53:28   INFO (BinaryReader) Size in bytes: 2
+
+2020-11-7 12:53:28   INFO (BinaryReader) Size in bits: 16
+
+2020-11-7 12:53:28   INFO (BinaryReader) Size in bits (inc size byte): 24
+
+2020-11-7 12:53:28   INFO (BinaryReader) Deserializing an int: 000000100000000000000000
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting binary 00000000 to decimal
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 0
+
+2020-11-7 12:53:28   INFO (BinaryReader) Int was positive
+
+2020-11-7 12:53:28   INFO (BinaryReader) Int is 0
+
+2020-11-7 12:53:28   INFO (BinaryReader) Getting size from item 00000000000000100000000000000000000000100000000000000000000000100000000000000000,
+starting at bit #56
+
+2020-11-7 12:53:28   INFO (BinaryReader) Size bits: 00000010
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting binary 00000010 to decimal
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 2
+
+2020-11-7 12:53:28   INFO (BinaryReader) Size in bytes: 2
+
+2020-11-7 12:53:28   INFO (BinaryReader) Size in bits: 16
+
+2020-11-7 12:53:28   INFO (BinaryReader) Size in bits (inc size byte): 24
+
+2020-11-7 12:53:28   INFO (BinaryReader) Deserializing an int: 000000100000000000000000
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting binary 00000000 to decimal
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 0
+
+2020-11-7 12:53:28   INFO (BinaryReader) Int was positive
+
+2020-11-7 12:53:28   INFO (BinaryReader) Int is 0
+
+2020-11-7 12:53:28   INFO (BinaryReader) Signing double
+
+2020-11-7 12:53:28   INFO (BinaryReader) Double was positive
+
+2020-11-7 12:53:28   INFO (BinaryReader) double was 0.000000
+
+2020-11-7 12:53:28   INFO (BinaryReader) Getting size from item 00100001000010100000000000000010000000000000000000000010000000000000000000000010000000000000000000001010000000000000001000000000000000000000001000000000000000000000001000000000000000000000101000000000000000100000000000000000000000100000000000000000000000100000000000000000001001000000101100000000000000100000000000000000000000100000000100000000000000110000000000000001010001010000101100000000000000100000000000000000000000100000000100000000000000110000000000000001010100010000101100000000000000100000000000000000000000100000000100000000000000110000000000000001010001010010010000001011000000000000001000000000000000000000001000000001000000000000001100000000000000010100010100001011000000000000001000000000000000000000001000000001000000000000001100000000000000010100010100001011000000000000001000000000000000000000001000000001000000000000001100000000000000010100010100001010000000000000001000000000000000000000001000000000000000000000001000000000000000000000101000000000000000100000000001000101000000100000000000000000000000100000000000000000000000010000000100000001,
+starting at bit #272
+
+2020-11-7 12:53:28   INFO (BinaryReader) Size bits: 00100100
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting binary 00100100 to decimal
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 36
+
+2020-11-7 12:53:28   INFO (BinaryReader) Size in bytes: 36
+
+2020-11-7 12:53:28   INFO (BinaryReader) Size in bits: 288
+
+2020-11-7 12:53:28   INFO (BinaryReader) Size in bits (inc size byte): 296
+
+2020-11-7 12:53:28   INFO (BinaryReader) Deserializing a coord: 00100100000010110000000000000010000000000000000000000010000000010000000000000011000000000000000101000101000010110000000000000010000000000000000000000010000000010000000000000011000000000000000101010001000010110000000000000010000000000000000000000010000000010000000000000011000000000000000101000101
+
+2020-11-7 12:53:28   INFO (BinaryReader) Getting coord item #1
+
+2020-11-7 12:53:28   INFO (BinaryReader) Getting size from item 000010110000000000000010000000000000000000000010000000010000000000000011000000000000000101000101000010110000000000000010000000000000000000000010000000010000000000000011000000000000000101010001000010110000000000000010000000000000000000000010000000010000000000000011000000000000000101000101,
+starting at bit #0
+
+2020-11-7 12:53:28   INFO (BinaryReader) Size bits: 00001011
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting binary 00001011 to decimal
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 11
+
+2020-11-7 12:53:28   INFO (BinaryReader) Size in bytes: 11
+
+2020-11-7 12:53:28   INFO (BinaryReader) Size in bits: 88
+
+2020-11-7 12:53:28   INFO (BinaryReader) Size in bits (inc size byte): 96
+
+2020-11-7 12:53:28   INFO (BinaryReader) Item length is 96
+
+2020-11-7 12:53:28   INFO (BinaryReader) Item binary: 000010110000000000000010000000000000000000000010000000010000000000000011000000000000000101000101
+
+2020-11-7 12:53:28   INFO (BinaryReader) Deserializing a double: 000010110000000000000010000000000000000000000010000000010000000000000011000000000000000101000101
+
+2020-11-7 12:53:28   INFO (BinaryReader) Getting size from item 0000000000000010000000000000000000000010000000010000000000000011000000000000000101000101,
+starting at bit #8
+
+2020-11-7 12:53:28   INFO (BinaryReader) Size bits: 00000010
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting binary 00000010 to decimal
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 2
+
+2020-11-7 12:53:28   INFO (BinaryReader) Size in bytes: 2
+
+2020-11-7 12:53:28   INFO (BinaryReader) Size in bits: 16
+
+2020-11-7 12:53:28   INFO (BinaryReader) Size in bits (inc size byte): 24
+
+2020-11-7 12:53:28   INFO (BinaryReader) Deserializing an int: 000000100000000000000000
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting binary 00000000 to decimal
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 0
+
+2020-11-7 12:53:28   INFO (BinaryReader) Int was positive
+
+2020-11-7 12:53:28   INFO (BinaryReader) Int is 0
+
+2020-11-7 12:53:28   INFO (BinaryReader) Getting size from item 0000000000000010000000000000000000000010000000010000000000000011000000000000000101000101,
+starting at bit #32
+
+2020-11-7 12:53:28   INFO (BinaryReader) Size bits: 00000010
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting binary 00000010 to decimal
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 2
+
+2020-11-7 12:53:28   INFO (BinaryReader) Size in bytes: 2
+
+2020-11-7 12:53:28   INFO (BinaryReader) Size in bits: 16
+
+2020-11-7 12:53:28   INFO (BinaryReader) Size in bits (inc size byte): 24
+
+2020-11-7 12:53:28   INFO (BinaryReader) Deserializing an int: 000000100000000100000000
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting binary 00000000 to decimal
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 0
+
+2020-11-7 12:53:28   INFO (BinaryReader) Int was negative
+
+2020-11-7 12:53:28   INFO (BinaryReader) Int is 0
+
+2020-11-7 12:53:28   INFO (BinaryReader) Getting size from item 0000000000000010000000000000000000000010000000010000000000000011000000000000000101000101,
+starting at bit #56
+
+2020-11-7 12:53:28   INFO (BinaryReader) Size bits: 00000011
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting binary 00000011 to decimal
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 3
+
+2020-11-7 12:53:28   INFO (BinaryReader) Size in bytes: 3
+
+2020-11-7 12:53:28   INFO (BinaryReader) Size in bits: 24
+
+2020-11-7 12:53:28   INFO (BinaryReader) Size in bits (inc size byte): 32
+
+2020-11-7 12:53:28   INFO (BinaryReader) Deserializing an int: 00000011000000000000000101000101
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting binary 0000000101000101 to decimal
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 325
+
+2020-11-7 12:53:28   INFO (BinaryReader) Int was positive
+
+2020-11-7 12:53:28   INFO (BinaryReader) Int is 325
+
+2020-11-7 12:53:28   INFO (BinaryReader) Signing double
+
+2020-11-7 12:53:28   INFO (BinaryReader) Double was positive
+
+2020-11-7 12:53:28   INFO (BinaryReader) double was 0.000000
+
+2020-11-7 12:53:28   INFO (BinaryReader) Getting coord item #2
+
+2020-11-7 12:53:28   INFO (BinaryReader) Getting size from item 000010110000000000000010000000000000000000000010000000010000000000000011000000000000000101010001000010110000000000000010000000000000000000000010000000010000000000000011000000000000000101000101,
+starting at bit #0
+
+2020-11-7 12:53:28   INFO (BinaryReader) Size bits: 00001011
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting binary 00001011 to decimal
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 11
+
+2020-11-7 12:53:28   INFO (BinaryReader) Size in bytes: 11
+
+2020-11-7 12:53:28   INFO (BinaryReader) Size in bits: 88
+
+2020-11-7 12:53:28   INFO (BinaryReader) Size in bits (inc size byte): 96
+
+2020-11-7 12:53:28   INFO (BinaryReader) Item length is 96
+
+2020-11-7 12:53:28   INFO (BinaryReader) Item binary: 000010110000000000000010000000000000000000000010000000010000000000000011000000000000000101010001
+
+2020-11-7 12:53:28   INFO (BinaryReader) Deserializing a double: 000010110000000000000010000000000000000000000010000000010000000000000011000000000000000101010001
+
+2020-11-7 12:53:28   INFO (BinaryReader) Getting size from item 0000000000000010000000000000000000000010000000010000000000000011000000000000000101010001,
+starting at bit #8
+
+2020-11-7 12:53:28   INFO (BinaryReader) Size bits: 00000010
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting binary 00000010 to decimal
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 2
+
+2020-11-7 12:53:28   INFO (BinaryReader) Size in bytes: 2
+
+2020-11-7 12:53:28   INFO (BinaryReader) Size in bits: 16
+
+2020-11-7 12:53:28   INFO (BinaryReader) Size in bits (inc size byte): 24
+
+2020-11-7 12:53:28   INFO (BinaryReader) Deserializing an int: 000000100000000000000000
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting binary 00000000 to decimal
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 0
+
+2020-11-7 12:53:28   INFO (BinaryReader) Int was positive
+
+2020-11-7 12:53:28   INFO (BinaryReader) Int is 0
+
+2020-11-7 12:53:28   INFO (BinaryReader) Getting size from item 0000000000000010000000000000000000000010000000010000000000000011000000000000000101010001,
+starting at bit #32
+
+2020-11-7 12:53:28   INFO (BinaryReader) Size bits: 00000010
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting binary 00000010 to decimal
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 2
+
+2020-11-7 12:53:28   INFO (BinaryReader) Size in bytes: 2
+
+2020-11-7 12:53:28   INFO (BinaryReader) Size in bits: 16
+
+2020-11-7 12:53:28   INFO (BinaryReader) Size in bits (inc size byte): 24
+
+2020-11-7 12:53:28   INFO (BinaryReader) Deserializing an int: 000000100000000100000000
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting binary 00000000 to decimal
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 0
+
+2020-11-7 12:53:28   INFO (BinaryReader) Int was negative
+
+2020-11-7 12:53:28   INFO (BinaryReader) Int is 0
+
+2020-11-7 12:53:28   INFO (BinaryReader) Getting size from item 0000000000000010000000000000000000000010000000010000000000000011000000000000000101010001,
+starting at bit #56
+
+2020-11-7 12:53:28   INFO (BinaryReader) Size bits: 00000011
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting binary 00000011 to decimal
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 3
+
+2020-11-7 12:53:28   INFO (BinaryReader) Size in bytes: 3
+
+2020-11-7 12:53:28   INFO (BinaryReader) Size in bits: 24
+
+2020-11-7 12:53:28   INFO (BinaryReader) Size in bits (inc size byte): 32
+
+2020-11-7 12:53:28   INFO (BinaryReader) Deserializing an int: 00000011000000000000000101010001
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting binary 0000000101010001 to decimal
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 337
+
+2020-11-7 12:53:28   INFO (BinaryReader) Int was positive
+
+2020-11-7 12:53:28   INFO (BinaryReader) Int is 337
+
+2020-11-7 12:53:28   INFO (BinaryReader) Signing double
+
+2020-11-7 12:53:28   INFO (BinaryReader) Double was positive
+
+2020-11-7 12:53:28   INFO (BinaryReader) double was 0.000000
+
+2020-11-7 12:53:28   INFO (BinaryReader) Getting coord item #3
+
+2020-11-7 12:53:28   INFO (BinaryReader) Getting size from item 000010110000000000000010000000000000000000000010000000010000000000000011000000000000000101000101,
+starting at bit #0
+
+2020-11-7 12:53:28   INFO (BinaryReader) Size bits: 00001011
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting binary 00001011 to decimal
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 11
+
+2020-11-7 12:53:28   INFO (BinaryReader) Size in bytes: 11
+
+2020-11-7 12:53:28   INFO (BinaryReader) Size in bits: 88
+
+2020-11-7 12:53:28   INFO (BinaryReader) Size in bits (inc size byte): 96
+
+2020-11-7 12:53:28   INFO (BinaryReader) Item length is 96
+
+2020-11-7 12:53:28   INFO (BinaryReader) Item binary: 000010110000000000000010000000000000000000000010000000010000000000000011000000000000000101000101
+
+2020-11-7 12:53:28   INFO (BinaryReader) Deserializing a double: 000010110000000000000010000000000000000000000010000000010000000000000011000000000000000101000101
+
+2020-11-7 12:53:28   INFO (BinaryReader) Getting size from item 0000000000000010000000000000000000000010000000010000000000000011000000000000000101000101,
+starting at bit #8
+
+2020-11-7 12:53:28   INFO (BinaryReader) Size bits: 00000010
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting binary 00000010 to decimal
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 2
+
+2020-11-7 12:53:28   INFO (BinaryReader) Size in bytes: 2
+
+2020-11-7 12:53:28   INFO (BinaryReader) Size in bits: 16
+
+2020-11-7 12:53:28   INFO (BinaryReader) Size in bits (inc size byte): 24
+
+2020-11-7 12:53:28   INFO (BinaryReader) Deserializing an int: 000000100000000000000000
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting binary 00000000 to decimal
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 0
+
+2020-11-7 12:53:28   INFO (BinaryReader) Int was positive
+
+2020-11-7 12:53:28   INFO (BinaryReader) Int is 0
+
+2020-11-7 12:53:28   INFO (BinaryReader) Getting size from item 0000000000000010000000000000000000000010000000010000000000000011000000000000000101000101,
+starting at bit #32
+
+2020-11-7 12:53:28   INFO (BinaryReader) Size bits: 00000010
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting binary 00000010 to decimal
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 2
+
+2020-11-7 12:53:28   INFO (BinaryReader) Size in bytes: 2
+
+2020-11-7 12:53:28   INFO (BinaryReader) Size in bits: 16
+
+2020-11-7 12:53:28   INFO (BinaryReader) Size in bits (inc size byte): 24
+
+2020-11-7 12:53:28   INFO (BinaryReader) Deserializing an int: 000000100000000100000000
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting binary 00000000 to decimal
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 0
+
+2020-11-7 12:53:28   INFO (BinaryReader) Int was negative
+
+2020-11-7 12:53:28   INFO (BinaryReader) Int is 0
+
+2020-11-7 12:53:28   INFO (BinaryReader) Getting size from item 0000000000000010000000000000000000000010000000010000000000000011000000000000000101000101,
+starting at bit #56
+
+2020-11-7 12:53:28   INFO (BinaryReader) Size bits: 00000011
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting binary 00000011 to decimal
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 3
+
+2020-11-7 12:53:28   INFO (BinaryReader) Size in bytes: 3
+
+2020-11-7 12:53:28   INFO (BinaryReader) Size in bits: 24
+
+2020-11-7 12:53:28   INFO (BinaryReader) Size in bits (inc size byte): 32
+
+2020-11-7 12:53:28   INFO (BinaryReader) Deserializing an int: 00000011000000000000000101000101
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting binary 0000000101000101 to decimal
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 325
+
+2020-11-7 12:53:28   INFO (BinaryReader) Int was positive
+
+2020-11-7 12:53:28   INFO (BinaryReader) Int is 325
+
+2020-11-7 12:53:28   INFO (BinaryReader) Signing double
+
+2020-11-7 12:53:28   INFO (BinaryReader) Double was positive
+
+2020-11-7 12:53:28   INFO (BinaryReader) double was 0.000000
+
+2020-11-7 12:53:28   INFO (BinaryReader) Getting size from item 00100001000010100000000000000010000000000000000000000010000000000000000000000010000000000000000000001010000000000000001000000000000000000000001000000000000000000000001000000000000000000000101000000000000000100000000000000000000000100000000000000000000000100000000000000000001001000000101100000000000000100000000000000000000000100000000100000000000000110000000000000001010001010000101100000000000000100000000000000000000000100000000100000000000000110000000000000001010100010000101100000000000000100000000000000000000000100000000100000000000000110000000000000001010001010010010000001011000000000000001000000000000000000000001000000001000000000000001100000000000000010100010100001011000000000000001000000000000000000000001000000001000000000000001100000000000000010100010100001011000000000000001000000000000000000000001000000001000000000000001100000000000000010100010100001010000000000000001000000000000000000000001000000000000000000000001000000000000000000000101000000000000000100000000001000101000000100000000000000000000000100000000000000000000000010000000100000001,
+starting at bit #568
+
+2020-11-7 12:53:28   INFO (BinaryReader) Size bits: 00100100
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting binary 00100100 to decimal
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 36
+
+2020-11-7 12:53:28   INFO (BinaryReader) Size in bytes: 36
+
+2020-11-7 12:53:28   INFO (BinaryReader) Size in bits: 288
+
+2020-11-7 12:53:28   INFO (BinaryReader) Size in bits (inc size byte): 296
+
+2020-11-7 12:53:28   INFO (BinaryReader) Deserializing a coord: 00100100000010110000000000000010000000000000000000000010000000010000000000000011000000000000000101000101000010110000000000000010000000000000000000000010000000010000000000000011000000000000000101000101000010110000000000000010000000000000000000000010000000010000000000000011000000000000000101000101
+
+2020-11-7 12:53:28   INFO (BinaryReader) Getting coord item #1
+
+2020-11-7 12:53:28   INFO (BinaryReader) Getting size from item 000010110000000000000010000000000000000000000010000000010000000000000011000000000000000101000101000010110000000000000010000000000000000000000010000000010000000000000011000000000000000101000101000010110000000000000010000000000000000000000010000000010000000000000011000000000000000101000101,
+starting at bit #0
+
+2020-11-7 12:53:28   INFO (BinaryReader) Size bits: 00001011
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting binary 00001011 to decimal
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 11
+
+2020-11-7 12:53:28   INFO (BinaryReader) Size in bytes: 11
+
+2020-11-7 12:53:28   INFO (BinaryReader) Size in bits: 88
+
+2020-11-7 12:53:28   INFO (BinaryReader) Size in bits (inc size byte): 96
+
+2020-11-7 12:53:28   INFO (BinaryReader) Item length is 96
+
+2020-11-7 12:53:28   INFO (BinaryReader) Item binary: 000010110000000000000010000000000000000000000010000000010000000000000011000000000000000101000101
+
+2020-11-7 12:53:28   INFO (BinaryReader) Deserializing a double: 000010110000000000000010000000000000000000000010000000010000000000000011000000000000000101000101
+
+2020-11-7 12:53:28   INFO (BinaryReader) Getting size from item 0000000000000010000000000000000000000010000000010000000000000011000000000000000101000101,
+starting at bit #8
+
+2020-11-7 12:53:28   INFO (BinaryReader) Size bits: 00000010
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting binary 00000010 to decimal
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 2
+
+2020-11-7 12:53:28   INFO (BinaryReader) Size in bytes: 2
+
+2020-11-7 12:53:28   INFO (BinaryReader) Size in bits: 16
+
+2020-11-7 12:53:28   INFO (BinaryReader) Size in bits (inc size byte): 24
+
+2020-11-7 12:53:28   INFO (BinaryReader) Deserializing an int: 000000100000000000000000
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting binary 00000000 to decimal
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 0
+
+2020-11-7 12:53:28   INFO (BinaryReader) Int was positive
+
+2020-11-7 12:53:28   INFO (BinaryReader) Int is 0
+
+2020-11-7 12:53:28   INFO (BinaryReader) Getting size from item 0000000000000010000000000000000000000010000000010000000000000011000000000000000101000101,
+starting at bit #32
+
+2020-11-7 12:53:28   INFO (BinaryReader) Size bits: 00000010
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting binary 00000010 to decimal
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 2
+
+2020-11-7 12:53:28   INFO (BinaryReader) Size in bytes: 2
+
+2020-11-7 12:53:28   INFO (BinaryReader) Size in bits: 16
+
+2020-11-7 12:53:28   INFO (BinaryReader) Size in bits (inc size byte): 24
+
+2020-11-7 12:53:28   INFO (BinaryReader) Deserializing an int: 000000100000000100000000
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting binary 00000000 to decimal
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 0
+
+2020-11-7 12:53:28   INFO (BinaryReader) Int was negative
+
+2020-11-7 12:53:28   INFO (BinaryReader) Int is 0
+
+2020-11-7 12:53:28   INFO (BinaryReader) Getting size from item 0000000000000010000000000000000000000010000000010000000000000011000000000000000101000101,
+starting at bit #56
+
+2020-11-7 12:53:28   INFO (BinaryReader) Size bits: 00000011
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting binary 00000011 to decimal
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 3
+
+2020-11-7 12:53:28   INFO (BinaryReader) Size in bytes: 3
+
+2020-11-7 12:53:28   INFO (BinaryReader) Size in bits: 24
+
+2020-11-7 12:53:28   INFO (BinaryReader) Size in bits (inc size byte): 32
+
+2020-11-7 12:53:28   INFO (BinaryReader) Deserializing an int: 00000011000000000000000101000101
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting binary 0000000101000101 to decimal
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 325
+
+2020-11-7 12:53:28   INFO (BinaryReader) Int was positive
+
+2020-11-7 12:53:28   INFO (BinaryReader) Int is 325
+
+2020-11-7 12:53:28   INFO (BinaryReader) Signing double
+
+2020-11-7 12:53:28   INFO (BinaryReader) Double was positive
+
+2020-11-7 12:53:28   INFO (BinaryReader) double was 0.000000
+
+2020-11-7 12:53:28   INFO (BinaryReader) Getting coord item #2
+
+2020-11-7 12:53:28   INFO (BinaryReader) Getting size from item 000010110000000000000010000000000000000000000010000000010000000000000011000000000000000101000101000010110000000000000010000000000000000000000010000000010000000000000011000000000000000101000101,
+starting at bit #0
+
+2020-11-7 12:53:28   INFO (BinaryReader) Size bits: 00001011
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting binary 00001011 to decimal
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 11
+
+2020-11-7 12:53:28   INFO (BinaryReader) Size in bytes: 11
+
+2020-11-7 12:53:28   INFO (BinaryReader) Size in bits: 88
+
+2020-11-7 12:53:28   INFO (BinaryReader) Size in bits (inc size byte): 96
+
+2020-11-7 12:53:28   INFO (BinaryReader) Item length is 96
+
+2020-11-7 12:53:28   INFO (BinaryReader) Item binary: 000010110000000000000010000000000000000000000010000000010000000000000011000000000000000101000101
+
+2020-11-7 12:53:28   INFO (BinaryReader) Deserializing a double: 000010110000000000000010000000000000000000000010000000010000000000000011000000000000000101000101
+
+2020-11-7 12:53:28   INFO (BinaryReader) Getting size from item 0000000000000010000000000000000000000010000000010000000000000011000000000000000101000101,
+starting at bit #8
+
+2020-11-7 12:53:28   INFO (BinaryReader) Size bits: 00000010
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting binary 00000010 to decimal
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 2
+
+2020-11-7 12:53:28   INFO (BinaryReader) Size in bytes: 2
+
+2020-11-7 12:53:28   INFO (BinaryReader) Size in bits: 16
+
+2020-11-7 12:53:28   INFO (BinaryReader) Size in bits (inc size byte): 24
+
+2020-11-7 12:53:28   INFO (BinaryReader) Deserializing an int: 000000100000000000000000
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting binary 00000000 to decimal
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 0
+
+2020-11-7 12:53:28   INFO (BinaryReader) Int was positive
+
+2020-11-7 12:53:28   INFO (BinaryReader) Int is 0
+
+2020-11-7 12:53:28   INFO (BinaryReader) Getting size from item 0000000000000010000000000000000000000010000000010000000000000011000000000000000101000101,
+starting at bit #32
+
+2020-11-7 12:53:28   INFO (BinaryReader) Size bits: 00000010
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting binary 00000010 to decimal
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 2
+
+2020-11-7 12:53:28   INFO (BinaryReader) Size in bytes: 2
+
+2020-11-7 12:53:28   INFO (BinaryReader) Size in bits: 16
+
+2020-11-7 12:53:28   INFO (BinaryReader) Size in bits (inc size byte): 24
+
+2020-11-7 12:53:28   INFO (BinaryReader) Deserializing an int: 000000100000000100000000
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting binary 00000000 to decimal
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 0
+
+2020-11-7 12:53:28   INFO (BinaryReader) Int was negative
+
+2020-11-7 12:53:28   INFO (BinaryReader) Int is 0
+
+2020-11-7 12:53:28   INFO (BinaryReader) Getting size from item 0000000000000010000000000000000000000010000000010000000000000011000000000000000101000101,
+starting at bit #56
+
+2020-11-7 12:53:28   INFO (BinaryReader) Size bits: 00000011
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting binary 00000011 to decimal
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 3
+
+2020-11-7 12:53:28   INFO (BinaryReader) Size in bytes: 3
+
+2020-11-7 12:53:28   INFO (BinaryReader) Size in bits: 24
+
+2020-11-7 12:53:28   INFO (BinaryReader) Size in bits (inc size byte): 32
+
+2020-11-7 12:53:28   INFO (BinaryReader) Deserializing an int: 00000011000000000000000101000101
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting binary 0000000101000101 to decimal
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 325
+
+2020-11-7 12:53:28   INFO (BinaryReader) Int was positive
+
+2020-11-7 12:53:28   INFO (BinaryReader) Int is 325
+
+2020-11-7 12:53:28   INFO (BinaryReader) Signing double
+
+2020-11-7 12:53:28   INFO (BinaryReader) Double was positive
+
+2020-11-7 12:53:28   INFO (BinaryReader) double was 0.000000
+
+2020-11-7 12:53:28   INFO (BinaryReader) Getting coord item #3
+
+2020-11-7 12:53:28   INFO (BinaryReader) Getting size from item 000010110000000000000010000000000000000000000010000000010000000000000011000000000000000101000101,
+starting at bit #0
+
+2020-11-7 12:53:28   INFO (BinaryReader) Size bits: 00001011
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting binary 00001011 to decimal
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 11
+
+2020-11-7 12:53:28   INFO (BinaryReader) Size in bytes: 11
+
+2020-11-7 12:53:28   INFO (BinaryReader) Size in bits: 88
+
+2020-11-7 12:53:28   INFO (BinaryReader) Size in bits (inc size byte): 96
+
+2020-11-7 12:53:28   INFO (BinaryReader) Item length is 96
+
+2020-11-7 12:53:28   INFO (BinaryReader) Item binary: 000010110000000000000010000000000000000000000010000000010000000000000011000000000000000101000101
+
+2020-11-7 12:53:28   INFO (BinaryReader) Deserializing a double: 000010110000000000000010000000000000000000000010000000010000000000000011000000000000000101000101
+
+2020-11-7 12:53:28   INFO (BinaryReader) Getting size from item 0000000000000010000000000000000000000010000000010000000000000011000000000000000101000101,
+starting at bit #8
+
+2020-11-7 12:53:28   INFO (BinaryReader) Size bits: 00000010
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting binary 00000010 to decimal
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 2
+
+2020-11-7 12:53:28   INFO (BinaryReader) Size in bytes: 2
+
+2020-11-7 12:53:28   INFO (BinaryReader) Size in bits: 16
+
+2020-11-7 12:53:28   INFO (BinaryReader) Size in bits (inc size byte): 24
+
+2020-11-7 12:53:28   INFO (BinaryReader) Deserializing an int: 000000100000000000000000
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting binary 00000000 to decimal
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 0
+
+2020-11-7 12:53:28   INFO (BinaryReader) Int was positive
+
+2020-11-7 12:53:28   INFO (BinaryReader) Int is 0
+
+2020-11-7 12:53:28   INFO (BinaryReader) Getting size from item 0000000000000010000000000000000000000010000000010000000000000011000000000000000101000101,
+starting at bit #32
+
+2020-11-7 12:53:28   INFO (BinaryReader) Size bits: 00000010
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting binary 00000010 to decimal
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 2
+
+2020-11-7 12:53:28   INFO (BinaryReader) Size in bytes: 2
+
+2020-11-7 12:53:28   INFO (BinaryReader) Size in bits: 16
+
+2020-11-7 12:53:28   INFO (BinaryReader) Size in bits (inc size byte): 24
+
+2020-11-7 12:53:28   INFO (BinaryReader) Deserializing an int: 000000100000000100000000
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting binary 00000000 to decimal
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 0
+
+2020-11-7 12:53:28   INFO (BinaryReader) Int was negative
+
+2020-11-7 12:53:28   INFO (BinaryReader) Int is 0
+
+2020-11-7 12:53:28   INFO (BinaryReader) Getting size from item 0000000000000010000000000000000000000010000000010000000000000011000000000000000101000101,
+starting at bit #56
+
+2020-11-7 12:53:28   INFO (BinaryReader) Size bits: 00000011
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting binary 00000011 to decimal
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 3
+
+2020-11-7 12:53:28   INFO (BinaryReader) Size in bytes: 3
+
+2020-11-7 12:53:28   INFO (BinaryReader) Size in bits: 24
+
+2020-11-7 12:53:28   INFO (BinaryReader) Size in bits (inc size byte): 32
+
+2020-11-7 12:53:28   INFO (BinaryReader) Deserializing an int: 00000011000000000000000101000101
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting binary 0000000101000101 to decimal
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 325
+
+2020-11-7 12:53:28   INFO (BinaryReader) Int was positive
+
+2020-11-7 12:53:28   INFO (BinaryReader) Int is 325
+
+2020-11-7 12:53:28   INFO (BinaryReader) Signing double
+
+2020-11-7 12:53:28   INFO (BinaryReader) Double was positive
+
+2020-11-7 12:53:28   INFO (BinaryReader) double was 0.000000
+
+2020-11-7 12:53:28   INFO (BinaryReader) Getting size from item 00100001000010100000000000000010000000000000000000000010000000000000000000000010000000000000000000001010000000000000001000000000000000000000001000000000000000000000001000000000000000000000101000000000000000100000000000000000000000100000000000000000000000100000000000000000001001000000101100000000000000100000000000000000000000100000000100000000000000110000000000000001010001010000101100000000000000100000000000000000000000100000000100000000000000110000000000000001010100010000101100000000000000100000000000000000000000100000000100000000000000110000000000000001010001010010010000001011000000000000001000000000000000000000001000000001000000000000001100000000000000010100010100001011000000000000001000000000000000000000001000000001000000000000001100000000000000010100010100001011000000000000001000000000000000000000001000000001000000000000001100000000000000010100010100001010000000000000001000000000000000000000001000000000000000000000001000000000000000000000101000000000000000100000000001000101000000100000000000000000000000100000000000000000000000010000000100000001,
+starting at bit #864
+
+2020-11-7 12:53:28   INFO (BinaryReader) Size bits: 00001010
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting binary 00001010 to decimal
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 10
+
+2020-11-7 12:53:28   INFO (BinaryReader) Size in bytes: 10
+
+2020-11-7 12:53:28   INFO (BinaryReader) Size in bits: 80
+
+2020-11-7 12:53:28   INFO (BinaryReader) Size in bits (inc size byte): 88
+
+2020-11-7 12:53:28   INFO (BinaryReader) Deserializing a double: 0000101000000000000000100000000000000000000000100000000000000000000000100000000000000000
+
+2020-11-7 12:53:28   INFO (BinaryReader) Getting size from item 00000000000000100000000000000000000000100000000000000000000000100000000000000000,
+starting at bit #8
+
+2020-11-7 12:53:28   INFO (BinaryReader) Size bits: 00000010
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting binary 00000010 to decimal
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 2
+
+2020-11-7 12:53:28   INFO (BinaryReader) Size in bytes: 2
+
+2020-11-7 12:53:28   INFO (BinaryReader) Size in bits: 16
+
+2020-11-7 12:53:28   INFO (BinaryReader) Size in bits (inc size byte): 24
+
+2020-11-7 12:53:28   INFO (BinaryReader) Deserializing an int: 000000100000000000000000
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting binary 00000000 to decimal
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 0
+
+2020-11-7 12:53:28   INFO (BinaryReader) Int was positive
+
+2020-11-7 12:53:28   INFO (BinaryReader) Int is 0
+
+2020-11-7 12:53:28   INFO (BinaryReader) Getting size from item 00000000000000100000000000000000000000100000000000000000000000100000000000000000,
+starting at bit #32
+
+2020-11-7 12:53:28   INFO (BinaryReader) Size bits: 00000010
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting binary 00000010 to decimal
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 2
+
+2020-11-7 12:53:28   INFO (BinaryReader) Size in bytes: 2
+
+2020-11-7 12:53:28   INFO (BinaryReader) Size in bits: 16
+
+2020-11-7 12:53:28   INFO (BinaryReader) Size in bits (inc size byte): 24
+
+2020-11-7 12:53:28   INFO (BinaryReader) Deserializing an int: 000000100000000000000000
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting binary 00000000 to decimal
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 0
+
+2020-11-7 12:53:28   INFO (BinaryReader) Int was positive
+
+2020-11-7 12:53:28   INFO (BinaryReader) Int is 0
+
+2020-11-7 12:53:28   INFO (BinaryReader) Getting size from item 00000000000000100000000000000000000000100000000000000000000000100000000000000000,
+starting at bit #56
+
+2020-11-7 12:53:28   INFO (BinaryReader) Size bits: 00000010
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting binary 00000010 to decimal
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 2
+
+2020-11-7 12:53:28   INFO (BinaryReader) Size in bytes: 2
+
+2020-11-7 12:53:28   INFO (BinaryReader) Size in bits: 16
+
+2020-11-7 12:53:28   INFO (BinaryReader) Size in bits (inc size byte): 24
+
+2020-11-7 12:53:28   INFO (BinaryReader) Deserializing an int: 000000100000000000000000
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting binary 00000000 to decimal
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 0
+
+2020-11-7 12:53:28   INFO (BinaryReader) Int was positive
+
+2020-11-7 12:53:28   INFO (BinaryReader) Int is 0
+
+2020-11-7 12:53:28   INFO (BinaryReader) Signing double
+
+2020-11-7 12:53:28   INFO (BinaryReader) Double was positive
+
+2020-11-7 12:53:28   INFO (BinaryReader) double was 0.000000
+
+2020-11-7 12:53:28   INFO (BinaryReader) Getting size from item 00100001000010100000000000000010000000000000000000000010000000000000000000000010000000000000000000001010000000000000001000000000000000000000001000000000000000000000001000000000000000000000101000000000000000100000000000000000000000100000000000000000000000100000000000000000001001000000101100000000000000100000000000000000000000100000000100000000000000110000000000000001010001010000101100000000000000100000000000000000000000100000000100000000000000110000000000000001010100010000101100000000000000100000000000000000000000100000000100000000000000110000000000000001010001010010010000001011000000000000001000000000000000000000001000000001000000000000001100000000000000010100010100001011000000000000001000000000000000000000001000000001000000000000001100000000000000010100010100001011000000000000001000000000000000000000001000000001000000000000001100000000000000010100010100001010000000000000001000000000000000000000001000000000000000000000001000000000000000000000101000000000000000100000000001000101000000100000000000000000000000100000000000000000000000010000000100000001,
+starting at bit #952
+
+2020-11-7 12:53:28   INFO (BinaryReader) Size bits: 00001010
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting binary 00001010 to decimal
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 10
+
+2020-11-7 12:53:28   INFO (BinaryReader) Size in bytes: 10
+
+2020-11-7 12:53:28   INFO (BinaryReader) Size in bits: 80
+
+2020-11-7 12:53:28   INFO (BinaryReader) Size in bits (inc size byte): 88
+
+2020-11-7 12:53:28   INFO (BinaryReader) Deserializing a double: 0000101000000000000000100000000001000101000000100000000000000000000000100000000000000000
+
+2020-11-7 12:53:28   INFO (BinaryReader) Getting size from item 00000000000000100000000001000101000000100000000000000000000000100000000000000000,
+starting at bit #8
+
+2020-11-7 12:53:28   INFO (BinaryReader) Size bits: 00000010
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting binary 00000010 to decimal
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 2
+
+2020-11-7 12:53:28   INFO (BinaryReader) Size in bytes: 2
+
+2020-11-7 12:53:28   INFO (BinaryReader) Size in bits: 16
+
+2020-11-7 12:53:28   INFO (BinaryReader) Size in bits (inc size byte): 24
+
+2020-11-7 12:53:28   INFO (BinaryReader) Deserializing an int: 000000100000000001000101
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting binary 01000101 to decimal
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 69
+
+2020-11-7 12:53:28   INFO (BinaryReader) Int was positive
+
+2020-11-7 12:53:28   INFO (BinaryReader) Int is 69
+
+2020-11-7 12:53:28   INFO (BinaryReader) Getting size from item 00000000000000100000000001000101000000100000000000000000000000100000000000000000,
+starting at bit #32
+
+2020-11-7 12:53:28   INFO (BinaryReader) Size bits: 00000010
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting binary 00000010 to decimal
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 2
+
+2020-11-7 12:53:28   INFO (BinaryReader) Size in bytes: 2
+
+2020-11-7 12:53:28   INFO (BinaryReader) Size in bits: 16
+
+2020-11-7 12:53:28   INFO (BinaryReader) Size in bits (inc size byte): 24
+
+2020-11-7 12:53:28   INFO (BinaryReader) Deserializing an int: 000000100000000000000000
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting binary 00000000 to decimal
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 0
+
+2020-11-7 12:53:28   INFO (BinaryReader) Int was positive
+
+2020-11-7 12:53:28   INFO (BinaryReader) Int is 0
+
+2020-11-7 12:53:28   INFO (BinaryReader) Getting size from item 00000000000000100000000001000101000000100000000000000000000000100000000000000000,
+starting at bit #56
+
+2020-11-7 12:53:28   INFO (BinaryReader) Size bits: 00000010
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting binary 00000010 to decimal
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 2
+
+2020-11-7 12:53:28   INFO (BinaryReader) Size in bytes: 2
+
+2020-11-7 12:53:28   INFO (BinaryReader) Size in bits: 16
+
+2020-11-7 12:53:28   INFO (BinaryReader) Size in bits (inc size byte): 24
+
+2020-11-7 12:53:28   INFO (BinaryReader) Deserializing an int: 000000100000000000000000
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting binary 00000000 to decimal
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 0
+
+2020-11-7 12:53:28   INFO (BinaryReader) Int was positive
+
+2020-11-7 12:53:28   INFO (BinaryReader) Int is 0
+
+2020-11-7 12:53:28   INFO (BinaryReader) Signing double
+
+2020-11-7 12:53:28   INFO (BinaryReader) Double was positive
+
+2020-11-7 12:53:28   INFO (BinaryReader) double was 69.000000
+
+2020-11-7 12:53:28   INFO (BinaryReader) Getting size from item 00100001000010100000000000000010000000000000000000000010000000000000000000000010000000000000000000001010000000000000001000000000000000000000001000000000000000000000001000000000000000000000101000000000000000100000000000000000000000100000000000000000000000100000000000000000001001000000101100000000000000100000000000000000000000100000000100000000000000110000000000000001010001010000101100000000000000100000000000000000000000100000000100000000000000110000000000000001010100010000101100000000000000100000000000000000000000100000000100000000000000110000000000000001010001010010010000001011000000000000001000000000000000000000001000000001000000000000001100000000000000010100010100001011000000000000001000000000000000000000001000000001000000000000001100000000000000010100010100001011000000000000001000000000000000000000001000000001000000000000001100000000000000010100010100001010000000000000001000000000000000000000001000000000000000000000001000000000000000000000101000000000000000100000000001000101000000100000000000000000000000100000000000000000000000010000000100000001,
+starting at bit #1040
+
+2020-11-7 12:53:28   INFO (BinaryReader) Size bits: 00000001
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting binary 00000001 to decimal
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 1
+
+2020-11-7 12:53:28   INFO (BinaryReader) Size in bytes: 1
+
+2020-11-7 12:53:28   INFO (BinaryReader) Size in bits: 8
+
+2020-11-7 12:53:28   INFO (BinaryReader) Size in bits (inc size byte): 16
+
+2020-11-7 12:53:28   INFO (BinaryReader) Deserializing bodyType
+
+2020-11-7 12:53:28   INFO (BinaryShared) Converting binary 00000001 to decimal
+
+2020-11-7 12:53:28   INFO (BinaryShared) Result was 1
+
+2020-11-7 12:53:28   INFO (BinaryReader) sphere
+
+2020-11-7 12:53:28   INFO (ThreeDBody) ThreeDBody initialized
+
+2020-11-7 12:53:28   INFO (ThreeDBody) ThreeDBody initialized
+
+2020-11-7 12:53:28   INFO (Field) checking for tag field
+
+2020-11-7 12:53:28   INFO (Field) the tag was not found
+
+2020-11-7 12:53:28   INFO (Field) adding tag field
+
+2020-11-7 12:53:28   INFO (Field) Field initialized
+
+2020-11-7 12:53:28   INFO (GravField) checking for tag gravField
+
+2020-11-7 12:53:28   INFO (GravField) the tag was not found
+
+2020-11-7 12:53:28   INFO (GravField) adding tag gravField
+
+2020-11-7 12:53:28   INFO (GravField) GravField initialized
+
+2020-11-7 12:53:28   INFO (Object 0) checking for tag object
+
+2020-11-7 12:53:28   INFO (Object 0) the tag was not found
+
+2020-11-7 12:53:28   INFO (Object 0) adding tag object
+
+2020-11-7 12:53:28   INFO (Object 0) Object is a sphere
+
+2020-11-7 12:53:28   INFO (Object 0) Object initialized
+
+2020-11-7 12:53:28   INFO (Object 0) Location: 0.000000, 0.000000, 0.000000
+
+2020-11-7 12:53:28   INFO (Object 0) Size: 0.000000
+
+2020-11-7 12:53:28   INFO (Object 0) Mass: 69.000000
+
+2020-11-7 12:53:28   INFO (Object 0) Volume: 0.000000
+
+2020-11-7 12:53:28   INFO (Object 0) Density: inf
+
+2020-11-7 12:53:28   INFO (GravField - Object 0) destroying
+
+2020-11-7 12:53:28   INFO (Object 0) destroying
+
+2020-11-7 12:53:28   INFO (Model) exitFunc called
+
+2020-11-7 12:53:28   INFO (Model) ticking
+
+2020-11-7 12:53:28   INFO (ObjectHandler) ticking
+

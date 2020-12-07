@@ -100,22 +100,22 @@ double getDist(coord *a, coord *b)
 
 // check if a given x, y, z is inside the body
 bool ThreeDBody::containsPoint(coord *coords) {
-    switch (*shape)
+    switch (shape)
     {
         case cube:
         {
-            double halfSideLength = *(size)/2;
+            double halfSideLength = size/2;
             coord minimums
             {
-                location->x - halfSideLength,
-                location->y - halfSideLength,
-                location->z - halfSideLength
+                location.x - halfSideLength,
+                location.y - halfSideLength,
+                location.z - halfSideLength
             };
             coord maximums
             {
-                location->x + halfSideLength,
-                location->y + halfSideLength,
-                location->z + halfSideLength
+                location.x + halfSideLength,
+                location.y + halfSideLength,
+                location.z + halfSideLength
             };
             return ( (coords->x > minimums.x && coords->y > minimums.y && coords->z > minimums.z) && (coords->x < maximums.x && coords->y < maximums.y && coords->z < maximums.z) );
         }
@@ -123,10 +123,10 @@ bool ThreeDBody::containsPoint(coord *coords) {
         case sphere:
         {
             // get the distance between the centre of the sphere & our point
-            double dist = getDist(location, coords);
+            double dist = getDist(&location, coords);
 
             // now compare that to the radius of our sphere
-            return (dist <= *size);
+            return (dist <= size);
         }
     }
 

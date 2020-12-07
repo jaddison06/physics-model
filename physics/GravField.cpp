@@ -12,7 +12,7 @@ void GravField::init(double *ownerMass)
 {
     // maths for this is on paper somewhere
     auto temp = sqrt(CONST_G*(*ownerMass)*M2_APPROX_KG*1000);
-    size = &temp;
+    size = temp;
 
     bodyMass = ownerMass;
 }
@@ -25,7 +25,7 @@ double GravField::calcFieldStrength(coord *point, std::vector<double> *extraData
     if (containsPoint(point))
     {
         // newton's something of something
-        double r = getDist(location, point);
+        double r = getDist(&location, point);
         return (CONST_G*(*bodyMass)*m2)/pow(r, 2);
     } else
     {

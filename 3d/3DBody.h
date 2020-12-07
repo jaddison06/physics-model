@@ -42,9 +42,9 @@ class ThreeDBody: public GenericBaseClass
         void removeTag(std::string tag);
         bool hasTag(std::string tag);
 
-        coord *location;
-        bodyType *shape;
-        double *size;
+        coord location;
+        bodyType shape;
+        double size;
 
     protected:
         std::vector<std::string> *tags;

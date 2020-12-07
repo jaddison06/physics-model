@@ -21,6 +21,7 @@ ObjectHandler::~ObjectHandler()
 
 void ObjectHandler::Tick(double tickTime)
 {
+    print("oh tick");
     logger->info("ticking");
     for (int i=0; i<objects->size(); i++)
     {
@@ -35,8 +36,8 @@ void ObjectHandler::Add(coord *pos, coord *vel, coord *accel, double *size, doub
     
     Object object(pos, size, mass, shape, ID);
 
-    object.velocity = vel;
-    object.acceleration = accel;
+    object.velocity = *vel;
+    object.acceleration = *accel;
 
     objects->push_back(object);
 }

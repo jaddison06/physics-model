@@ -5,8 +5,7 @@ Field::Field()
     logger->setSender("Field");
     addTag("field");
 
-    auto temp = sphere;
-    shape = &temp;
+    shape = sphere;
 
     logger->info("Field initialized");
 }
