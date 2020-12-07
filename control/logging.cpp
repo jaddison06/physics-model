@@ -7,12 +7,6 @@ std::ofstream logfile;
 std::string fname;
 
 
-// print and flush
-void print(std::string someString)
-{
-    std::cout << someString << std::endl;
-}
-
 // get a tm struct
 tm *getTime()
 {
@@ -38,10 +32,16 @@ void initLogging()
 {
     tm *startTime = getTime();
 
-    // create the logs folder, if it already exists this will hopefully just fail silently (?)
-    std::filesystem::create_directories("./data/logs/");
+    // create the logs folder
+    // why do they be changing the standard
+    // this now crashes if the dir exists
+    auto temp = new fs::path(LOG_PATH);
+    if (!fs::exists(*temp)) {
+        fs::create_directories(LOG_PATH);
+    }
+    delete temp;
 
-    fname = "./data/logs/" + formatTime(startTime);
+    fname = LOG_PATH + formatTime(startTime);
 
     logfile.open(fname, std::ios::app);
 }

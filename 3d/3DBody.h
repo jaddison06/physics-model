@@ -48,6 +48,7 @@ class ThreeDBody: public GenericBaseClass
 
     protected:
         std::vector<std::string> *tags;
+        std::string coordToString(coord *coords);
 
 
 };

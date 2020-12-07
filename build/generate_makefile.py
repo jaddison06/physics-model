@@ -48,22 +48,34 @@ for f in files:
         fnames.append(f[:-4])
 
 objFiles = f"build/objects/{'.o build/objects/'.join([ f[f.rfind('/')+1:] for f in fnames ])}.o"
+debugFiles = f"build/objects/{'-debug.o build/objects/'.join([ f[f.rfind('/')+1:] for f in fnames ])}-debug.o"
 
 makefile = ""
-makefile += f"main: {objFiles}\n		g++-8 {objFiles} -o ./physics-model -lstdc++fs\n\n"
+makefile += f"main: {objFiles}\n		g++ {objFiles} -o ./physics-model\n\n"
+makefile += f"debug: {debugFiles}\n		g++ {debugFiles} -g -o ./physics-model\n\n"
 makefile += "clean:\n		rm -r ./build/objects\n		mkdir ./build/objects\n		rm ./physics-model\n\n"
 makefile += "makefile:\n		python3 ./build/generate_makefile.py\n\n"
 
 
 for f in fnames:
     rootF = f[f.rfind('/')+1:]
+
+    # main entry
     makefile += f"build/objects/{rootF}.o: {f}.cpp"
 
     # main.h doesn't exist
     if not f=="./main":
         makefile += f" {f}.h"
 
-    makefile += f"\n		g++-8 -c {f}.cpp -I . -Wall -Wno-sign-compare -std=c++17 -o ./build/objects/{rootF}.o\n\n"
+    makefile += f"\n		g++ -c {f}.cpp -I . -Wall -Wno-sign-compare -std=c++17 -o ./build/objects/{rootF}.o\n\n"
+
+    # debug entry
+    makefile += f"build/objects/{rootF}-debug.o: {f}.cpp"
+
+    if not f=="./main":
+        makefile += f" {f}.h"
+
+    makefile += f"\n		g++ -c {f}.cpp -I . -Wall -Wno-sign-compare -std=c++17 -g -o ./build/objects/{rootF}-debug.o\n\n"
 
 
 print(f"Generated makefile:\n\n{makefile}")

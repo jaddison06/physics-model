@@ -6,10 +6,12 @@
 #include <iostream>
 #include <filesystem>
 
+#define LOG_PATH "./data/logs/"
+
+namespace fs = std::filesystem;
+
 void initLogging();
 
-
-void print(std::string someString);
 
 class Logger
 {

@@ -55,15 +55,25 @@ Object::~Object()
 // tickTime currently does nothing
 void Object::Tick(double tickTime)
 {
-    print("o tick");
+    printf("o tick\n");
+    logger->info("test");
+    printf("t\n");
     logger->info("Current location: "+coordToString(&location));
+    printf("l\n");
     logger->info("Current velocity: "+coordToString(&velocity));
     logger->info("Current acceleration: "+coordToString(&acceleration));
 
+    printf("hh\n");
+
     logger->info("ticking");
 
+    printf("logga\n");
+
+    //TODO: _average_ velocity over the time interval
     addCoords(&location, &velocity);
     addCoords(&velocity, &acceleration);
+
+    printf("add done\n");
 
     logger->info("New location: " + coordToString(&location));
     logger->info("New velocity: " + coordToString(&velocity));

@@ -69,7 +69,7 @@ bool ThreeDBody::hasTag(std::string tag)
 }
 
 // sexy coord
-std::string coordToString(coord *coords)
+std::string ThreeDBody::coordToString(coord *coords)
 {
     return std::to_string(coords->x) + ", " + std::to_string(coords->y) + ", " + std::to_string(coords->z);
 }
