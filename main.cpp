@@ -23,14 +23,15 @@ int main() {
     // we have to call this _before_
     // instantiating the Model as it has its own Logger object
     // that won't work without it
-    printf("il\n");
     initLogging();
-    printf("im\n");
     Model *model = new Model;
-    printf("start\n");
     model->Start(&exitFunc);
 
+    printf("done\n");
+
     delete model;
+
+    printf("hhhh\n");
 
     return 0;
 }

@@ -21,7 +21,6 @@ ObjectHandler::~ObjectHandler()
 
 void ObjectHandler::Tick(double tickTime)
 {
-    printf("oh tick\n");
     logger.info("ticking");
     for (int i=0; i<objects.size(); i++)
     {

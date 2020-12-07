@@ -34,7 +34,6 @@ void Model::Start( bool (*exitFunc)(Logger *) )
         // tick until we're told to stop
         while ( !exitFunc(&logger) )
         {
-            printf("tick\n");
             Tick();
         }
         logger.info("model complete, exiting");
